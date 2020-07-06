@@ -4,7 +4,7 @@ import React from 'react';
 import styles from './styles'
 import { LinearGradient } from 'expo-linear-gradient';
 import { colors } from '../../../configuration';
-import CircularMenu from '../CircularMenu';
+import Menu from '../Menu';
 
 const Home = ({}) => {
 
@@ -12,23 +12,20 @@ const Home = ({}) => {
 
   return (
     <View style={styles.container}>
-        <LinearGradient
-            colors={[colors.white, colors.primaryB]}
-            style={styles.gradient}
-        >
-            <View style={styles.header}>
-                <Image style={styles.icon} source={require('../../public/logo/icon.png')} ></Image>
-                <Image style={styles.logo} source={require('../../public/logo/logo.png')} ></Image>
-                <TouchableOpacity onClick={() => home}>
-                    <Image style={styles.icon} source={require('../../public/icons/settings.png')} ></Image>
-                </TouchableOpacity>  
-            </View>
-            <CircularMenu radius={5} elements={[
-                {onClick: test, icon: require('../../public/icons/settings.png'), title: 'LALALA'},
-                {onClick: test, icon: require('../../public/icons/settings.png'), title: 'LALALA'}
-            ]} ></CircularMenu>s
-    </LinearGradient>
-</View>
+        <View style={styles.header}>
+            <Image style={styles.icon} source={require('../../public/logo/icon.png')} ></Image>
+            <Image style={styles.logo} source={require('../../public/logo/logo.png')} ></Image>
+            <TouchableOpacity onClick={() => home}>
+                <Image style={styles.icon} source={require('../../public/icons/settings.png')} ></Image>
+            </TouchableOpacity>  
+        </View>
+        <Text style={styles.title}>
+            <strong>{'Mobile App'}</strong>
+        </Text>
+        <Menu></Menu>
+        <View style={styles.bottom}>
+        </View>
+    </View>
 )};
 
 export default connect(

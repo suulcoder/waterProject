@@ -8,8 +8,8 @@ export const colors = {
     primaryA: '#384C60',
     primaryB: '#4A86E8',
     primaryC: '#75A2EB',
-    primaryD: '266786',
-    secondaryA: 'FD8414',
+    primaryD: '#266786',
+    secondaryA: '#FD8414',
     white: '#FFFFFF',
     black: '#000000',
     gray: '#BBC2B4'

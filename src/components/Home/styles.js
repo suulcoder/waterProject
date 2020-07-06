@@ -4,9 +4,9 @@ import { normalize } from '../../utils/normalize';
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
       alignItems: 'flex-start',
-      backgroundColor: colors.primary,
+      backgroundColor: colors.white,
+      flex: 1,
       flexDirection: 'column',
       justifyContent: 'center',
     },
@@ -16,17 +16,24 @@ const styles = StyleSheet.create({
         padding: normalize(3),
         width: '100%',
     },
-    gradient:{
-        height:'100%',
-        width: '100%',
-    },
     icon:{
-        height:normalize(24),
-        width:normalize(24),
+        height:normalize(15),
+        width:normalize(15),
     },
     logo:{
         height: normalize(24),
         width: normalize(500),
+    },
+    bottom:{
+        backgroundColor: colors.primaryB,
+        bottom: 0,
+        height: normalize(7),
+        position: 'absolute',
+        width: '100%',
+    },
+    title:{
+        alignSelf: 'center',
+        color: colors.secondaryA,
     }
   });
   
