@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
       borderRadius: '55px 20px',
       flex: 1,
       justifyContent: 'center',
-      marginTop: normalize(5),
+      marginTop: normalize(4),
       padding: normalize(10),
       width: '100%',
     },

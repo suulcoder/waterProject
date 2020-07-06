@@ -4,6 +4,8 @@
     app.
 */
 
+export const URL = 'https://localhost:19006/'
+
 export const colors = {
     primaryA: '#384C60',
     primaryB: '#4A86E8',

@@ -1,12 +1,12 @@
+import { Actions } from 'react-native-router-flux';
 import { connect } from 'react-redux';
+import { normalize } from '../../utils/normalize';
 import {Text, View, Image, TouchableOpacity } from 'react-native';
+import {URL} from '../../../configuration'
 import React from 'react';
 import styles from './styles'
-import { LinearGradient } from 'expo-linear-gradient';
-import { colors } from '../../../configuration';
-import { normalize } from '../../utils/normalize';
 
-const Menu = ({radius, elements}) => {
+const Menu = ({radius, contact}) => {
 
   const angle = 365/radius;
 
@@ -16,7 +16,7 @@ const Menu = ({radius, elements}) => {
             <strong>{'Welcome'}</strong>
         </Text>
         <View style={styles.row}>
-            <TouchableOpacity style={styles.element} onClick={console.log("")}>
+            <TouchableOpacity style={styles.element} onPress={contact}>
                 <Image style={{
                     alignSelf: 'center',
                     height:normalize(20),
@@ -24,7 +24,7 @@ const Menu = ({radius, elements}) => {
                 }} source={require('../../public/icons/test.png')} ></Image>
                 <Text style={styles.text}> {'Test your water'} </Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.element} onClick={console.log("")}>
+            <TouchableOpacity style={styles.element} onPress={contact}>
                 <Image style={{
                     alignSelf: 'center',
                     height:normalize(15),
@@ -34,7 +34,7 @@ const Menu = ({radius, elements}) => {
             </TouchableOpacity>
         </View>
         <View style={styles.row}>
-            <TouchableOpacity style={styles.element} onClick={console.log("")}>
+            <TouchableOpacity style={styles.element} onPress={contact}>
                 <Image style={{
                     alignSelf: 'center',
                     height:normalize(20),
@@ -42,7 +42,7 @@ const Menu = ({radius, elements}) => {
                 source={require('../../public/icons/water.png')} ></Image>
                 <Text style={styles.text}> {'Contaminated water and your health'} </Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.element} onClick={console.log("")}>
+            <TouchableOpacity style={styles.element} onPress={contact}>
                 <Image style={{
                     alignSelf: 'center',
                     height:normalize(15),
@@ -59,6 +59,13 @@ export default connect(
         
     }),
     dispatch=>({
-        
+        contact(){
+            if(typeof document !== 'undefined'){
+                window.location.href = URL+'contact/'
+              }
+              else{
+                Actions.replace('Contact')
+              }
+          },
     }),
 )(Menu);

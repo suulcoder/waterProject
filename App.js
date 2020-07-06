@@ -9,6 +9,7 @@ import mainSaga from './src/sagas';
 import React from 'react';
 import reducer from './src/reducers';
 import throttle from 'lodash/throttle';
+import Contact from './src/components/Contact';
 
 //localStorage.clear();
 let persistedState = loadState()
@@ -27,13 +28,14 @@ export default function App() {
           <Router>                                                                                 
             <Stack key="root" style={styles.container}>
               <Scene key="Home" component={Home}  hideNavBar={true} />
+              <Scene key="Contact" component={Contact}  hideNavBar={true} />
             </Stack>
         </Router>
         ):(
           <BrowserRouter>
             <Switch>
               <Route exact path="/" component={Home} />
-              {/* <Route exact path="/search" component={Search}/> */}
+              <Route exact path="/contact" component={Contact}/>
             </Switch>
         </BrowserRouter>
         )
