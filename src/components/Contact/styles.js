@@ -36,15 +36,21 @@ const styles = StyleSheet.create({
     },
     icon:{
         margin: normalize(1),
-        height:normalize(15),
-        width:normalize(15),
+        height:normalize(20),
+        width:normalize(20),
+    },
+    circle:{
+        backgroundColor: colors.white,
+        padding: normalize(1),
+        borderRadius: normalize(50),
     },
     info:{
         marginLeft: normalize(1),
-        maxWidth: '87%',
+        marginRight: normalize(1),
+        maxWidth: '80%',
     },
     text:{
-        color:colors.black,
+        color:colors.white,
         fontSize: normalize(2.5),
     }
   });
