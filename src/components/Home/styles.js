@@ -4,6 +4,7 @@ import { normalize } from '../../utils/normalize';
 
 const styles = StyleSheet.create({
     container: {
+      marginTop: normalize(15),
       alignItems: 'flex-start',
       backgroundColor: colors.white,
       flex: 1,
@@ -21,8 +22,8 @@ const styles = StyleSheet.create({
         width:normalize(15),
     },
     logo:{
-        height: normalize(24),
-        width: normalize(500),
+        height: normalize(30),
+        width: normalize(600),
     },
     bottom:{
         backgroundColor: colors.primaryB,
@@ -34,6 +35,8 @@ const styles = StyleSheet.create({
     title:{
         alignSelf: 'center',
         color: colors.secondaryA,
+        fontWeight: "bold",
+        fontSize: normalize(3)
     }
   });
   

@@ -14,11 +14,9 @@ const Home = ({}) => (
             </TouchableOpacity>  
         </View>
         <Text style={styles.title}>
-            <strong>{'Mobile App'}</strong>
+            {'Aplicación Móvil'}
         </Text>
         <Menu></Menu>
-        <View style={styles.bottom}>
-        </View>
     </View>
 );
 

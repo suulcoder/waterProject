@@ -26,7 +26,7 @@ export default function App() {
     <Provider store={store}>
       {(typeof document === 'undefined')?(                                                         //This line is needed uring development in order to open the app.
           <Router>                                                                                 
-            <Stack key="root" style={styles.container}>
+            <Stack key="root" >
               <Scene key="Home" component={Home}  hideNavBar={true} />
               <Scene key="Contact" component={Contact}  hideNavBar={true} />
             </Stack>

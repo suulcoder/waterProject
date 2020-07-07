@@ -13,7 +13,7 @@ const Menu = ({radius, contact}) => {
   return (
     <View style={styles.container} >
         <Text style={styles.welcomeText}>
-            <strong>{'Welcome'}</strong>
+            {'¡Bienvenido!'}
         </Text>
         <View style={styles.row}>
             <TouchableOpacity style={styles.element} onPress={contact}>
