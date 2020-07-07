@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
         color: colors.white,
         fontSize: normalize(7),
         fontWeight: "bold",
-        marginBottom: normalize(10),
+        marginBottom: normalize(5),
         marginTop: normalize(1),
         padding: normalize(0.5),
     },
@@ -62,9 +62,50 @@ const styles = StyleSheet.create({
         fontSize: normalize(2.5),
     },
     map:{
+        borderRadius: normalize(500),
+        alignSelf: 'center',
         margin: normalize(2),
-        marginTop: normalize(7),
-        height: '60%',
+        width: '85%',
+        marginTop: normalize(10),
+        marginBottom: normalize(20),
+        height: normalize(3000),
+    },
+    input: {
+        width: '80%',
+        alignSelf: 'center',
+        height: normalize(60),
+        backgroundColor: colors.white,
+        borderRadius: 7,
+        fontSize: normalize(2),
+        margin: normalize(0.5),
+        padding: 10,
+        borderColor: colors.white,
+        borderWidth: 1
+    },
+    input_multiline: {
+        width: '80%',
+        alignSelf: 'center',
+        height: normalize(600),
+        backgroundColor: colors.white,
+        borderRadius: 7,
+        fontSize: normalize(2),
+        margin: normalize(0.5),
+        padding: 10,
+        borderColor: colors.white,
+        borderWidth: 1
+    },
+    submitText:{
+        backgroundColor: colors.primaryA,
+        padding:normalize(2),
+        paddingTop: normalize(1),
+        paddingBottom: normalize(1),
+        color: colors.white,
+    },
+    submit:{
+        marginTop: normalize(5),
+        marginBottom: normalize(10),
+        alignSelf:'flex-end',
+        right: '15%'
     }
   });
   

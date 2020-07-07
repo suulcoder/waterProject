@@ -22,7 +22,7 @@ const Menu = ({radius, contact}) => {
                     height:normalize(20),
                     width:normalize(20),
                 }} source={require('../../public/icons/test.png')} ></Image>
-                <Text style={styles.text}> {'Test your water'} </Text>
+                <Text style={styles.text}> {'Evalúa el agua'} </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.element} onPress={contact}>
                 <Image style={{
@@ -30,7 +30,7 @@ const Menu = ({radius, contact}) => {
                     height:normalize(15),
                     width:normalize(20),
                 }} source={require('../../public/icons/eco.png')} ></Image>
-                <Text style={styles.text}> {'About Ecofiltro'} </Text>
+                <Text style={styles.text}> {'Sobre Ecofiltro'} </Text>
             </TouchableOpacity>
         </View>
         <View style={styles.row}>
@@ -40,7 +40,7 @@ const Menu = ({radius, contact}) => {
                     height:normalize(20),
                     width:normalize(20),}}
                 source={require('../../public/icons/water.png')} ></Image>
-                <Text style={styles.text}> {'Contaminated water and your health'} </Text>
+                <Text style={styles.text}> {'Agua contaminada y salud'} </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.element} onPress={contact}>
                 <Image style={{
@@ -48,7 +48,7 @@ const Menu = ({radius, contact}) => {
                     height:normalize(15),
                     width:normalize(25),
                 }} source={require('../../public/icons/contactus.png')} ></Image>
-                <Text style={styles.text}> {'Contact us'} </Text>
+                <Text style={styles.text}> {'Contáctanos'} </Text>
             </TouchableOpacity>
         </View>
     </View>
@@ -64,7 +64,7 @@ export default connect(
                 window.location.href = URL+'contact/'
               }
               else{
-                Actions.replace('Contact')
+                Actions.Contact()
               }
           },
     }),

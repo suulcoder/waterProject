@@ -1,37 +1,85 @@
 import { connect } from 'react-redux';
-import {Text, View, Image, TouchableOpacity } from 'react-native';
+import {Text, View, Image, ScrollView, TextInput, TouchableOpacity } from 'react-native';
 import Header from '../Header';
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './styles'
-import MapView from 'react-native-maps';
+import MapView, {Marker} from 'react-native-maps';
 
 const Contact = ({}) => {
-  return (
+  
+    const [name, changeName] = useState('');
+    const [phone, changePhone] = useState('');
+    const [email, changeEmail] = useState('');
+    const [message, changeMessage] = useState('');
+
+    return (
     <View style={styles.container}>
         <Header></Header>
         <View style={styles.content}>
             <Text style={styles.title}>
-                {'Contact Us'}
+                {'¡Contáctanos!'}
             </Text>
-            <View style={styles.row}>
-                <View style={styles.circle}>
-                    <Image style={styles.icon} source={require('../../public/icons/location.png')} ></Image>
+            <ScrollView>
+                <View style={styles.row}>
+                    <View style={styles.circle}>
+                        <Image style={styles.icon} source={require('../../public/icons/location.png')} ></Image>
+                    </View>
+                    <View style={styles.info}>
+                        <Text style={styles.text}> {'KM 77, Aldea San Lorenzo El Cubo Ciudad Vieja,  Sacatepéquez.'} </Text>
+                        <Text style={styles.text}> {'Tel.: (+502) 7955-8555'} </Text>
+                        <Text style={styles.text}> {'Email:  info@ecofiltro.com'} </Text>
+                    </View>
                 </View>
-                <View style={styles.info}>
-                    <Text style={styles.text}> {'Location:  KM 77, Aldea San Lorenzo El Cubo Ciudad Vieja,  Sacatepéquez.'} </Text>
-                    <Text style={styles.text}> {'Phone:     (+502) 7955-8555'} </Text>
-                    <Text style={styles.text}> {'Email:     info@ecofiltro.com'} </Text>
-                </View>
-            </View>
-            <MapView
-                style={styles.map}
-                initialRegion={{
-                    latitude: 37.78825,
-                    longitude: -122.4324,
-                    latitudeDelta: 0.05,
-                    longitudeDelta: 0.05
-                }}
-            />
+                <MapView
+                    style={styles.map}
+                    initialRegion={{
+                        latitude: 14.5354397,
+                        longitude: -90.7684187,
+                        latitudeDelta: 0.005,
+                        longitudeDelta: 0.005
+                    }}    
+                >
+                    <Marker
+                        coordinate={{
+                            latitude: 14.5354397,
+                            longitude: -90.7684299,
+                            latitudeDelta: 0.5,
+                            longitudeDelta: 0.5
+                        }}
+                        title={'Ecofiltro'}
+                        />
+                </MapView>
+                <TextInput
+                    style={styles.input}
+                    placeholder="Nombre"
+                    value={name}
+                    onChangeText={changeName}   
+                />
+                <TextInput
+                    style={styles.input}
+                    keyboardType={'numeric'}
+                    placeholder="Teléfono"
+                    value={phone}
+                    onChangeText={changePhone}   
+                />
+                <TextInput
+                    style={styles.input}
+                    keyboardType={'email-address'}
+                    placeholder="Email"
+                    value={email}
+                    onChangeText={changeEmail}   
+                />
+                <TextInput
+                    style={styles.input_multiline}
+                    multiline={true}
+                    placeholder="Mensaje"
+                    value={message}
+                    onChangeText={changeMessage}   
+                />
+                <TouchableOpacity style={styles.submit}>
+                    <Text style={styles.submitText}> {'Enviar'} </Text>
+                </TouchableOpacity>
+            </ScrollView>
         </View>
     </View>
 )};

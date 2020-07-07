@@ -4,6 +4,7 @@ import { normalize } from '../../utils/normalize';
 
 const styles = StyleSheet.create({
     header:{
+        alignItems:'center',
         flexDirection: 'row',
         justifyContent: 'space-between',
         padding: normalize(3),
@@ -14,8 +15,8 @@ const styles = StyleSheet.create({
         width:normalize(15),
     },
     logo:{
-        height: normalize(24),
-        width: normalize(500),
+        height: normalize(30),
+        width: normalize(600),
     },
   });
   
