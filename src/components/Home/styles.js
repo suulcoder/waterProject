@@ -4,12 +4,12 @@ import { normalize } from '../../utils/normalize';
 
 const styles = StyleSheet.create({
     container: {
-      marginTop: normalize(15),
       alignItems: 'flex-start',
       backgroundColor: colors.white,
       flex: 1,
       flexDirection: 'column',
       justifyContent: 'center',
+      marginTop: normalize(15),
     },
     header:{
         flexDirection: 'row',
@@ -35,8 +35,8 @@ const styles = StyleSheet.create({
     title:{
         alignSelf: 'center',
         color: colors.secondaryA,
+        fontSize: normalize(3),
         fontWeight: "bold",
-        fontSize: normalize(3)
     }
   });
   

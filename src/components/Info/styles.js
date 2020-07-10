@@ -4,11 +4,11 @@ import { normalize } from '../../utils/normalize';
 
 const styles = StyleSheet.create({
     container: {
-      marginTop: normalize(15),
       alignItems: 'flex-start',
       backgroundColor: colors.white,
       flex: 1,
       flexDirection: 'column',
+      marginTop: normalize(15),
     },
     content: {
         alignSelf: 'center',
@@ -62,18 +62,18 @@ const styles = StyleSheet.create({
         padding: normalize(15),
     },
     icon:{
-        margin: normalize(1),
         height:normalize(20),
+        margin: normalize(1),
         width:normalize(20),
     },
     circle:{
-        backgroundColor: colors.white,
-        marginRight: normalize(1),
         alignItems:'center',
+        backgroundColor: colors.white,
+        borderRadius: normalize(50),
+        height: normalize(80),
+        marginRight: normalize(1),
         padding: normalize(1),
         width: normalize(80),
-        height: normalize(80),
-        borderRadius: normalize(50),
     },
     info:{
         marginLeft: normalize(1),

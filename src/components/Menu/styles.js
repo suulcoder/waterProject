@@ -24,7 +24,9 @@ const styles = StyleSheet.create({
     },
     text: {
         alignSelf: 'center',
-        fontSize: normalize(1.8),
+        color: colors.white,
+        width: normalize(500),
+        fontSize: normalize(2.5),
         marginTop: normalize(1.5),
         textAlign: 'center',
     },

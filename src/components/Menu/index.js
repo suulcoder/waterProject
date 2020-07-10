@@ -12,40 +12,48 @@ const Menu = ({about, contact, info}) => (
             {'¡Bienvenido!'}
         </Text>
         <View style={styles.row}>
-            <TouchableOpacity style={styles.element} onPress={contact}>
-                <Image style={{
-                    alignSelf: 'center',
-                    height:normalize(20),
-                    width:normalize(20),
-                }} source={require('../../public/icons/test.png')} ></Image>
+            <View>
+                <TouchableOpacity style={styles.element} onPress={contact}>
+                    <Image style={{
+                        alignSelf: 'center',
+                        height:normalize(60),
+                        width:normalize(20),
+                    }} source={require('../../public/icons/test.png')} ></Image>
+                </TouchableOpacity>    
                 <Text style={styles.text}> {'Evalúa el agua'} </Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.element} onPress={about}>
-                <Image style={{
-                    alignSelf: 'center',
-                    height:normalize(15),
-                    width:normalize(20),
-                }} source={require('../../public/icons/eco.png')} ></Image>
+            </View>
+            <View>
+                <TouchableOpacity style={styles.element} onPress={about}>
+                    <Image style={{
+                        alignSelf: 'center',
+                        height:normalize(60),
+                        width:normalize(60),
+                    }} source={require('../../public/icons/eco.png')} ></Image>
+                </TouchableOpacity>
                 <Text style={styles.text}> {'Sobre Ecofiltro'} </Text>
-            </TouchableOpacity>
+            </View>
         </View>
         <View style={styles.row}>
-            <TouchableOpacity style={styles.element} onPress={info}>
-                <Image style={{
-                    alignSelf: 'center',
-                    height:normalize(20),
-                    width:normalize(20),}}
-                source={require('../../public/icons/water.png')} ></Image>
+            <View>
+                <TouchableOpacity style={styles.element} onPress={info}>
+                    <Image style={{
+                        alignSelf: 'center',
+                        height:normalize(60),
+                        width:normalize(20),}}
+                    source={require('../../public/icons/water.png')} ></Image>
+                </TouchableOpacity>
                 <Text style={styles.text}> {'Agua contaminada y salud'} </Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.element} onPress={contact}>
-                <Image style={{
-                    alignSelf: 'center',
-                    height:normalize(15),
-                    width:normalize(25),
-                }} source={require('../../public/icons/contactus.png')} ></Image>
+            </View>
+            <View>
+                <TouchableOpacity style={styles.element} onPress={contact}>
+                    <Image style={{
+                        alignSelf: 'center',
+                        height:normalize(40),
+                        width:normalize(60),
+                    }} source={require('../../public/icons/contactus.png')} ></Image>
+                </TouchableOpacity>
                 <Text style={styles.text}> {'Contáctanos'} </Text>
-            </TouchableOpacity>
+            </View>
         </View>
     </View>
 );
