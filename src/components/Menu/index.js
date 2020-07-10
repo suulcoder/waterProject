@@ -6,11 +6,7 @@ import {URL} from '../../../configuration'
 import React from 'react';
 import styles from './styles'
 
-const Menu = ({radius, contact}) => {
-
-  const angle = 365/radius;
-
-  return (
+const Menu = ({about, contact, info}) => (
     <View style={styles.container} >
         <Text style={styles.welcomeText}>
             {'¡Bienvenido!'}
@@ -24,7 +20,7 @@ const Menu = ({radius, contact}) => {
                 }} source={require('../../public/icons/test.png')} ></Image>
                 <Text style={styles.text}> {'Evalúa el agua'} </Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.element} onPress={contact}>
+            <TouchableOpacity style={styles.element} onPress={about}>
                 <Image style={{
                     alignSelf: 'center',
                     height:normalize(15),
@@ -34,7 +30,7 @@ const Menu = ({radius, contact}) => {
             </TouchableOpacity>
         </View>
         <View style={styles.row}>
-            <TouchableOpacity style={styles.element} onPress={contact}>
+            <TouchableOpacity style={styles.element} onPress={info}>
                 <Image style={{
                     alignSelf: 'center',
                     height:normalize(20),
@@ -52,7 +48,7 @@ const Menu = ({radius, contact}) => {
             </TouchableOpacity>
         </View>
     </View>
-)};
+);
 
 export default connect(
     state => ({
@@ -60,12 +56,13 @@ export default connect(
     }),
     dispatch=>({
         contact(){
-            if(typeof document !== 'undefined'){
-                window.location.href = URL+'contact/'
-              }
-              else{
-                Actions.Contact()
-              }
-          },
+            Actions.Contact()
+        },
+        about(){
+            Actions.About()
+        },
+        info(){
+            Actions.Info()
+        }
     }),
 )(Menu);

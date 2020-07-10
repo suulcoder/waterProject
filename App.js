@@ -10,6 +10,8 @@ import React from 'react';
 import reducer from './src/reducers';
 import throttle from 'lodash/throttle';
 import Contact from './src/components/Contact';
+import About from './src/components/Info';
+import Info from './src/components/Info';
 
 //localStorage.clear();
 let persistedState = loadState()
@@ -24,22 +26,14 @@ store.subscribe(throttle(()=>{
 export default function App() {
   return (
     <Provider store={store}>
-      {(typeof document === 'undefined')?(                                                         //This line is needed uring development in order to open the app.
-          <Router>                                                                                 
-            <Stack key="root" >
-              <Scene key="Home" component={Home}  hideNavBar={true} />
-              <Scene key="Contact" component={Contact}  hideNavBar={true} />
-            </Stack>
-        </Router>
-        ):(
-          <BrowserRouter>
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/contact" component={Contact}/>
-            </Switch>
-        </BrowserRouter>
-        )
-        }        
+      <Router>                                                                                 
+        <Stack key="root" >
+          <Scene key="Home" component={Home}  hideNavBar={true} />
+          <Scene key="Contact" component={Contact}  hideNavBar={true} />
+          <Scene key="About" component={About}  hideNavBar={true} />
+          <Scene key="Info" component={Info}  hideNavBar={true} />
+        </Stack>
+      </Router>        
    </Provider>
   );
 }

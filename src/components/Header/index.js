@@ -26,12 +26,7 @@ export default connect(
             Actions.pop()
         },
         home(){
-            if(typeof document !== 'undefined'){
-                window.location.href = URL
-            }
-            else{
-                Actions.replace('Home')
-            }
+            Actions.replace('Home')
         },
     }),
 )(Header);
