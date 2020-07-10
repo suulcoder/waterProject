@@ -10,7 +10,7 @@ import React from 'react';
 import reducer from './src/reducers';
 import throttle from 'lodash/throttle';
 import Contact from './src/components/Contact';
-import About from './src/components/Info';
+import About from './src/components/About';
 import Info from './src/components/Info';
 
 //localStorage.clear();

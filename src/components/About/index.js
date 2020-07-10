@@ -15,40 +15,48 @@ const About = ({option}) => (
                 {'Sobre Ecofiltro'}
             </Text>
             <View style={styles.row}>
-                <TouchableOpacity style={styles.element} onPress={option}>
-                    <Image style={{
-                        alignSelf: 'center',
-                        height:normalize(20),
-                        width:normalize(20),
-                    }} source={require('../../public/icons/test.png')} ></Image>
+                <View>
+                    <TouchableOpacity style={styles.element} onPress={option}>
+                        <Image style={{
+                            alignSelf: 'center',
+                            height:normalize(180),
+                            width:normalize(180),
+                        }} source={require('../../public/icons/maintenance.png')} ></Image>
+                    </TouchableOpacity>
                     <Text style={styles.text}> {'¿Cómo cuidar el Ecofiltro?'} </Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.element} onPress={option}>
-                    <Image style={{
-                        alignSelf: 'center',
-                        height:normalize(15),
-                        width:normalize(20),
-                    }} source={require('../../public/icons/eco.png')} ></Image>
-                    <Text style={styles.text}> {'Historias'} </Text>
-                </TouchableOpacity>
+                </View>
+                <View>
+                    <TouchableOpacity style={styles.element} onPress={option}>
+                        <Image style={{
+                            alignSelf: 'center',
+                            height:normalize(150),
+                            width:normalize(150),
+                        }} source={require('../../public/icons/stories.png')} ></Image>
+                    </TouchableOpacity>
+                    <Text style={styles.text}> {'Experiencias'} </Text>
+                </View>
             </View>
             <View style={styles.row}>
-                <TouchableOpacity style={styles.element} onPress={option}>
-                    <Image style={{
-                        alignSelf: 'center',
-                        height:normalize(20),
-                        width:normalize(20),}}
-                    source={require('../../public/icons/water.png')} ></Image>
+                <View>
+                    <TouchableOpacity style={styles.element} onPress={option}>
+                        <Image style={{
+                            alignSelf: 'center',
+                            height:normalize(100),
+                            width:normalize(100),}}
+                        source={require('../../public/icons/eco.png')} ></Image>
+                    </TouchableOpacity>
                     <Text style={styles.text}> {'¿Porqué Ecofiltro?'} </Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.element} onPress={option}>
-                    <Image style={{
-                        alignSelf: 'center',
-                        height:normalize(15),
-                        width:normalize(25),
-                    }} source={require('../../public/icons/contactus.png')} ></Image>
+                </View>
+                <View>
+                    <TouchableOpacity style={styles.element} onPress={option}>
+                        <Image style={{
+                            alignSelf: 'center',
+                            height:normalize(90),
+                            width:normalize(95),
+                        }} source={require('../../public/icons/question.png')} ></Image>
+                    </TouchableOpacity>
                     <Text style={styles.text}> {'Preguntas frecuentes'} </Text>
-                </TouchableOpacity>
+                </View>
             </View>
         </View>
     </View>

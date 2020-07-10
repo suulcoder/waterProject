@@ -16,8 +16,8 @@ const Menu = ({about, contact, info}) => (
                 <TouchableOpacity style={styles.element} onPress={contact}>
                     <Image style={{
                         alignSelf: 'center',
-                        height:normalize(60),
-                        width:normalize(20),
+                        height:normalize(100),
+                        width:normalize(80),
                     }} source={require('../../public/icons/test.png')} ></Image>
                 </TouchableOpacity>    
                 <Text style={styles.text}> {'Evalúa el agua'} </Text>
@@ -26,9 +26,9 @@ const Menu = ({about, contact, info}) => (
                 <TouchableOpacity style={styles.element} onPress={about}>
                     <Image style={{
                         alignSelf: 'center',
-                        height:normalize(60),
-                        width:normalize(60),
-                    }} source={require('../../public/icons/eco.png')} ></Image>
+                        height:normalize(100),
+                        width:normalize(150),
+                    }} source={require('../../public/icons/about.png')} ></Image>
                 </TouchableOpacity>
                 <Text style={styles.text}> {'Sobre Ecofiltro'} </Text>
             </View>
@@ -38,8 +38,8 @@ const Menu = ({about, contact, info}) => (
                 <TouchableOpacity style={styles.element} onPress={info}>
                     <Image style={{
                         alignSelf: 'center',
-                        height:normalize(60),
-                        width:normalize(20),}}
+                        height:normalize(100),
+                        width:normalize(100),}}
                     source={require('../../public/icons/water.png')} ></Image>
                 </TouchableOpacity>
                 <Text style={styles.text}> {'Agua contaminada y salud'} </Text>
@@ -48,8 +48,8 @@ const Menu = ({about, contact, info}) => (
                 <TouchableOpacity style={styles.element} onPress={contact}>
                     <Image style={{
                         alignSelf: 'center',
-                        height:normalize(40),
-                        width:normalize(60),
+                        height:normalize(80),
+                        width:normalize(120),
                     }} source={require('../../public/icons/contactus.png')} ></Image>
                 </TouchableOpacity>
                 <Text style={styles.text}> {'Contáctanos'} </Text>

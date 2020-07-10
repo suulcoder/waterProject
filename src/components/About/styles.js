@@ -18,13 +18,6 @@ const styles = StyleSheet.create({
         marginTop: normalize(4),
         width: '100%',
       },
-    bottom:{
-        backgroundColor: colors.primaryB,
-        bottom: 0,
-        height: normalize(7),
-        position: 'absolute',
-        width: '100%',
-    },
     element:{
         alignSelf: 'center',
         backgroundColor: colors.white,
@@ -36,7 +29,9 @@ const styles = StyleSheet.create({
     },
     text: {
         alignSelf: 'center',
-        fontSize: normalize(1.8),
+        color: colors.white,
+        width: normalize(500),
+        fontSize: normalize(2.5),
         marginTop: normalize(1.5),
         textAlign: 'center',
     },
