@@ -16,8 +16,8 @@ const Menu = ({about, contact, info}) => (
                 <TouchableOpacity style={styles.element} onPress={contact}>
                     <Image style={{
                         alignSelf: 'center',
-                        height:normalize(100),
-                        width:normalize(80),
+                        height:normalize(140),
+                        width:normalize(100),
                     }} source={require('../../public/icons/test.png')} ></Image>
                 </TouchableOpacity>    
                 <Text style={styles.text}> {'Evalúa el agua'} </Text>
@@ -26,8 +26,8 @@ const Menu = ({about, contact, info}) => (
                 <TouchableOpacity style={styles.element} onPress={about}>
                     <Image style={{
                         alignSelf: 'center',
-                        height:normalize(100),
-                        width:normalize(150),
+                        height:normalize(120),
+                        width:normalize(70),
                     }} source={require('../../public/icons/about.png')} ></Image>
                 </TouchableOpacity>
                 <Text style={styles.text}> {'Sobre Ecofiltro'} </Text>

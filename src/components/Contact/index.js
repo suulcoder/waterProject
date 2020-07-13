@@ -4,13 +4,15 @@ import Header from '../Header';
 import React, {useState} from 'react';
 import styles from './styles'
 import MapView, {Marker} from 'react-native-maps';
+import email from 'react-native-email'
 
-const Contact = ({}) => {
+const Contact = ({submit}) => {
   
     const [name, changeName] = useState('');
     const [phone, changePhone] = useState('');
-    const [email, changeEmail] = useState('');
+    const [mail, changeEmail] = useState('');
     const [message, changeMessage] = useState('');
+    const [code, changeCode] = useState('');
 
     return (
     <View style={styles.container}>
@@ -51,32 +53,38 @@ const Contact = ({}) => {
                 </MapView>
                 <TextInput
                     style={styles.input}
-                    placeholder="Nombre"
+                    placeholder="Nombre*"
                     value={name}
                     onChangeText={changeName}   
                 />
                 <TextInput
                     style={styles.input}
                     keyboardType={'numeric'}
-                    placeholder="Teléfono"
+                    placeholder="Teléfono*"
                     value={phone}
                     onChangeText={changePhone}   
                 />
                 <TextInput
                     style={styles.input}
                     keyboardType={'email-address'}
-                    placeholder="Email"
-                    value={email}
+                    placeholder="Email*"
+                    value={mail}
                     onChangeText={changeEmail}   
+                />
+                <TextInput
+                    style={styles.input}
+                    placeholder="Código de ecofiltro*"
+                    value={code}
+                    onChangeText={changeCode}   
                 />
                 <TextInput
                     style={styles.input_multiline}
                     multiline={true}
-                    placeholder="Mensaje"
+                    placeholder="Mensaje*"
                     value={message}
                     onChangeText={changeMessage}   
                 />
-                <TouchableOpacity style={styles.submit}>
+                <TouchableOpacity style={styles.submit} onPress={() => submit({name,phone,mail,code,message})}>
                     <Text style={styles.submitText}> {'Enviar'} </Text>
                 </TouchableOpacity>
             </ScrollView>
@@ -89,6 +97,12 @@ export default connect(
         
     }),
     dispatch=>({
-        
+        submit({name,phone,mail,code,message}){
+            const to = ['scontrerasig@gmail.com'] // Must add all the valid
+            email(to, { 
+                subject: 'Ecofiltro-App Contact',
+                body: `name: ${name}\n phone: ${phone}\n email: ${mail}\n ecofiltro code: ${code}\n message: ${message}`
+            }).catch(console.error)
+        }
     }),
 )(Contact);

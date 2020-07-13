@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         borderWidth: 1,
         fontSize: normalize(2),
-        height: normalize(60),
+        height: normalize(50),
         margin: normalize(0.5),
         padding: 10,
         width: '80%',

@@ -7,3 +7,4 @@ const reducer = combineReducers({
 
 export default reducer;
 
+export const getLanguage = state => settingsSelectors.getLanguage(state.settings);

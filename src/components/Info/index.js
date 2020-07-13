@@ -33,7 +33,7 @@ const Info = ({option}) => (
                             width:normalize(150),
                         }} source={require('../../public/icons/health.png')} ></Image>
                     </TouchableOpacity>
-                    <Text style={styles.text}> {'Agua y salud'} </Text>
+                    <Text style={styles.text}> {'Agua y tu salud'} </Text>
                 </View>
             </View>
             <View style={styles.row}>
@@ -53,6 +53,7 @@ const Info = ({option}) => (
                             alignSelf: 'center',
                             height:normalize(140),
                             width:normalize(140),
+                            borderRadius: normalize(50),
                         }} source={require('../../public/icons/pollution.png')} ></Image>
                     </TouchableOpacity>
                     <Text style={styles.text}> {'Otros contaminantes'} </Text>

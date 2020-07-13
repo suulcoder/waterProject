@@ -21,7 +21,8 @@ const About = ({option}) => (
                             alignSelf: 'center',
                             height:normalize(180),
                             width:normalize(180),
-                        }} source={require('../../public/icons/maintenance.png')} ></Image>
+                            borderRadius: normalize(50),
+                        }} source={require('../../public/img/howToUse.jpg')} ></Image>
                     </TouchableOpacity>
                     <Text style={styles.text}> {'¿Cómo usar el Ecofiltro?'} </Text>
                 </View>
@@ -41,9 +42,9 @@ const About = ({option}) => (
                     <TouchableOpacity style={styles.element} onPress={option}>
                         <Image style={{
                             alignSelf: 'center',
-                            height:normalize(100),
-                            width:normalize(100),}}
-                        source={require('../../public/icons/eco.png')} ></Image>
+                            height:normalize(130),
+                            width:normalize(60),}}
+                        source={require('../../public/icons/about.png')} ></Image>
                     </TouchableOpacity>
                     <Text style={styles.text}> {'¿Porqué Ecofiltro?'} </Text>
                 </View>
