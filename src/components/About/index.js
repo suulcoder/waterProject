@@ -23,7 +23,7 @@ const About = ({option}) => (
                             width:normalize(180),
                         }} source={require('../../public/icons/maintenance.png')} ></Image>
                     </TouchableOpacity>
-                    <Text style={styles.text}> {'¿Cómo cuidar el Ecofiltro?'} </Text>
+                    <Text style={styles.text}> {'¿Cómo usar el Ecofiltro?'} </Text>
                 </View>
                 <View>
                     <TouchableOpacity style={styles.element} onPress={option}>

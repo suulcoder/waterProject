@@ -23,7 +23,7 @@ const Info = ({option}) => (
                             width:normalize(180),
                         }} source={require('../../public/icons/coliform.png')} ></Image>
                     </TouchableOpacity>
-                    <Text style={styles.text}> {'Coliformes, ¿Cómo se transmiten?'} </Text>
+                    <Text style={styles.text}> {'Bacterias en el agua'} </Text>
                 </View>
                 <View>
                     <TouchableOpacity style={styles.element} onPress={option}>
@@ -33,7 +33,7 @@ const Info = ({option}) => (
                             width:normalize(150),
                         }} source={require('../../public/icons/health.png')} ></Image>
                     </TouchableOpacity>
-                    <Text style={styles.text}> {'Efectos en la salud'} </Text>
+                    <Text style={styles.text}> {'Agua y salud'} </Text>
                 </View>
             </View>
             <View style={styles.row}>
@@ -45,7 +45,7 @@ const Info = ({option}) => (
                             width:normalize(100),}}
                         source={require('../../public/icons/purification.png')} ></Image>
                     </TouchableOpacity>
-                    <Text style={styles.text}> {'Otros métodos de purificación'} </Text>
+                    <Text style={styles.text}> {'Otras formas de limpiar tu agua'} </Text>
                 </View>
                 <View>
                     <TouchableOpacity style={styles.element} onPress={option}>
@@ -55,7 +55,7 @@ const Info = ({option}) => (
                             width:normalize(140),
                         }} source={require('../../public/icons/pollution.png')} ></Image>
                     </TouchableOpacity>
-                    <Text style={styles.text}> {'Otras formas de contaminación'} </Text>
+                    <Text style={styles.text}> {'Otros contaminantes'} </Text>
                 </View>
             </View>
         </View>

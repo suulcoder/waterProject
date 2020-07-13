@@ -42,7 +42,7 @@ const Menu = ({about, contact, info}) => (
                         width:normalize(100),}}
                     source={require('../../public/icons/water.png')} ></Image>
                 </TouchableOpacity>
-                <Text style={styles.text}> {'Agua contaminada y salud'} </Text>
+                <Text style={styles.text}> {'Agua contaminada y tu salud'} </Text>
             </View>
             <View>
                 <TouchableOpacity style={styles.element} onPress={contact}>
