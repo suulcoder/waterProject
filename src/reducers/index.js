@@ -1,15 +1,9 @@
 import { combineReducers } from 'redux';
+import settings, * as settingsSelectors from './settings';
 
-// const reducer = combineReducers({
-    
-// });
-
-const reducer = (state,action)=>{
-    switch (action.type) {
-        default:
-            state;
-    }
-}
+const reducer = combineReducers({
+    settings,
+})
 
 export default reducer;
 
