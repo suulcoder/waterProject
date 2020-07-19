@@ -13,7 +13,7 @@ const Menu = ({about, contact, info}) => (
         </Text>
         <View style={styles.row}>
             <View>
-                <TouchableOpacity style={styles.element} onPress={contact}>
+                <TouchableOpacity style={styles.element}>
                     <Image style={{
                         alignSelf: 'center',
                         height:normalize(100),

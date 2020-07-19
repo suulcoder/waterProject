@@ -5,6 +5,7 @@ import React from 'react';
 import styles from './styles'
 import { normalize } from '../../utils/normalize';
 import { Actions } from 'react-native-router-flux';
+import { colors } from '../../../configuration';
 
 const About = ({}) => (
     <View style={styles.container}>
