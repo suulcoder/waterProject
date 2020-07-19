@@ -1,13 +1,12 @@
 import { connect } from 'react-redux';
-import {Text, View, Image, ScrollView, TextInput, TouchableOpacity } from 'react-native';
+import {Text, View, Image, TouchableOpacity } from 'react-native';
 import Header from '../Header';
-import React, {useState} from 'react';
+import React from 'react';
 import styles from './styles'
-import MapView, {Marker} from 'react-native-maps';
-import Menu from '../Menu';
 import { normalize } from '../../utils/normalize';
+import { Actions } from 'react-native-router-flux';
 
-const About = ({option}) => (
+const About = ({}) => (
     <View style={styles.container}>
         <Header></Header>
         <View style={styles.content}>
@@ -16,40 +15,41 @@ const About = ({option}) => (
             </Text>
             <View style={styles.row}>
                 <View>
-                    <TouchableOpacity style={styles.element} onPress={option}>
+                    <TouchableOpacity style={styles.element} >
                         <Image style={{
                             alignSelf: 'center',
-                            height:normalize(180),
-                            width:normalize(180),
+                            height:normalize(250),
+                            width:normalize(250),
                             borderRadius: normalize(50),
                         }} source={require('../../public/img/howToUse.jpg')} ></Image>
                     </TouchableOpacity>
                     <Text style={styles.text}> {'¿Cómo usar el Ecofiltro?'} </Text>
                 </View>
                 <View>
-                    <TouchableOpacity style={styles.element} onPress={option}>
+                    <TouchableOpacity style={styles.element} >
                         <Image style={{
                             alignSelf: 'center',
-                            height:normalize(150),
-                            width:normalize(150),
-                        }} source={require('../../public/icons/stories.png')} ></Image>
+                            height:normalize(250),
+                            width:normalize(250),
+                            borderRadius: normalize(50),
+                        }} source={require('../../public/img/stories.png')} ></Image>
                     </TouchableOpacity>
                     <Text style={styles.text}> {'Experiencias'} </Text>
                 </View>
             </View>
             <View style={styles.row}>
                 <View>
-                    <TouchableOpacity style={styles.element} onPress={option}>
+                    <TouchableOpacity style={styles.element} onPress={()=>Actions.Whyitworks(true)}>
                         <Image style={{
                             alignSelf: 'center',
                             height:normalize(130),
                             width:normalize(60),}}
                         source={require('../../public/icons/about.png')} ></Image>
                     </TouchableOpacity>
-                    <Text style={styles.text}> {'¿Porqué Ecofiltro?'} </Text>
+                    <Text style={styles.text}> {'¿Cómo funciona Ecofiltro?'} </Text>
                 </View>
                 <View>
-                    <TouchableOpacity style={styles.element} onPress={option}>
+                    <TouchableOpacity style={styles.element}>
                         <Image style={{
                             alignSelf: 'center',
                             height:normalize(90),

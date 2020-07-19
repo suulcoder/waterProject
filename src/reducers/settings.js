@@ -10,8 +10,53 @@ const language = (state = 'spanish', action) => {
     }
   };
 
+const name = (state = '', action) => {
+  switch(action.type) {
+    case types.NAME_SETTED: 
+      return action.payload;
+    default: 
+      return state;
+  }
+};
+
+const phone = (state = '', action) => {
+  switch(action.type) {
+    case types.PHONE_SETTED: 
+      return action.payload;
+    default: 
+      return state;
+  }
+};
+
+const mail = (state = '', action) => {
+  switch(action.type) {
+    case types.MAIL_SETTED: 
+      return action.payload;
+    default: 
+      return state;
+  }
+};
+
+const code = (state = '', action) => {
+  switch(action.type) {
+    case types.CODE_SETTED: 
+      return action.payload;
+    default: 
+      return state;
+  }
+};
+
+
 export default combineReducers({
-    language
+    language,
+    name,
+    phone,
+    mail,
+    code,
 });
 
 export const getLanguage = state => state.language;
+export const getName = state => state.name;
+export const getPhone = state => state.phone;
+export const getMail = state => state.mail;
+export const getCode = state => state.code;

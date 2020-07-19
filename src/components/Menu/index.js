@@ -16,7 +16,7 @@ const Menu = ({about, contact, info}) => (
                 <TouchableOpacity style={styles.element} onPress={contact}>
                     <Image style={{
                         alignSelf: 'center',
-                        height:normalize(140),
+                        height:normalize(100),
                         width:normalize(100),
                     }} source={require('../../public/icons/test.png')} ></Image>
                 </TouchableOpacity>    

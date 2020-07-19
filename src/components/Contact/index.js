@@ -5,14 +5,16 @@ import React, {useState} from 'react';
 import styles from './styles'
 import MapView, {Marker} from 'react-native-maps';
 import email from 'react-native-email'
+import * as selectors from '../../reducers'
+import { validateEmail } from '../../utils/validate';
 
-const Contact = ({submit}) => {
+const Contact = ({name_,phone_,mail_,code_,submit}) => {
   
-    const [name, changeName] = useState('');
-    const [phone, changePhone] = useState('');
-    const [mail, changeEmail] = useState('');
+    const [name, changeName] = useState(name_);
+    const [phone, changePhone] = useState(phone_);
+    const [mail, changeEmail] = useState(mail_);
+    const [code, changeCode] = useState(code_);
     const [message, changeMessage] = useState('');
-    const [code, changeCode] = useState('');
 
     return (
     <View style={styles.container}>
@@ -55,10 +57,12 @@ const Contact = ({submit}) => {
                     style={styles.input}
                     placeholder="Nombre*"
                     value={name}
+                    placeholderTextColor="#777777" 
                     onChangeText={changeName}   
                 />
                 <TextInput
                     style={styles.input}
+                    placeholderTextColor="#777777" 
                     keyboardType={'numeric'}
                     placeholder="Teléfono*"
                     value={phone}
@@ -66,19 +70,25 @@ const Contact = ({submit}) => {
                 />
                 <TextInput
                     style={styles.input}
+                    placeholderTextColor="#777777" 
                     keyboardType={'email-address'}
                     placeholder="Email*"
                     value={mail}
                     onChangeText={changeEmail}   
                 />
+                {
+                    !validateEmail(mail) && mail!=='' && <Text style={styles.error}> {'WRITE A VALID EMAIL'} </Text>
+                }
                 <TextInput
                     style={styles.input}
-                    placeholder="Código de ecofiltro*"
+                    placeholderTextColor="#777777" 
+                    placeholder="Código de ecofiltro"
                     value={code}
                     onChangeText={changeCode}   
                 />
                 <TextInput
                     style={styles.input_multiline}
+                    placeholderTextColor="#777777" 
                     multiline={true}
                     placeholder="Mensaje*"
                     value={message}
@@ -94,15 +104,20 @@ const Contact = ({submit}) => {
 
 export default connect(
     state => ({
-        
+        name_: selectors.getName(state),
+        phone_: selectors.getPhone(state),
+        code_: selectors.getCode(state),
+        mail_: selectors.getMail(state),
     }),
     dispatch=>({
         submit({name,phone,mail,code,message}){
-            const to = ['scontrerasig@gmail.com'] // Must add all the valid
-            email(to, { 
-                subject: 'Ecofiltro-App Contact',
-                body: `name: ${name}\n phone: ${phone}\n email: ${mail}\n ecofiltro code: ${code}\n message: ${message}`
-            }).catch(console.error)
+            if(validateEmail(mail)){
+                const to = ['scontrerasig@gmail.com'] // Must add all the valid
+                email(to, { 
+                    subject: 'Ecofiltro-App Contact',
+                    body: `name: ${name}\n phone: ${phone}\n email: ${mail}\n ecofiltro code: ${code}\n message: ${message}`
+                })
+            }
         }
     }),
 )(Contact);

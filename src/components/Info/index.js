@@ -19,7 +19,7 @@ const Info = ({option}) => (
                     <TouchableOpacity style={styles.element} onPress={option}>
                         <Image style={{
                             alignSelf: 'center',
-                            height:normalize(180),
+                            height:normalize(100),
                             width:normalize(180),
                         }} source={require('../../public/icons/coliform.png')} ></Image>
                     </TouchableOpacity>

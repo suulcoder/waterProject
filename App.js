@@ -12,6 +12,8 @@ import throttle from 'lodash/throttle';
 import Contact from './src/components/Contact';
 import About from './src/components/About';
 import Info from './src/components/Info';
+import Settings from './src/components/Settings';
+import Whyitworks from './src/components/Whyitworks';
 
 //localStorage.clear();
 let persistedState = loadState()
@@ -32,6 +34,8 @@ export default function App() {
           <Scene key="Contact" component={Contact}  hideNavBar={true} />
           <Scene key="About" component={About}  hideNavBar={true} />
           <Scene key="Info" component={Info}  hideNavBar={true} />
+          <Scene key="Settings" component={Settings}  hideNavBar={true} />
+          <Scene key="Whyitworks" component={Whyitworks}  hideNavBar={true} />
         </Stack>
       </Router>        
    </Provider>

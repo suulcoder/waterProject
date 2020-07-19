@@ -1,1 +1,5 @@
 export const LANGUAGE_CHANGED = 'LANGUAGE_CHANGED';
+export const NAME_SETTED = 'NAME_SETTED';
+export const PHONE_SETTED = 'PHONE_SETTED';
+export const MAIL_SETTED = 'MAIL_SETTED';
+export const CODE_SETTED = 'CODE_SETTED'  

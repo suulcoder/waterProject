@@ -34,8 +34,17 @@ const styles = StyleSheet.create({
         padding: normalize(0.5),
     },
     row:{
+        backgroundColor: colors.white,
+        alignSelf: 'center',
+        justifyContent: 'space-between',
         alignItems: 'center',
+        paddingRight: normalize(5),
+        paddingLeft: normalize(5),
+        borderRadius: normalize(20),
+        width: '80%',
         flexDirection: 'row',
+        marginBottom: normalize(25),
+        marginTop: normalize(25),
     },
     icon:{
         height:normalize(20),
@@ -57,9 +66,29 @@ const styles = StyleSheet.create({
         maxWidth: '80%',
     },
     text:{
-        color:colors.white,
-        fontSize: normalize(2.5),
+        alignSelf: 'center',
+        color:colors.black,
+        fontSize: normalize(4),
         marginBottom: normalize(0.25),
+    },
+    text_:{
+        alignSelf: 'center',
+        color:colors.white,
+        fontSize: normalize(4),
+        marginBottom: normalize(15),
+    },
+    error:{
+        alignSelf: 'center',
+        color:colors.white,
+        fontSize: normalize(3),
+        marginBottom: normalize(0.25),
+    },
+    bar:{
+        alignSelf: 'center',
+        marginBottom: normalize(30),
+        height: normalize(0.1),
+        width: '90%',
+        backgroundColor: colors.white,
     },
     map:{
         alignSelf: 'center',
@@ -77,8 +106,8 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         borderWidth: 1,
         fontSize: normalize(2),
-        height: normalize(50),
-        margin: normalize(0.5),
+        height: normalize(55),
+        margin: normalize(0.7),
         padding: 10,
         width: '80%',
     },
@@ -108,13 +137,7 @@ const styles = StyleSheet.create({
         marginBottom: normalize(10),
         marginTop: normalize(5),
         right: '15%',
-    },
-    error:{
-        alignSelf: 'center',
-        color:colors.white,
-        fontSize: normalize(3),
-        marginBottom: normalize(0.25),
-    },
+    }
   });
   
 export default styles
