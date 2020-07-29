@@ -1,0 +1,233 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ecofiltro"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="28" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:3:3-75
+11-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:3:20-73
+12    <uses-permission android:name="android.permission.INTERNET" /> <!-- OPTIONAL PERMISSIONS, REMOVE WHATEVER YOU DO NOT NEED -->
+12-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:2:3-64
+12-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:2:20-62
+13    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+13-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:5:3-72
+13-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:5:20-70
+14    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+14-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:6:3-77
+14-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:6:20-75
+15    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+15-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:7:3-72
+15-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:7:20-70
+16    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+16-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:8:3-71
+16-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:8:20-69
+17    <uses-permission android:name="android.permission.VIBRATE" />
+17-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:9:3-63
+17-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:9:20-61
+18    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" /> <!-- These require runtime permissions on M -->
+18-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:10:3-77
+18-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:10:20-75
+19    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+19-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:12:3-78
+19-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:12:20-76
+20    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+20-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:13:3-76
+20-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:13:20-74
+21    <uses-permission android:name="android.permission.CAMERA" />
+21-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:14:3-62
+21-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:14:20-60
+22    <uses-permission android:name="android.permission.READ_CONTACTS" />
+22-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:15:3-69
+22-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:15:20-67
+23    <uses-permission android:name="android.permission.READ_CALENDAR" />
+23-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:16:3-69
+23-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:16:20-67
+24    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+24-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:17:3-70
+24-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:17:20-68
+25    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+25-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:18:3-77
+25-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:18:20-75
+26    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+26-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:19:3-68
+26-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:19:20-66
+27    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+27-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:20:3-78
+27-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:20:20-76
+28    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+28-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:21:3-70
+28-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:21:20-68
+29    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+29-->[com.facebook.flipper:flipper:0.33.1] /home/thecoder/.gradle/caches/transforms-2/files-2.1/80f62273b2eee8039c6a21a689abf0fa/jetified-flipper-0.33.1/AndroidManifest.xml:16:5-76
+29-->[com.facebook.flipper:flipper:0.33.1] /home/thecoder/.gradle/caches/transforms-2/files-2.1/80f62273b2eee8039c6a21a689abf0fa/jetified-flipper-0.33.1/AndroidManifest.xml:16:22-73
+30    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+30-->[:expo-updates] /home/thecoder/Documentos/UVG/waterProject/node_modules/expo-updates/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-79
+30-->[:expo-updates] /home/thecoder/Documentos/UVG/waterProject/node_modules/expo-updates/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-76
+31    <uses-permission android:name="android.permission.STORAGE" />
+31-->[:expo-file-system] /home/thecoder/Documentos/UVG/waterProject/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-66
+31-->[:expo-file-system] /home/thecoder/Documentos/UVG/waterProject/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:22-63
+32    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+32-->[:expo-location] /home/thecoder/Documentos/UVG/waterProject/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-77
+32-->[:expo-location] /home/thecoder/Documentos/UVG/waterProject/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-74
+33
+34    <uses-feature
+34-->[com.google.android.gms:play-services-maps:17.0.0] /home/thecoder/.gradle/caches/transforms-2/files-2.1/01020bef9767baf2fec1e4b5916eba32/play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+35        android:glEsVersion="0x00020000"
+35-->[com.google.android.gms:play-services-maps:17.0.0] /home/thecoder/.gradle/caches/transforms-2/files-2.1/01020bef9767baf2fec1e4b5916eba32/play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+36        android:required="true" />
+36-->[com.google.android.gms:play-services-maps:17.0.0] /home/thecoder/.gradle/caches/transforms-2/files-2.1/01020bef9767baf2fec1e4b5916eba32/play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+37
+38    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+38-->[io.nlopez.smartlocation:library:3.2.11] /home/thecoder/.gradle/caches/transforms-2/files-2.1/7d47c0f9c136b43c8ac9f5a6f806ff9a/jetified-library-3.2.11/AndroidManifest.xml:15:5-98
+38-->[io.nlopez.smartlocation:library:3.2.11] /home/thecoder/.gradle/caches/transforms-2/files-2.1/7d47c0f9c136b43c8ac9f5a6f806ff9a/jetified-library-3.2.11/AndroidManifest.xml:15:22-95
+39    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+39-->[io.nlopez.smartlocation:library:3.2.11] /home/thecoder/.gradle/caches/transforms-2/files-2.1/7d47c0f9c136b43c8ac9f5a6f806ff9a/jetified-library-3.2.11/AndroidManifest.xml:16:5-94
+39-->[io.nlopez.smartlocation:library:3.2.11] /home/thecoder/.gradle/caches/transforms-2/files-2.1/7d47c0f9c136b43c8ac9f5a6f806ff9a/jetified-library-3.2.11/AndroidManifest.xml:16:22-91
+40
+41    <application
+41-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:23:3-47:17
+42        android:name="com.ecofiltro.MainApplication"
+42-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:24:5-36
+43        android:allowBackup="false"
+43-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:28:5-32
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.1.0] /home/thecoder/.gradle/caches/transforms-2/files-2.1/71bf4efc4a31a947ad653616e8e5bcce/core-1.1.0/AndroidManifest.xml:24:18-86
+45        android:debuggable="true"
+46        android:icon="@mipmap/ic_launcher"
+46-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:26:5-39
+47        android:label="@string/app_name"
+47-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:25:5-37
+48        android:roundIcon="@mipmap/ic_launcher_round"
+48-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:27:5-50
+49        android:theme="@style/AppTheme"
+49-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:29:5-36
+50        android:usesCleartextTraffic="true" >
+50-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/debug/AndroidManifest.xml:6:18-53
+51        <meta-data
+51-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:31:5-103
+52            android:name="expo.modules.updates.EXPO_UPDATE_URL"
+52-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:31:16-67
+53            android:value="YOUR-APP-URL-HERE" />
+53-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:31:68-101
+54        <meta-data
+54-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:32:5-112
+55            android:name="expo.modules.updates.EXPO_SDK_VERSION"
+55-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:32:16-68
+56            android:value="YOUR-APP-SDK-VERSION-HERE" />
+56-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:32:69-110
+57
+58        <activity
+58-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:33:5-45:16
+59            android:name="com.ecofiltro.MainActivity"
+59-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:34:7-35
+60            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+60-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:36:7-84
+61            android:label="@string/app_name"
+61-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:35:7-39
+62            android:launchMode="singleTask"
+62-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:37:7-38
+63            android:theme="@style/Theme.App.SplashScreen"
+63-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:39:7-52
+64            android:windowSoftInputMode="adjustResize" >
+64-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:38:7-49
+65            <intent-filter>
+65-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:41:7-44:23
+66                <action android:name="android.intent.action.MAIN" />
+66-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:42:9-60
+66-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:42:17-58
+67
+68                <category android:name="android.intent.category.LAUNCHER" />
+68-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:43:9-68
+68-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:43:19-66
+69            </intent-filter>
+70        </activity>
+71        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+71-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:46:5-81
+71-->/home/thecoder/Documentos/UVG/waterProject/android/app/src/main/AndroidManifest.xml:46:15-79
+72
+73        <meta-data
+73-->[:unimodules-react-native-adapter] /home/thecoder/Documentos/UVG/waterProject/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:91
+74            android:name="org.unimodules.core.AppLoader#react-native-headless"
+74-->[:unimodules-react-native-adapter] /home/thecoder/Documentos/UVG/waterProject/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-79
+75            android:value="org.unimodules.adapters.react.apploader.RNHeadlessAppLoader" />
+75-->[:unimodules-react-native-adapter] /home/thecoder/Documentos/UVG/waterProject/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-88
+76
+77        <provider
+77-->[:expo-file-system] /home/thecoder/Documentos/UVG/waterProject/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:9-27:20
+78            android:name="expo.modules.filesystem.FileSystemFileProvider"
+78-->[:expo-file-system] /home/thecoder/Documentos/UVG/waterProject/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-74
+79            android:authorities="com.ecofiltro.FileSystemFileProvider"
+79-->[:expo-file-system] /home/thecoder/Documentos/UVG/waterProject/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-74
+80            android:exported="false"
+80-->[:expo-file-system] /home/thecoder/Documentos/UVG/waterProject/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-37
+81            android:grantUriPermissions="true" >
+81-->[:expo-file-system] /home/thecoder/Documentos/UVG/waterProject/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-47
+82            <meta-data
+82-->[:expo-file-system] /home/thecoder/Documentos/UVG/waterProject/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-26:70
+83                android:name="android.support.FILE_PROVIDER_PATHS"
+83-->[:expo-file-system] /home/thecoder/Documentos/UVG/waterProject/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:17-67
+84                android:resource="@xml/file_system_provider_paths" />
+84-->[:expo-file-system] /home/thecoder/Documentos/UVG/waterProject/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:17-67
+85        </provider>
+86
+87        <service
+87-->[:expo-location] /home/thecoder/Documentos/UVG/waterProject/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:40
+88            android:name="expo.modules.location.services.LocationTaskService"
+88-->[:expo-location] /home/thecoder/Documentos/UVG/waterProject/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-78
+89            android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
+89-->[:expo-location] /home/thecoder/Documentos/UVG/waterProject/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+90        <uses-library
+90-->[com.google.android.gms:play-services-maps:17.0.0] /home/thecoder/.gradle/caches/transforms-2/files-2.1/01020bef9767baf2fec1e4b5916eba32/play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+91            android:name="org.apache.http.legacy"
+91-->[com.google.android.gms:play-services-maps:17.0.0] /home/thecoder/.gradle/caches/transforms-2/files-2.1/01020bef9767baf2fec1e4b5916eba32/play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+92            android:required="false" />
+92-->[com.google.android.gms:play-services-maps:17.0.0] /home/thecoder/.gradle/caches/transforms-2/files-2.1/01020bef9767baf2fec1e4b5916eba32/play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+93
+94        <activity
+94-->[com.google.android.gms:play-services-base:17.0.0] /home/thecoder/.gradle/caches/transforms-2/files-2.1/2f3d23c99421500510a0bcb96dc88329/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+95            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+95-->[com.google.android.gms:play-services-base:17.0.0] /home/thecoder/.gradle/caches/transforms-2/files-2.1/2f3d23c99421500510a0bcb96dc88329/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+96            android:exported="false"
+96-->[com.google.android.gms:play-services-base:17.0.0] /home/thecoder/.gradle/caches/transforms-2/files-2.1/2f3d23c99421500510a0bcb96dc88329/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+97            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+97-->[com.google.android.gms:play-services-base:17.0.0] /home/thecoder/.gradle/caches/transforms-2/files-2.1/2f3d23c99421500510a0bcb96dc88329/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+98
+99        <meta-data
+99-->[com.google.android.gms:play-services-basement:17.0.0] /home/thecoder/.gradle/caches/transforms-2/files-2.1/106129b5453e7f8b670f907cdb154263/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+100            android:name="com.google.android.gms.version"
+100-->[com.google.android.gms:play-services-basement:17.0.0] /home/thecoder/.gradle/caches/transforms-2/files-2.1/106129b5453e7f8b670f907cdb154263/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+101            android:value="@integer/google_play_services_version" />
+101-->[com.google.android.gms:play-services-basement:17.0.0] /home/thecoder/.gradle/caches/transforms-2/files-2.1/106129b5453e7f8b670f907cdb154263/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+102
+103        <service
+103-->[androidx.room:room-runtime:2.1.0] /home/thecoder/.gradle/caches/transforms-2/files-2.1/d1dd4bffbd2ae299fbe9492b8fb3f644/room-runtime-2.1.0/AndroidManifest.xml:25:9-27:40
+104            android:name="androidx.room.MultiInstanceInvalidationService"
+104-->[androidx.room:room-runtime:2.1.0] /home/thecoder/.gradle/caches/transforms-2/files-2.1/d1dd4bffbd2ae299fbe9492b8fb3f644/room-runtime-2.1.0/AndroidManifest.xml:26:13-74
+105            android:exported="false" />
+105-->[androidx.room:room-runtime:2.1.0] /home/thecoder/.gradle/caches/transforms-2/files-2.1/d1dd4bffbd2ae299fbe9492b8fb3f644/room-runtime-2.1.0/AndroidManifest.xml:27:13-37
+106        <service
+106-->[io.nlopez.smartlocation:library:3.2.11] /home/thecoder/.gradle/caches/transforms-2/files-2.1/7d47c0f9c136b43c8ac9f5a6f806ff9a/jetified-library-3.2.11/AndroidManifest.xml:19:9-21:40
+107            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
+107-->[io.nlopez.smartlocation:library:3.2.11] /home/thecoder/.gradle/caches/transforms-2/files-2.1/7d47c0f9c136b43c8ac9f5a6f806ff9a/jetified-library-3.2.11/AndroidManifest.xml:20:13-132
+108            android:exported="false" />
+108-->[io.nlopez.smartlocation:library:3.2.11] /home/thecoder/.gradle/caches/transforms-2/files-2.1/7d47c0f9c136b43c8ac9f5a6f806ff9a/jetified-library-3.2.11/AndroidManifest.xml:21:13-37
+109        <service
+109-->[io.nlopez.smartlocation:library:3.2.11] /home/thecoder/.gradle/caches/transforms-2/files-2.1/7d47c0f9c136b43c8ac9f5a6f806ff9a/jetified-library-3.2.11/AndroidManifest.xml:22:9-24:40
+110            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
+110-->[io.nlopez.smartlocation:library:3.2.11] /home/thecoder/.gradle/caches/transforms-2/files-2.1/7d47c0f9c136b43c8ac9f5a6f806ff9a/jetified-library-3.2.11/AndroidManifest.xml:23:13-127
+111            android:exported="false" />
+111-->[io.nlopez.smartlocation:library:3.2.11] /home/thecoder/.gradle/caches/transforms-2/files-2.1/7d47c0f9c136b43c8ac9f5a6f806ff9a/jetified-library-3.2.11/AndroidManifest.xml:24:13-37
+112        <service
+112-->[io.nlopez.smartlocation:library:3.2.11] /home/thecoder/.gradle/caches/transforms-2/files-2.1/7d47c0f9c136b43c8ac9f5a6f806ff9a/jetified-library-3.2.11/AndroidManifest.xml:25:9-27:40
+113            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
+113-->[io.nlopez.smartlocation:library:3.2.11] /home/thecoder/.gradle/caches/transforms-2/files-2.1/7d47c0f9c136b43c8ac9f5a6f806ff9a/jetified-library-3.2.11/AndroidManifest.xml:26:13-120
+114            android:exported="false" />
+114-->[io.nlopez.smartlocation:library:3.2.11] /home/thecoder/.gradle/caches/transforms-2/files-2.1/7d47c0f9c136b43c8ac9f5a6f806ff9a/jetified-library-3.2.11/AndroidManifest.xml:27:13-37
+115    </application>
+116
+117</manifest>

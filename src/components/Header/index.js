@@ -1,7 +1,6 @@
 import { Actions } from 'react-native-router-flux';
 import { connect } from 'react-redux';
 import {Text, View, Image, TouchableOpacity } from 'react-native';
-import {URL} from '../../../configuration'
 import React from 'react';
 import styles from './styles'
 

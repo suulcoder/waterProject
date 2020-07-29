@@ -14,6 +14,11 @@ import About from './src/components/About';
 import Info from './src/components/Info';
 import Settings from './src/components/Settings';
 import Whyitworks from './src/components/Whyitworks';
+import HowEcofiltroWorks from './src/components/HowEcofiltroWorks';
+import HowTheCompanyWorks from './src/components/HowTheCompanyWorks';
+import HowtoUse from './src/components/HowtoUse';
+import FAQ from './src/components/FAQ';
+import Bacterias from './src/components/Bacterias';
 
 //localStorage.clear();
 let persistedState = loadState()
@@ -36,6 +41,11 @@ export default function App() {
           <Scene key="Info" component={Info}  hideNavBar={true} />
           <Scene key="Settings" component={Settings}  hideNavBar={true} />
           <Scene key="Whyitworks" component={Whyitworks}  hideNavBar={true} />
+          <Scene key="HowEcofiltroWorks" component={HowEcofiltroWorks}  hideNavBar={true} />
+          <Scene key="HowTheCompanyWorks" component={HowTheCompanyWorks}  hideNavBar={true}/>
+          <Scene key="HowtoUse" component={HowtoUse}  hideNavBar={true}/>
+          <Scene key="FAQ" component={FAQ}  hideNavBar={true}/>
+          <Scene key="Bacterias" component={Bacterias}  hideNavBar={true}/>
         </Stack>
       </Router>        
    </Provider>

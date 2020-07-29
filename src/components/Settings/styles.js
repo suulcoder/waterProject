@@ -8,7 +8,6 @@ const styles = StyleSheet.create({
       backgroundColor: colors.white,
       flex: 1,
       flexDirection: 'column',
-      marginTop: normalize(15),
     },
     content: {
         backgroundColor: colors.primaryB,
@@ -44,7 +43,7 @@ const styles = StyleSheet.create({
         width: '80%',
         flexDirection: 'row',
         marginBottom: normalize(25),
-        marginTop: normalize(25),
+        marginTop: normalize(1),
     },
     icon:{
         height:normalize(20),
@@ -69,7 +68,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         color:colors.black,
         fontSize: normalize(4),
-        marginBottom: normalize(0.25),
+        margin: normalize(2),
     },
     text_:{
         alignSelf: 'center',

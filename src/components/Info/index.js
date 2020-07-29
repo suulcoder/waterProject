@@ -6,8 +6,9 @@ import styles from './styles'
 import MapView, {Marker} from 'react-native-maps';
 import Menu from '../Menu';
 import { normalize } from '../../utils/normalize';
+import { Actions } from 'react-native-router-flux';
 
-const Info = ({option}) => (
+const Info = ({}) => (
     <View style={styles.container}>
         <Header></Header>
         <View style={styles.content}>
@@ -16,7 +17,7 @@ const Info = ({option}) => (
             </Text>
             <View style={styles.row}>
                 <View>
-                    <TouchableOpacity style={styles.element} onPress={option}>
+                    <TouchableOpacity style={styles.element} onPress={()=>Actions.Bacterias(true)}>
                         <Image style={{
                             alignSelf: 'center',
                             height:normalize(100),
@@ -26,7 +27,7 @@ const Info = ({option}) => (
                     <Text style={styles.text}> {'Bacterias en el agua'} </Text>
                 </View>
                 <View>
-                    <TouchableOpacity style={styles.element} onPress={option}>
+                    <TouchableOpacity style={styles.element}>
                         <Image style={{
                             alignSelf: 'center',
                             height:normalize(150),
@@ -38,17 +39,7 @@ const Info = ({option}) => (
             </View>
             <View style={styles.row}>
                 <View>
-                    <TouchableOpacity style={styles.element} onPress={option}>
-                        <Image style={{
-                            alignSelf: 'center',
-                            height:normalize(100),
-                            width:normalize(100),}}
-                        source={require('../../public/icons/purification.png')} ></Image>
-                    </TouchableOpacity>
-                    <Text style={styles.text}> {'Otras formas de limpiar tu agua'} </Text>
-                </View>
-                <View>
-                    <TouchableOpacity style={styles.element} onPress={option}>
+                    <TouchableOpacity style={styles.element}>
                         <Image style={{
                             alignSelf: 'center',
                             height:normalize(140),

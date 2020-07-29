@@ -46,6 +46,14 @@ const code = (state = '', action) => {
   }
 };
 
+const automatized_audio = (state = false, action) => {
+  switch(action.type) {
+    case types.AUTOMATIZED_AUDIO_SETTED: 
+      return action.payload;
+    default: 
+      return state;
+  }
+}
 
 export default combineReducers({
     language,
@@ -53,6 +61,7 @@ export default combineReducers({
     phone,
     mail,
     code,
+    automatized_audio
 });
 
 export const getLanguage = state => state.language;
@@ -60,3 +69,4 @@ export const getName = state => state.name;
 export const getPhone = state => state.phone;
 export const getMail = state => state.mail;
 export const getCode = state => state.code;
+export const getAutomatizedAudio = state => state.automatized_audio;

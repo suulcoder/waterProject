@@ -16,7 +16,7 @@ const About = ({}) => (
             </Text>
             <View style={styles.row}>
                 <View>
-                    <TouchableOpacity style={styles.element} >
+                    <TouchableOpacity style={styles.element} onPress={()=>Actions.HowtoUse(true)}>
                         <Image style={{
                             alignSelf: 'center',
                             height:normalize(250),
@@ -33,7 +33,7 @@ const About = ({}) => (
                             height:normalize(250),
                             width:normalize(250),
                             borderRadius: normalize(50),
-                        }} source={require('../../public/img/stories.png')} ></Image>
+                        }} source={require('../../public/img/stories_.jpeg')} ></Image>
                     </TouchableOpacity>
                     <Text style={styles.text}> {'Experiencias'} </Text>
                 </View>
@@ -50,7 +50,7 @@ const About = ({}) => (
                     <Text style={styles.text}> {'¿Cómo funciona Ecofiltro?'} </Text>
                 </View>
                 <View>
-                    <TouchableOpacity style={styles.element}>
+                    <TouchableOpacity style={styles.element} onPress={()=>Actions.FAQ(true)}>
                         <Image style={{
                             alignSelf: 'center',
                             height:normalize(90),

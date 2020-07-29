@@ -112,7 +112,7 @@ export default connect(
     dispatch=>({
         submit({name,phone,mail,code,message}){
             if(validateEmail(mail)){
-                const to = ['scontrerasig@gmail.com'] // Must add all the valid
+                const to = ['info@ecofiltro.com'] // Must add all the valid
                 email(to, { 
                     subject: 'Ecofiltro-App Contact',
                     body: `name: ${name}\n phone: ${phone}\n email: ${mail}\n ecofiltro code: ${code}\n message: ${message}`
