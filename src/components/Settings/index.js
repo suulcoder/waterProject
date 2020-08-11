@@ -53,10 +53,10 @@ const Settings = ({name_,phone_,mail_,code_,language_,automatizedAudio,submit, s
                     <Text style={styles.text}>{'Reproducción automática:'} </Text>
                     <Switch
                         trackColor={{
-                            false: '#6ec6ff',
-                            true: '#ff7961',
+                            true: '#6ec6ff',
+                            false: '#ff7961',
                         }}
-                        thumbColor={audio ? '#f44336' : '#2196f3'}
+                        thumbColor={!audio ? '#f44336' : '#2196f3'}
                         onValueChange={() => toggleSwitch(audio)}
                         value={audio}
                     />
