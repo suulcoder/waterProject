@@ -27,7 +27,7 @@ const Info = ({}) => (
                     <Text style={styles.text}> {'Bacterias en el agua'} </Text>
                 </View>
                 <View>
-                    <TouchableOpacity style={styles.element}>
+                    <TouchableOpacity style={styles.element} onPress={()=>Actions.Health(true)}>
                         <Image style={{
                             alignSelf: 'center',
                             height:normalize(150),

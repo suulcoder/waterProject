@@ -19,6 +19,7 @@ import HowTheCompanyWorks from './src/components/HowTheCompanyWorks';
 import HowtoUse from './src/components/HowtoUse';
 import FAQ from './src/components/FAQ';
 import Bacterias from './src/components/Bacterias';
+import Health from './src/components/WaterAndHealth';
 
 //localStorage.clear();
 let persistedState = loadState()
@@ -46,6 +47,7 @@ export default function App() {
           <Scene key="HowtoUse" component={HowtoUse}  hideNavBar={true}/>
           <Scene key="FAQ" component={FAQ}  hideNavBar={true}/>
           <Scene key="Bacterias" component={Bacterias}  hideNavBar={true}/>
+          <Scene key="Health" component={Health}  hideNavBar={true}/>
         </Stack>
       </Router>        
    </Provider>
