@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/thecoder/Documentos/UVG/waterProject/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-de/values-de.xml",
+            "outputFile": "/home/thecoder/Documentos/UVG/Ecofiltro/waterProject/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-de/values-de.xml",
             "map": [
                 {
                     "source": "/home/thecoder/.gradle/caches/transforms-2/files-2.1/7276fb4265ca9d4b2a4c832c8996f8a2/jetified-exoplayer-ui-2.9.2/res/values-de/values-de.xml",

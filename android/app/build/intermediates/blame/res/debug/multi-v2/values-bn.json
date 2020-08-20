@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/thecoder/Documentos/UVG/waterProject/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bn/values-bn.xml",
+            "outputFile": "/home/thecoder/Documentos/UVG/Ecofiltro/waterProject/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bn/values-bn.xml",
             "map": [
                 {
                     "source": "/home/thecoder/.gradle/caches/transforms-2/files-2.1/2f3d23c99421500510a0bcb96dc88329/play-services-base-17.0.0/res/values-bn/values.xml",
