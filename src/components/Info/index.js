@@ -39,7 +39,7 @@ const Info = ({}) => (
             </View>
             <View style={styles.row}>
                 <View>
-                    <TouchableOpacity style={styles.element}>
+                    <TouchableOpacity style={styles.element} onPress={()=>Actions.Pollution(true)}>
                         <Image style={{
                             alignSelf: 'center',
                             height:normalize(140),

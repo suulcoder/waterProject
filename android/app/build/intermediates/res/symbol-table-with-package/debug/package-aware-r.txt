@@ -2044,6 +2044,7 @@ layout text_view_without_line_height
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw agua_salud
 raw amu_ballon_gx_prefix
 raw amu_basic_folder
 raw amu_basic_placemark
@@ -2064,6 +2065,7 @@ raw amu_poly_style_boolean_numeric
 raw amu_unknwown_folder
 raw amu_unsupported
 raw amu_visibility_ground_overlay
+raw bacterias
 raw ecofiltro_faq_0
 raw ecofiltro_faq_1
 raw ecofiltro_faq_10
@@ -2077,6 +2079,7 @@ raw ecofiltro_faq_6
 raw ecofiltro_faq_7
 raw ecofiltro_faq_8
 raw ecofiltro_faq_9
+raw otros_cont
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

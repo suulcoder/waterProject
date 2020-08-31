@@ -9,6 +9,21 @@ const styles = StyleSheet.create({
       flex: 1,
       flexDirection: 'column',
     },
+    header:{
+      alignItems:'center',
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      padding: normalize(3),
+      width: '100%',
+    },
+    icon:{
+        height:normalize(15),
+        width:normalize(15),
+    },
+    logo:{
+        height: normalize(30),
+        width: normalize(600),
+    },
   });
   
 export default styles
