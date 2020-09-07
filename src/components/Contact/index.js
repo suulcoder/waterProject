@@ -3,10 +3,10 @@ import {Text, View, Image, ScrollView, TextInput, TouchableOpacity } from 'react
 import Header from '../Header';
 import React, {useState} from 'react';
 import styles from './styles'
-import MapView, {Marker} from 'react-native-maps';
 import email from 'react-native-email'
 import * as selectors from '../../reducers'
 import { validateEmail } from '../../utils/validate';
+import WebView from 'react-native-webview';
 
 const Contact = ({name_,phone_,mail_,code_,submit}) => {
   
@@ -23,36 +23,22 @@ const Contact = ({name_,phone_,mail_,code_,submit}) => {
             <Text style={styles.title}>
                 {'¡Contáctanos!'}
             </Text>
+            <ScrollView></ScrollView>
+            
             <ScrollView>
+                <WebView 
+                    source={{ uri: 'https://www.google.com.gt/maps/search/distribuidor+de+ecofiltro/@14.3151697,-90.3506001,8z' }} 
+                    style={styles.map}
+                />
                 <View style={styles.row}>
                     <View style={styles.circle}>
                         <Image style={styles.icon} source={require('../../public/icons/location.png')} ></Image>
                     </View>
                     <View style={styles.info}>
-                        <Text style={styles.text}> {'KM 77, Aldea San Lorenzo El Cubo Ciudad Vieja,  Sacatepéquez.'} </Text>
                         <Text style={styles.text}> {'Tel.: (+502) 7955-8555'} </Text>
                         <Text style={styles.text}> {'Email:  info@ecofiltro.com'} </Text>
                     </View>
                 </View>
-                <MapView
-                    style={styles.map}
-                    initialRegion={{
-                        latitude: 14.5354397,
-                        longitude: -90.7684187,
-                        latitudeDelta: 0.005,
-                        longitudeDelta: 0.005
-                    }}    
-                >
-                    <Marker
-                        coordinate={{
-                            latitude: 14.5354397,
-                            longitude: -90.7684299,
-                            latitudeDelta: 0.5,
-                            longitudeDelta: 0.5
-                        }}
-                        title={'Ecofiltro'}
-                        />
-                </MapView>
                 <TextInput
                     style={styles.input}
                     placeholder="Nombre*"

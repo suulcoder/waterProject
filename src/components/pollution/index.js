@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import {Text, View, Image, ScrollView, TouchableOpacity } from 'react-native';
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { Linking } from 'react-native';
 import styles from './styles'
 import { normalize } from '../../utils/normalize';
@@ -10,15 +10,31 @@ import SoundPlayer from 'react-native-sound-player';
 
 
 const Pollution = ({settings, back}) => {
-    
+
+    useEffect(() => {
+        // returned function will be called on component unmount 
+        return () => {
+          SoundPlayer.pause()
+        }
+      }, [])
+
+    const [isPlaying, changeIsPlaying] = useState(false);
+
     const play = () => { 
         try {
-            SoundPlayer.playSoundFile(`otros_cont`, 'm4a')
+            if(isPlaying){
+                SoundPlayer.pause()
+                changeIsPlaying(false)
+            }
+            else{
+                SoundPlayer.playSoundFile(`otros_cont`, 'm4a')
+                changeIsPlaying(true)
+            }
         } catch (e) {
             console.log(`cannot play the sound file`, e)
         }
     }
-
+    
     if(settings){
         play()
     }
@@ -32,7 +48,7 @@ const Pollution = ({settings, back}) => {
             </TouchableOpacity>  
             <Image style={styles.logo} source={require('../../public/logo/logo.png')} ></Image>
             <TouchableOpacity onPress={play}>
-                <Image style={styles.icon} source={require('../../public/icons/sound.png')} ></Image>
+                <Image style={styles.icon} source={isPlaying?require('../../public/icons/pause.png'):require('../../public/icons/sound.png')} ></Image>
             </TouchableOpacity>  
         </View>
             <ScrollView

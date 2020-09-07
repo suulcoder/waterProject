@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
         color: colors.white,
         fontSize: normalize(7),
         fontWeight: "bold",
-        marginBottom: normalize(5),
+        marginBottom: normalize(0.005),
         marginTop: normalize(1),
         padding: normalize(0.5),
     },
@@ -51,6 +51,8 @@ const styles = StyleSheet.create({
         width: normalize(80),
     },
     info:{
+        margin: normalize(20),
+        marginBottom: normalize(20),
         marginLeft: normalize(1),
         marginRight: normalize(1),
         maxWidth: '80%',
@@ -93,6 +95,17 @@ const styles = StyleSheet.create({
         padding: 10,
         width: '80%',
     },
+    viewLocation:{
+        alignSelf: 'center',
+        textAlign: 'center',
+        backgroundColor: colors.primaryC,
+        textDecorationLine: 'underline',
+        borderRadius: normalize(1),
+        color: colors.white,
+        padding:normalize(6),
+        paddingBottom: normalize(1),
+        paddingTop: normalize(1),
+    },
     submitText:{
         backgroundColor: colors.primaryD,
         borderRadius: normalize(20),
@@ -107,6 +120,12 @@ const styles = StyleSheet.create({
         marginBottom: normalize(10),
         marginTop: normalize(5),
         right: '15%',
+    },
+    geo:{
+        alignSelf:'center',
+        borderRadius: normalize(5),
+        marginBottom: normalize(4),
+        marginTop: normalize(15),
     },
     error:{
         alignSelf: 'center',

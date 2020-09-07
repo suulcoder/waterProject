@@ -21,6 +21,9 @@ import FAQ from './src/components/FAQ';
 import Bacterias from './src/components/Bacterias';
 import Health from './src/components/WaterAndHealth';
 import Pollution from './src/components/pollution';
+import Stories from './src/components/Stories';
+import Story1 from './src/components/Story1';
+import Story2 from './src/components/Story2';
 
 //localStorage.clear();
 let persistedState = loadState()
@@ -50,6 +53,9 @@ export default function App() {
           <Scene key="Bacterias" component={Bacterias}  hideNavBar={true}/>
           <Scene key="Health" component={Health}  hideNavBar={true}/>
           <Scene key="Pollution" component={Pollution}  hideNavBar={true}/>
+          <Scene key="Stories" component={Stories}  hideNavBar={true}/>
+          <Scene key="Story1" component={Story1}  hideNavBar={true}/>
+          <Scene key="Story2" component={Story2}  hideNavBar={true}/>
         </Stack>
       </Router>        
    </Provider>

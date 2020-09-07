@@ -27,7 +27,7 @@ const About = ({}) => (
                     <Text style={styles.text}> {'¿Cómo usar el Ecofiltro?'} </Text>
                 </View>
                 <View>
-                    <TouchableOpacity style={styles.element} >
+                    <TouchableOpacity style={styles.element} onPress={()=>Actions.Stories(true)}>
                         <Image style={{
                             alignSelf: 'center',
                             height:normalize(250),

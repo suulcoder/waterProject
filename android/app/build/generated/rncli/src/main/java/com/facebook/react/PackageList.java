@@ -25,6 +25,8 @@ import com.zmxv.RNSound.RNSoundPackage;
 import com.johnsonsu.rnsoundplayer.RNSoundPlayerPackage;
 // react-native-video
 import com.brentvatne.react.ReactVideoPackage;
+// react-native-webview
+import com.reactnativecommunity.webview.RNCWebViewPackage;
 
 public class PackageList {
   private Application application;
@@ -76,7 +78,8 @@ public class PackageList {
       new RNScreensPackage(),
       new RNSoundPackage(),
       new RNSoundPlayerPackage(),
-      new ReactVideoPackage()
+      new ReactVideoPackage(),
+      new RNCWebViewPackage()
     ));
   }
 }

@@ -10,10 +10,10 @@ const HowtoUse = ({}) => (
         <Header></Header>
         <View style={styles.content}>
         <Text style={styles.welcomeText}>
-            {'¿Cómo funciona un ecofiltro?'}
+            {'¿Cómo usar el ecofiltro?'}
         </Text>
         <Video
-            source={require('../../public/video/comoUsar.mp4')}
+            source={require('../../public/video/comousar.mp4')}
             shouldPlay
             useNativeControls
             style={styles.video}

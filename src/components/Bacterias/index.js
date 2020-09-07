@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import {Text, View, Image, ScrollView, TouchableOpacity } from 'react-native';
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { Linking } from 'react-native';
 import styles from './styles'
 import { normalize } from '../../utils/normalize';
@@ -11,10 +11,26 @@ import SoundPlayer from 'react-native-sound-player';
 
 
 const Bacterias = ({settings, back}) => {
-    
+
+    useEffect(() => {
+        // returned function will be called on component unmount 
+        return () => {
+          SoundPlayer.pause()
+        }
+      }, [])
+
+    const [isPlaying, changeIsPlaying] = useState(false);
+
     const play = () => { 
         try {
-            SoundPlayer.playSoundFile(`bacterias`, 'm4a')
+            if(isPlaying){
+                SoundPlayer.pause()
+                changeIsPlaying(false)
+            }
+            else{
+                SoundPlayer.playSoundFile(`bacterias`, 'm4a')
+                changeIsPlaying(true)
+            }
         } catch (e) {
             console.log(`cannot play the sound file`, e)
         }
@@ -33,7 +49,7 @@ const Bacterias = ({settings, back}) => {
             </TouchableOpacity>  
             <Image style={styles.logo} source={require('../../public/logo/logo.png')} ></Image>
             <TouchableOpacity onPress={play}>
-                <Image style={styles.icon} source={require('../../public/icons/sound.png')} ></Image>
+                <Image style={styles.icon} source={isPlaying?require('../../public/icons/pause.png'):require('../../public/icons/sound.png')} ></Image>
             </TouchableOpacity>  
         </View>
             <ScrollView
@@ -48,7 +64,10 @@ const Bacterias = ({settings, back}) => {
                 <Text>
                     ¿Quieres saber como afecta esto a tu salud? 
                 </Text>
-                <TouchableOpacity onPress={()=>Actions.Health(true)}>
+                <TouchableOpacity onPress={()=>{
+                    play()
+                    Actions.Health(true)
+                    }}>
                     <Text style={{color: 'black',  textDecorationLine: 'underline', marginBottom: normalize(1)}}>
                         Selecciona aquí
                     </Text>

@@ -4,8 +4,6 @@ import Header from '../Header';
 import React, {useState} from 'react';
 import styles from './styles'
 import { Video } from 'expo-av';
-import { normalize } from '../../utils/normalize';
-import { Actions } from 'react-native-router-flux';
 
 const HowEcofiltroWorks = ({}) => (
     <View style={styles.container}>

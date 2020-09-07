@@ -4,15 +4,23 @@ import {Text, View, Image, ScrollView, TextInput, TouchableOpacity } from 'react
 import * as actions from '../../actions/FAQ'
 import * as selectors from '../../reducers'
 import Header from '../Header';
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import styles from './styles';
 import SoundPlayer from 'react-native-sound-player';
 import { normalize } from '../../utils/normalize';
 
 const FAQ = ({questions, search, settings}) => {
+
+    useEffect(() => {
+        // returned function will be called on component unmount 
+        return () => {
+          SoundPlayer.pause()
+        }
+      }, [])
   
     const [query, changeQuery] = useState('');
-    const [selected, changeSelected] = useState()
+    const [selected, changeSelected] = useState();
+    const [isPlaying, changeIsPlaying] = useState(false);
 
     const searchQuery = (query) => {
         changeQuery(query)
@@ -33,10 +41,21 @@ const FAQ = ({questions, search, settings}) => {
 
     const play = (id) => { 
         try {
-            SoundPlayer.playSoundFile(`ecofiltro_faq_${id}`, 'm4a')
+            if(isPlaying){
+                SoundPlayer.pause()
+                changeIsPlaying(false)
+            }
+            else{
+                SoundPlayer.playSoundFile(`ecofiltro_faq_${id}`, 'm4a')
+                changeIsPlaying(true)
+            }
         } catch (e) {
             console.log(`cannot play the sound file`, e)
         }
+    }
+
+    const pause = () => {
+        SoundPlayer.pause()    
     }
 
 
@@ -71,7 +90,7 @@ const FAQ = ({questions, search, settings}) => {
                                                 <Image style={{
                                                     height:normalize(50),
                                                     width:normalize(50),
-                                                }} source={require('../../public/icons/sound.png')} ></Image>
+                                                }} source={isPlaying?require('../../public/icons/pause.png'):require('../../public/icons/sound.png')} ></Image>
                                             </TouchableOpacity>
                                             <Text style={styles.answerText} > {question.answer} </Text>
                                         </View> 

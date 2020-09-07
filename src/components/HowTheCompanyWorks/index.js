@@ -5,10 +5,11 @@ import React, {useState} from 'react';
 import styles from './styles'
 import { Video } from 'expo-av';
 
-const HowTheCompanyWorks = ({}) => (
+const HowEcofiltroWorks = ({}) => (
     <View style={styles.container}>
         <Header></Header>
         <View style={styles.content}>
+        
         <Text style={styles.welcomeText}>
             {'¿Cómo funciona la empresa?'}
         </Text>
@@ -23,6 +24,6 @@ const HowTheCompanyWorks = ({}) => (
     </View>
 );
 
-export default HowTheCompanyWorks;
+export default HowEcofiltroWorks;
 
 
