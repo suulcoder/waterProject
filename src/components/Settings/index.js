@@ -48,20 +48,6 @@ const Settings = ({name_,phone_,mail_,code_,language_,automatizedAudio,submit, s
                     </Picker>
                 </View>
                 <View style={styles.bar}></View>
-                <Text style={styles.text_}>{'Audio:'} </Text>
-                <View style={styles.row}>
-                    <Text style={styles.text}>{'Reproducción automática:'} </Text>
-                    <Switch
-                        trackColor={{
-                            true: '#6ec6ff',
-                            false: '#ff7961',
-                        }}
-                        thumbColor={!audio ? '#f44336' : '#2196f3'}
-                        onValueChange={() => toggleSwitch(audio)}
-                        value={audio}
-                    />
-                </View>
-                <View style={styles.bar}></View>
                 <Text style={styles.text_}>{'Ajustes de usuario:'} </Text>
                 <TextInput
                     style={styles.input}

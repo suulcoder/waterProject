@@ -1,12 +1,12 @@
 {
-  "name": "Ecofiltro",
-  "displayName": "Ecofiltro",
   "expo": {
-    "name": "Ecofiltro",
-    "slug": "Ecofiltro",
-    "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
+   "name": "Ecofiltro",
+   "icon": "./android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+   "version": "1.0.0",
+   "slug": "your-app-slug",
+   "android": {
+     "package": "com.suulcoder.ecofiltro",
+     "versionCode": 1
+   }
   }
 }

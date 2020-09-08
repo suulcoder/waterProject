@@ -16,6 +16,13 @@ const styles = StyleSheet.create({
         padding: normalize(3),
         width: '100%',
       },
+      bar:{
+          alignSelf: 'center',
+          marginBottom: normalize(30),
+          height: normalize(0.1),
+          width: '90%',
+          backgroundColor: colors.white,
+      },
     bottom:{
         backgroundColor: colors.primaryB,
         bottom: 0,
@@ -98,7 +105,7 @@ const styles = StyleSheet.create({
     viewLocation:{
         alignSelf: 'center',
         textAlign: 'center',
-        backgroundColor: colors.primaryC,
+        backgroundColor: colors.primaryB,
         textDecorationLine: 'underline',
         borderRadius: normalize(1),
         color: colors.white,

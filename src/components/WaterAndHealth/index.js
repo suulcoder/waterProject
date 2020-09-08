@@ -7,36 +7,41 @@ import { normalize } from '../../utils/normalize';
 import { Actions } from 'react-native-router-flux';
 
 import * as selectors from '../../reducers'
-import SoundPlayer from 'react-native-sound-player';
+import { Audio } from 'expo-av';
 
 const Health = ({settings, back}) => {
 
     useEffect(() => {
         // returned function will be called on component unmount 
         return () => {
-          SoundPlayer.pause()
+            try {
+                soundObject.pauseAsync()
+            } catch (error) {
+                //do nothing
+            }
         }
       }, [])
 
     const [isPlaying, changeIsPlaying] = useState(false);
+    const [soundObject, setSoundObject] = useState(new Audio.Sound());
+  
 
-    const play = () => { 
+    async function play(){ 
         try {
             if(isPlaying){
-                SoundPlayer.pause()
+                await soundObject.pauseAsync()
                 changeIsPlaying(false)
+                setSoundObject(new Audio.Sound())
             }
             else{
-                SoundPlayer.playSoundFile(`agua_salud`, 'm4a')
+                await soundObject.loadAsync(require(`../../public/audio/agua_salud.m4a`));
                 changeIsPlaying(true)
+                await soundObject.playAsync();
+                setSoundObject(soundObject)
             }
         } catch (e) {
             console.log(`cannot play the sound file`, e)
         }
-    }
-
-    if(settings){
-        play()
     }
 
 

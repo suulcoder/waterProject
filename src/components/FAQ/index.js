@@ -6,7 +6,7 @@ import * as selectors from '../../reducers'
 import Header from '../Header';
 import React, {useState, useEffect} from 'react';
 import styles from './styles';
-import SoundPlayer from 'react-native-sound-player';
+import { Audio } from 'expo-av';
 import { normalize } from '../../utils/normalize';
 
 const FAQ = ({questions, search, settings}) => {
@@ -14,13 +14,18 @@ const FAQ = ({questions, search, settings}) => {
     useEffect(() => {
         // returned function will be called on component unmount 
         return () => {
-          SoundPlayer.pause()
+            try {
+                soundObject.pauseAsync()
+            } catch (error) {
+                //do nothing
+            }
         }
       }, [])
   
     const [query, changeQuery] = useState('');
     const [selected, changeSelected] = useState();
     const [isPlaying, changeIsPlaying] = useState(false);
+    const [soundObject, setSoundObject] = useState(new Audio.Sound());
 
     const searchQuery = (query) => {
         changeQuery(query)
@@ -39,25 +44,61 @@ const FAQ = ({questions, search, settings}) => {
         }
     }
 
-    const play = (id) => { 
+    /*For who anyone is going to read the next function im sorry
+        but require didnt allow me to concatenate
+
+    */
+
+    const getFileByID = (id) => {
+        switch (id) {
+            case 0:
+                return require(`../../public/audio/ecofiltro_faq_0.m4a`)
+            case 1:
+                return require(`../../public/audio/ecofiltro_faq_1.m4a`)
+            case 2:
+                return require(`../../public/audio/ecofiltro_faq_2.m4a`)
+            case 3:
+                return require(`../../public/audio/ecofiltro_faq_3.m4a`)
+            case 4:
+                return require(`../../public/audio/ecofiltro_faq_4.m4a`)
+            case 5:
+                return require(`../../public/audio/ecofiltro_faq_5.m4a`)
+            case 6:
+                return require(`../../public/audio/ecofiltro_faq_6.m4a`)
+            case 7:
+                return require(`../../public/audio/ecofiltro_faq_7.m4a`)
+            case 8:
+                return require(`../../public/audio/ecofiltro_faq_8.m4a`)
+            case 9:
+                return require(`../../public/audio/ecofiltro_faq_9.m4a`)
+            case 10:
+                return require(`../../public/audio/ecofiltro_faq_10.m4a`)
+            case 11:
+                return require(`../../public/audio/ecofiltro_faq_11.m4a`)
+            case 12:
+                return require(`../../public/audio/ecofiltro_faq_12.m4a`)
+            default:
+                break;
+        }
+    }
+
+    async function play(file){ 
         try {
             if(isPlaying){
-                SoundPlayer.pause()
+                await soundObject.pauseAsync()
                 changeIsPlaying(false)
+                setSoundObject(new Audio.Sound())
             }
             else{
-                SoundPlayer.playSoundFile(`ecofiltro_faq_${id}`, 'm4a')
+                await soundObject.loadAsync(file);
                 changeIsPlaying(true)
+                await soundObject.playAsync();
+                setSoundObject(soundObject)
             }
         } catch (e) {
             console.log(`cannot play the sound file`, e)
         }
     }
-
-    const pause = () => {
-        SoundPlayer.pause()    
-    }
-
 
     return (
     <View style={styles.container}>
@@ -86,7 +127,7 @@ const FAQ = ({questions, search, settings}) => {
                                     </TouchableOpacity>
                                     {(selected===question.id) && 
                                         <View style={styles.answer}>
-                                            <TouchableOpacity onPress={()=>play(question.id)}>
+                                            <TouchableOpacity onPress={()=>play(getFileByID(question.id))}>
                                                 <Image style={{
                                                     height:normalize(50),
                                                     width:normalize(50),

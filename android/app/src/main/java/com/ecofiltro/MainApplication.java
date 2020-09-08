@@ -6,6 +6,7 @@ import android.net.Uri;
 
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
+import com.zmxv.RNSound.RNSoundPackage;
 import com.johnsonsu.rnsoundplayer.RNSoundPlayerPackage;
 import com.zmxv.RNSound.RNSoundPackage;
 import com.zmxv.RNSound.RNSoundPackage;
