@@ -31,7 +31,8 @@ const Pollution = ({settings, back}) => {
             if(isPlaying){
                 await soundObject.pauseAsync()
                 changeIsPlaying(false)
-                setSoundObject(new Audio.Sound())
+                await soundObject.unloadAsync();
+                setSoundObject(soundObject)
             }
             else{
                 await soundObject.loadAsync(require(`../../public/audio/otros_cont.m4a`));

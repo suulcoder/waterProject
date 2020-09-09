@@ -87,7 +87,8 @@ const FAQ = ({questions, search, settings}) => {
             if(isPlaying){
                 await soundObject.pauseAsync()
                 changeIsPlaying(false)
-                setSoundObject(new Audio.Sound())
+                await soundObject.unloadAsync();
+                setSoundObject(soundObject)
             }
             else{
                 await soundObject.loadAsync(file);

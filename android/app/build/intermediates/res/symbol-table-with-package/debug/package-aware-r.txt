@@ -96,6 +96,8 @@ attr activityChooserViewStyle
 attr actualImageResource
 attr actualImageScaleType
 attr actualImageUri
+attr ad_marker_color
+attr ad_marker_width
 attr alertDialogButtonGroupStyle
 attr alertDialogCenterButtons
 attr alertDialogStyle
@@ -114,6 +116,7 @@ attr autoSizeMinTextSize
 attr autoSizePresetSizes
 attr autoSizeStepGranularity
 attr autoSizeTextType
+attr auto_show
 attr background
 attr backgroundColor
 attr backgroundImage
@@ -130,6 +133,7 @@ attr badgeGravity
 attr badgeStyle
 attr badgeTextColor
 attr barLength
+attr bar_height
 attr behavior_autoHide
 attr behavior_autoShrink
 attr behavior_expandedOffset
@@ -156,6 +160,7 @@ attr boxCornerRadiusTopStart
 attr boxStrokeColor
 attr boxStrokeWidth
 attr boxStrokeWidthFocused
+attr buffered_color
 attr buttonBarButtonStyle
 attr buttonBarNegativeButtonStyle
 attr buttonBarNeutralButtonStyle
@@ -264,6 +269,7 @@ attr contentPaddingRight
 attr contentPaddingTop
 attr contentScrim
 attr controlBackground
+attr controller_layout_id
 attr coordinatorLayoutStyle
 attr cornerFamily
 attr cornerFamilyBottomLeft
@@ -288,6 +294,7 @@ attr daySelectedStyle
 attr dayStyle
 attr dayTodayStyle
 attr defaultQueryHint
+attr default_artwork
 attr dialogCornerRadius
 attr dialogPreferredPadding
 attr dialogTheme
@@ -355,6 +362,7 @@ attr fastScrollHorizontalThumbDrawable
 attr fastScrollHorizontalTrackDrawable
 attr fastScrollVerticalThumbDrawable
 attr fastScrollVerticalTrackDrawable
+attr fastforward_increment
 attr firstBaselineToTopHeight
 attr floatingActionButtonStyle
 attr font
@@ -380,6 +388,8 @@ attr helperTextTextColor
 attr hideMotionSpec
 attr hideOnContentScroll
 attr hideOnScroll
+attr hide_during_ads
+attr hide_on_touch
 attr hintAnimationEnabled
 attr hintEnabled
 attr hintTextAppearance
@@ -428,6 +438,7 @@ attr itemTextAppearance
 attr itemTextAppearanceActive
 attr itemTextAppearanceInactive
 attr itemTextColor
+attr keep_content_on_player_reset
 attr keylines
 attr labelVisibilityMode
 attr lastBaselineToBottomHeight
@@ -520,6 +531,9 @@ attr passwordToggleTint
 attr passwordToggleTintMode
 attr placeholderImage
 attr placeholderImageScaleType
+attr played_ad_marker_color
+attr played_color
+attr player_layout_id
 attr popupMenuBackground
 attr popupMenuStyle
 attr popupTheme
@@ -540,9 +554,12 @@ attr ratingBarStyle
 attr ratingBarStyleIndicator
 attr ratingBarStyleSmall
 attr recyclerViewStyle
+attr repeat_toggle_modes
+attr resize_mode
 attr retryImage
 attr retryImageScaleType
 attr reverseLayout
+attr rewind_increment
 attr rippleColor
 attr roundAsCircle
 attr roundBottomEnd
@@ -563,6 +580,11 @@ attr scopeUris
 attr scrimAnimationDuration
 attr scrimBackground
 attr scrimVisibleHeightTrigger
+attr scrubber_color
+attr scrubber_disabled_size
+attr scrubber_dragged_size
+attr scrubber_drawable
+attr scrubber_enabled_size
 attr searchHintIcon
 attr searchIcon
 attr searchViewStyle
@@ -579,7 +601,11 @@ attr showDividers
 attr showMotionSpec
 attr showText
 attr showTitle
+attr show_buffering
+attr show_shuffle_button
+attr show_timeout
 attr shrinkMotionSpec
+attr shutter_background_color
 attr singleChoiceItemLayout
 attr singleLine
 attr singleSelection
@@ -615,6 +641,7 @@ attr subtitleTextAppearance
 attr subtitleTextColor
 attr subtitleTextStyle
 attr suggestionRowLayout
+attr surface_type
 attr switchMinWidth
 attr switchPadding
 attr switchStyle
@@ -702,6 +729,7 @@ attr toolbarStyle
 attr tooltipForegroundColor
 attr tooltipFrameBackground
 attr tooltipText
+attr touch_target_height
 attr track
 attr trackTint
 attr trackTintMode
@@ -714,9 +742,12 @@ attr uiScrollGesturesDuringRotateOrZoom
 attr uiTiltGestures
 attr uiZoomControls
 attr uiZoomGestures
+attr unplayed_color
 attr useCompatPadding
 attr useMaterialThemeColors
 attr useViewLifecycle
+attr use_artwork
+attr use_controller
 attr viewAspectRatio
 attr viewInflaterClass
 attr voiceIcon
@@ -838,6 +869,8 @@ color dim_foreground_material_dark
 color dim_foreground_material_light
 color error_color_material_dark
 color error_color_material_light
+color exo_edit_mode_background_color
+color exo_error_message_background_color
 color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
@@ -1082,6 +1115,8 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen exo_media_button_height
+dimen exo_media_button_width
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -1396,11 +1431,41 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable exo_controls_fastforward
+drawable exo_controls_fullscreen_enter
+drawable exo_controls_fullscreen_exit
+drawable exo_controls_next
+drawable exo_controls_pause
+drawable exo_controls_play
+drawable exo_controls_previous
+drawable exo_controls_repeat_all
+drawable exo_controls_repeat_off
+drawable exo_controls_repeat_one
+drawable exo_controls_rewind
+drawable exo_controls_shuffle
+drawable exo_edit_mode_logo
+drawable exo_icon_fastforward
+drawable exo_icon_next
+drawable exo_icon_pause
+drawable exo_icon_play
+drawable exo_icon_previous
+drawable exo_icon_rewind
+drawable exo_icon_stop
+drawable exo_notification_fastforward
+drawable exo_notification_next
+drawable exo_notification_pause
+drawable exo_notification_play
+drawable exo_notification_previous
+drawable exo_notification_rewind
+drawable exo_notification_small_icon
+drawable exo_notification_stop
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_edit_black_24dp
+drawable ic_fullscreen_32dp
+drawable ic_fullscreen_exit_32dp
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
 drawable ic_menu_arrow_down_black_24dp
@@ -1545,6 +1610,7 @@ id container
 id content
 id contentPanel
 id coordinator
+id current_time_text
 id custom
 id customPanel
 id cut
@@ -1564,17 +1630,41 @@ id edit_query
 id end
 id endInside
 id end_padder
+id end_time_text
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
+id exo_artwork
+id exo_buffering
+id exo_content_frame
+id exo_controller
+id exo_controller_placeholder
+id exo_duration
+id exo_error_message
+id exo_ffwd
+id exo_next
+id exo_overlay
+id exo_pause
+id exo_play
+id exo_position
+id exo_prev
+id exo_progress
+id exo_repeat_toggle
+id exo_rew
+id exo_shuffle
+id exo_shutter
+id exo_subtitles
+id exo_track_selection_view
 id expand_activities_button
 id expanded_menu
 id fade
+id fast_forward_button
 id fill
 id fill_horizontal
 id fill_vertical
 id filled
 id filter_chip
+id fit
 id fitBottomStart
 id fitCenter
 id fitEnd
@@ -1582,11 +1672,14 @@ id fitStart
 id fitToContents
 id fitXY
 id fixed
+id fixed_height
+id fixed_width
 id flipper_skip_view_traversal
 id focusCrop
 id forever
 id fps_text
 id fragment_container_view_tag
+id fullscreen_mode_button
 id ghost_view
 id ghost_view_holder
 id glide_custom_view_target_tag
@@ -1659,6 +1752,7 @@ id notification_main_column
 id notification_main_column_container
 id off
 id on
+id one
 id outline
 id parallax
 id parentPanel
@@ -1666,10 +1760,12 @@ id parent_matrix
 id password_toggle
 id peekHeight
 id pin
+id play_button
 id progress_circular
 id progress_horizontal
 id radio
 id react_test_id
+id rewind_button
 id right
 id rightBottom
 id rightBottomCrop
@@ -1709,6 +1805,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id seek_bar
 id select_dialog_listview
 id selected
 id shortcut
@@ -1716,6 +1813,8 @@ id showCustom
 id showHome
 id showTitle
 id skipCollapsed
+id skip_next_button
+id skip_previous_button
 id slide
 id smallLabel
 id snackbar_action
@@ -1723,6 +1822,7 @@ id snackbar_text
 id snap
 id snapMargins
 id spacer
+id spherical_view
 id split_action_bar
 id src_atop
 id src_in
@@ -1734,6 +1834,7 @@ id status_bar_latest_event_content
 id stretch
 id submenuarrow
 id submit_area
+id surface_view
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -1757,6 +1858,7 @@ id text_input_start_icon
 id textinput_counter
 id textinput_error
 id textinput_helper_text
+id texture_view
 id time
 id title
 id titleDividerNoCustom
@@ -1780,10 +1882,12 @@ id view_tag_native_id
 id visible
 id visible_removing_fragment_view_tag
 id webview
+id when_playing
 id wide
 id window
 id withText
 id wrap_content
+id zoom
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
@@ -1867,6 +1971,13 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dev_loading_view
+layout exo_list_divider
+layout exo_playback_control_view
+layout exo_player_control_view
+layout exo_player_view
+layout exo_simple_player_view
+layout exo_track_selection_dialog
+layout expo_media_controller
 layout fps_view
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
@@ -1933,7 +2044,6 @@ layout text_view_without_line_height
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
-raw agua_salud
 raw amu_ballon_gx_prefix
 raw amu_basic_folder
 raw amu_basic_placemark
@@ -1954,21 +2064,6 @@ raw amu_poly_style_boolean_numeric
 raw amu_unknwown_folder
 raw amu_unsupported
 raw amu_visibility_ground_overlay
-raw bacterias
-raw ecofiltro_faq_0
-raw ecofiltro_faq_1
-raw ecofiltro_faq_10
-raw ecofiltro_faq_11
-raw ecofiltro_faq_12
-raw ecofiltro_faq_2
-raw ecofiltro_faq_3
-raw ecofiltro_faq_4
-raw ecofiltro_faq_5
-raw ecofiltro_faq_6
-raw ecofiltro_faq_7
-raw ecofiltro_faq_8
-raw ecofiltro_faq_9
-raw otros_cont
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -2053,7 +2148,42 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string default_media_controller_time
+string enter_fullscreen_mode
 string error_icon_content_description
+string exit_fullscreen_mode
+string exo_controls_fastforward_description
+string exo_controls_fullscreen_description
+string exo_controls_next_description
+string exo_controls_pause_description
+string exo_controls_play_description
+string exo_controls_previous_description
+string exo_controls_repeat_all_description
+string exo_controls_repeat_off_description
+string exo_controls_repeat_one_description
+string exo_controls_rewind_description
+string exo_controls_shuffle_description
+string exo_controls_stop_description
+string exo_download_completed
+string exo_download_description
+string exo_download_downloading
+string exo_download_failed
+string exo_download_notification_channel_name
+string exo_download_removing
+string exo_item_list
+string exo_track_bitrate
+string exo_track_mono
+string exo_track_resolution
+string exo_track_selection_auto
+string exo_track_selection_none
+string exo_track_selection_title_audio
+string exo_track_selection_title_text
+string exo_track_selection_title_video
+string exo_track_stereo
+string exo_track_surround
+string exo_track_surround_5_point_1
+string exo_track_surround_7_point_1
+string exo_track_unknown
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
@@ -2352,6 +2482,14 @@ style ClockTimePickerStyle
 style DialogAnimationFade
 style DialogAnimationSlide
 style EmptyTheme
+style ExoMediaButton
+style ExoMediaButton_FastForward
+style ExoMediaButton_Next
+style ExoMediaButton_Pause
+style ExoMediaButton_Play
+style ExoMediaButton_Previous
+style ExoMediaButton_Rewind
+style ExoMediaButton_Shuffle
 style MaterialAlertDialog_MaterialComponents
 style MaterialAlertDialog_MaterialComponents_Body_Text
 style MaterialAlertDialog_MaterialComponents_Picker_Date_Calendar
@@ -2843,6 +2981,7 @@ styleable AppCompatSeekBar android_thumb tickMark tickMarkTint tickMarkTintMode
 styleable AppCompatTextHelper android_textAppearance android_drawableTop android_drawableBottom android_drawableLeft android_drawableRight android_drawableStart android_drawableEnd
 styleable AppCompatTextView android_textAppearance autoSizeMaxTextSize autoSizeMinTextSize autoSizePresetSizes autoSizeStepGranularity autoSizeTextType drawableBottomCompat drawableEndCompat drawableLeftCompat drawableRightCompat drawableStartCompat drawableTint drawableTintMode drawableTopCompat firstBaselineToTopHeight fontFamily fontVariationSettings lastBaselineToBottomHeight lineHeight textAllCaps textLocale
 styleable AppCompatTheme android_windowIsFloating android_windowAnimationStyle actionBarDivider actionBarItemBackground actionBarPopupTheme actionBarSize actionBarSplitStyle actionBarStyle actionBarTabBarStyle actionBarTabStyle actionBarTabTextStyle actionBarTheme actionBarWidgetTheme actionButtonStyle actionDropDownStyle actionMenuTextAppearance actionMenuTextColor actionModeBackground actionModeCloseButtonStyle actionModeCloseDrawable actionModeCopyDrawable actionModeCutDrawable actionModeFindDrawable actionModePasteDrawable actionModePopupWindowStyle actionModeSelectAllDrawable actionModeShareDrawable actionModeSplitBackground actionModeStyle actionModeWebSearchDrawable actionOverflowButtonStyle actionOverflowMenuStyle activityChooserViewStyle alertDialogButtonGroupStyle alertDialogCenterButtons alertDialogStyle alertDialogTheme autoCompleteTextViewStyle borderlessButtonStyle buttonBarButtonStyle buttonBarNegativeButtonStyle buttonBarNeutralButtonStyle buttonBarPositiveButtonStyle buttonBarStyle buttonStyle buttonStyleSmall checkboxStyle checkedTextViewStyle colorAccent colorBackgroundFloating colorButtonNormal colorControlActivated colorControlHighlight colorControlNormal colorError colorPrimary colorPrimaryDark colorSwitchThumbNormal controlBackground dialogCornerRadius dialogPreferredPadding dialogTheme dividerHorizontal dividerVertical dropDownListViewStyle dropdownListPreferredItemHeight editTextBackground editTextColor editTextStyle homeAsUpIndicator imageButtonStyle listChoiceBackgroundIndicator listChoiceIndicatorMultipleAnimated listChoiceIndicatorSingleAnimated listDividerAlertDialog listMenuViewStyle listPopupWindowStyle listPreferredItemHeight listPreferredItemHeightLarge listPreferredItemHeightSmall listPreferredItemPaddingEnd listPreferredItemPaddingLeft listPreferredItemPaddingRight listPreferredItemPaddingStart panelBackground panelMenuListTheme panelMenuListWidth popupMenuStyle popupWindowStyle radioButtonStyle ratingBarStyle ratingBarStyleIndicator ratingBarStyleSmall searchViewStyle seekBarStyle selectableItemBackground selectableItemBackgroundBorderless spinnerDropDownItemStyle spinnerStyle switchStyle textAppearanceLargePopupMenu textAppearanceListItem textAppearanceListItemSecondary textAppearanceListItemSmall textAppearancePopupMenuHeader textAppearanceSearchResultSubtitle textAppearanceSearchResultTitle textAppearanceSmallPopupMenu textColorAlertDialogListItem textColorSearchUrl toolbarNavigationButtonStyle toolbarStyle tooltipForegroundColor tooltipFrameBackground viewInflaterClass windowActionBar windowActionBarOverlay windowActionModeOverlay windowFixedHeightMajor windowFixedHeightMinor windowFixedWidthMajor windowFixedWidthMinor windowMinWidthMajor windowMinWidthMinor windowNoTitle
+styleable AspectRatioFrameLayout resize_mode
 styleable Badge backgroundColor badgeGravity badgeTextColor maxCharacterCount number
 styleable BottomAppBar backgroundTint elevation fabAlignmentMode fabAnimationMode fabCradleMargin fabCradleRoundedCornerRadius fabCradleVerticalOffset hideOnScroll
 styleable BottomNavigationView backgroundTint elevation itemBackground itemHorizontalTranslationEnabled itemIconSize itemIconTint itemRippleColor itemTextAppearanceActive itemTextAppearanceInactive itemTextColor labelVisibilityMode menu
@@ -2857,6 +2996,7 @@ styleable ColorStateListItem android_color android_alpha alpha
 styleable CompoundButton android_button buttonCompat buttonTint buttonTintMode
 styleable CoordinatorLayout keylines statusBarBackground
 styleable CoordinatorLayout_Layout android_layout_gravity layout_anchor layout_anchorGravity layout_behavior layout_dodgeInsetEdges layout_insetEdge layout_keyline
+styleable DefaultTimeBar ad_marker_color ad_marker_width bar_height buffered_color played_ad_marker_color played_color scrubber_color scrubber_disabled_size scrubber_dragged_size scrubber_drawable scrubber_enabled_size touch_target_height unplayed_color
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness
 styleable ExtendedFloatingActionButton elevation extendMotionSpec hideMotionSpec showMotionSpec shrinkMotionSpec
 styleable ExtendedFloatingActionButton_Behavior_Layout behavior_autoHide behavior_autoShrink
@@ -2892,6 +3032,8 @@ styleable MenuGroup android_enabled android_id android_visible android_menuCateg
 styleable MenuItem android_icon android_enabled android_id android_checked android_visible android_menuCategory android_orderInCategory android_title android_titleCondensed android_alphabeticShortcut android_numericShortcut android_checkable android_onClick actionLayout actionProviderClass actionViewClass alphabeticModifiers contentDescription iconTint iconTintMode numericModifiers showAsAction tooltipText
 styleable MenuView android_windowAnimationStyle android_itemTextAppearance android_horizontalDivider android_verticalDivider android_headerBackground android_itemBackground android_itemIconDisabledAlpha preserveIconSpacing subMenuArrow
 styleable NavigationView android_background android_fitsSystemWindows android_maxWidth elevation headerLayout itemBackground itemHorizontalPadding itemIconPadding itemIconSize itemIconTint itemMaxLines itemShapeAppearance itemShapeAppearanceOverlay itemShapeFillColor itemShapeInsetBottom itemShapeInsetEnd itemShapeInsetStart itemShapeInsetTop itemTextAppearance itemTextColor menu
+styleable PlayerControlView controller_layout_id fastforward_increment repeat_toggle_modes rewind_increment show_shuffle_button show_timeout
+styleable PlayerView auto_show controller_layout_id default_artwork fastforward_increment hide_during_ads hide_on_touch keep_content_on_player_reset player_layout_id repeat_toggle_modes resize_mode rewind_increment show_buffering show_shuffle_button show_timeout shutter_background_color surface_type use_artwork use_controller
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor
 styleable PopupWindowBackgroundState state_above_anchor
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle

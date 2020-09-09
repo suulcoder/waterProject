@@ -31,7 +31,8 @@ const Health = ({settings, back}) => {
             if(isPlaying){
                 await soundObject.pauseAsync()
                 changeIsPlaying(false)
-                setSoundObject(new Audio.Sound())
+                await soundObject.unloadAsync();
+                setSoundObject(soundObject)
             }
             else{
                 await soundObject.loadAsync(require(`../../public/audio/agua_salud.m4a`));

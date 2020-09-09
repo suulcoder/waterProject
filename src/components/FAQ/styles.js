@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
       backgroundColor: colors.white,
       flex: 1,
       flexDirection: 'column',
+      marginTop: normalize(10), 
     },
     content: {
         backgroundColor: colors.primaryB,

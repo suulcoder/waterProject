@@ -8,7 +8,8 @@ const styles = StyleSheet.create({
     backgroundColor: colors.white,
     flex: 1,
     flexDirection: 'column',
-    width: '100%'
+    width: '100%',
+    marginTop: normalize(10), 
   },
   content: {
       alignSelf: 'center',
