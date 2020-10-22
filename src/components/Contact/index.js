@@ -26,10 +26,13 @@ const Contact = ({name_,phone_,mail_,code_,submit}) => {
             <ScrollView></ScrollView>
             
             <ScrollView>
-                <TouchableOpacity style={styles.viewLocation} 
-                onPress={() => Linking.openURL('https://www.google.com.gt/maps/search/distribuidor+de+ecofiltro/@14.9099828,-90.7388792,8z')}>
-                    <Text style={styles.submitText}> {'Haz click aquí para ver los puntos de distribuición'} </Text>
-                </TouchableOpacity>
+                <View>
+                    <Text style={styles.subtitle}>{'Puntos de Venta'}</Text>
+                    <TouchableOpacity style={styles.viewLocation} 
+                    onPress={() => Linking.openURL('https://www.google.com.gt/maps/search/distribuidor+de+ecofiltro/@14.9099828,-90.7388792,8z')}>
+                        <Text style={styles.submitText}> {'Haz click aquí para ver los puntos de distribuición'} </Text>
+                    </TouchableOpacity>
+                </View>
                 <View style={styles.row}>
                     <View style={styles.circle}>
                         <Image style={styles.icon} source={require('../../public/icons/location.png')} ></Image>

@@ -40,6 +40,15 @@ const styles = StyleSheet.create({
         marginTop: normalize(1),
         padding: normalize(0.5),
     },
+    subtitle:{
+        alignSelf: 'center',
+        color: colors.white,
+        fontSize: normalize(5),
+        fontWeight: "bold",
+        marginBottom: normalize(0.005),
+        marginTop: normalize(1),
+        padding: normalize(0.5),
+    },
     row:{
         alignItems: 'center',
         flexDirection: 'row',

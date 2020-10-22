@@ -11,7 +11,7 @@ const Stories = ({}) => (
         <Header></Header>
         <View style={styles.content}>
             <Text style={styles.welcomeText}>
-                {'Experiencias'}
+                {'Testimoniales'}
             </Text>
             <View style={styles.row}>
                 <View>

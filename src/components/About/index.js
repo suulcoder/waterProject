@@ -35,7 +35,7 @@ const About = ({}) => (
                             borderRadius: normalize(50),
                         }} source={require('../../public/img/stories_.jpeg')} ></Image>
                     </TouchableOpacity>
-                    <Text style={styles.text}> {'Experiencias'} </Text>
+                    <Text style={styles.text}> {'Testimoniales'} </Text>
                 </View>
             </View>
             <View style={styles.row}>
