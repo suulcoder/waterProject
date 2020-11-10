@@ -45,7 +45,7 @@ const Stories = ({}) => (
                             height:normalize(270),
                             width:normalize(270),
                             borderRadius: normalize(50),
-                        }} source={require('../../public/img/luis.png')} ></Image>
+                        }} source={require('../../public/img/catalina.png')} ></Image>
                     </TouchableOpacity>
                     <Text style={styles.text}> {'La historia de Doña Catalina Pop'} </Text>
                 </View>
@@ -56,7 +56,7 @@ const Stories = ({}) => (
                             height:normalize(270),
                             width:normalize(270),
                             borderRadius: normalize(50),
-                        }} source={require('../../public/img/story.png')} ></Image>
+                        }} source={require('../../public/img/eldurazno.png')} ></Image>
                     </TouchableOpacity>
                     <Text style={styles.text}> {'La comunidad de El Durazno'} </Text>
                 </View>
