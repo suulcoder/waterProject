@@ -34,7 +34,7 @@ const Stories = ({}) => (
                             borderRadius: normalize(50),
                         }} source={require('../../public/img/story.png')} ></Image>
                     </TouchableOpacity>
-                    <Text style={styles.text}> {'Mi experiencia con Ecofiltro'} </Text>
+                    <Text style={styles.text}> {'Testimonial familiar anónimo'} </Text>
                 </View>
             </View>
             <View style={styles.row}>

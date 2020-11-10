@@ -11,7 +11,7 @@ const Story2 = ({}) => (
         <View style={styles.content}>
         
         <Text style={styles.welcomeText}>
-            {'Mi experiencia con Ecofiltros'}
+            {'Testimonial familiar anónimo'}
         </Text>
         <Video
             source={require('../../public/video/experiencias2.mp4')}
