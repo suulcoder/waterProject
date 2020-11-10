@@ -24,6 +24,8 @@ import Pollution from './src/components/pollution';
 import Stories from './src/components/Stories';
 import Story1 from './src/components/Story1';
 import Story2 from './src/components/Story2';
+import Story3 from './src/components/Story3';
+import Story4 from './src/components/Story4';
 
 //localStorage.clear();
 let persistedState = loadState()
@@ -56,6 +58,8 @@ export default function App() {
           <Scene key="Stories" component={Stories}  hideNavBar={true}/>
           <Scene key="Story1" component={Story1}  hideNavBar={true}/>
           <Scene key="Story2" component={Story2}  hideNavBar={true}/>
+          <Scene key="Story3" component={Story3}  hideNavBar={true}/>
+          <Scene key="Story4" component={Story4}  hideNavBar={true}/>
         </Stack>
       </Router>        
    </Provider>

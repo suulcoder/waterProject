@@ -3,8 +3,8 @@
   "webpackServerPort": null,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 1615,
-  "expoServerNgrokUrl": "https://n6-dbn.suulcoder.waterproject.exp.direct",
-  "packagerNgrokUrl": "https://packager.n6-dbn.suulcoder.waterproject.exp.direct",
-  "ngrokPid": 1752
+  "packagerPid": 2652,
+  "expoServerNgrokUrl": "https://n6-dbn.dianaxime.waterproject.exp.direct",
+  "packagerNgrokUrl": "https://packager.n6-dbn.dianaxime.waterproject.exp.direct",
+  "ngrokPid": 13308
 }

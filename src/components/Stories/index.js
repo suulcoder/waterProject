@@ -37,6 +37,30 @@ const Stories = ({}) => (
                     <Text style={styles.text}> {'Mi experiencia con Ecofiltro'} </Text>
                 </View>
             </View>
+            <View style={styles.row}>
+                <View>
+                    <TouchableOpacity style={styles.element} onPress={()=>Actions.Story3(false)}>
+                        <Image style={{
+                            alignSelf: 'center',
+                            height:normalize(270),
+                            width:normalize(270),
+                            borderRadius: normalize(50),
+                        }} source={require('../../public/img/luis.png')} ></Image>
+                    </TouchableOpacity>
+                    <Text style={styles.text}> {'La historia de Doña Catalina Pop'} </Text>
+                </View>
+                <View>
+                    <TouchableOpacity style={styles.element} onPress={()=>Actions.Story4(false)}>
+                        <Image style={{
+                            alignSelf: 'center',
+                            height:normalize(270),
+                            width:normalize(270),
+                            borderRadius: normalize(50),
+                        }} source={require('../../public/img/story.png')} ></Image>
+                    </TouchableOpacity>
+                    <Text style={styles.text}> {'La comunidad de El Durazno'} </Text>
+                </View>
+            </View>
         </View>
     </View>
 );
