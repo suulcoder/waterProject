@@ -23,8 +23,6 @@ const Contact = ({name_,phone_,mail_,code_,submit}) => {
             <Text style={styles.title}>
                 {'¡Contáctanos!'}
             </Text>
-            <ScrollView></ScrollView>
-            
             <ScrollView>
                 <View>
                     <Text style={styles.subtitle}>{'Puntos de Venta'}</Text>
