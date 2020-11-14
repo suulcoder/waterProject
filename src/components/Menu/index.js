@@ -29,7 +29,7 @@ const Menu = ({ about, contact, info }) => (
                         height: normalize(100),
                         width: normalize(100),
                     }}
-                        source={require('../../public/icons/water.png')} ></Image>
+                        source={require('../../public/icons/contaminated-water.png')} ></Image>
                 </TouchableOpacity>
                 <Text style={styles.text}> {'Agua contaminada y tu salud'} </Text>
             </View>
