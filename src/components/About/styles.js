@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     row:{
         flexDirection: 'row',
         justifyContent: 'space-around',
-        padding: normalize(15),
+        //padding: normalize(15),
     },
     icon:{
         height:normalize(20),
