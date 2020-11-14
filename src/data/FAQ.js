@@ -10,7 +10,7 @@ const FAQ = {
     1:{
         id: 1,
         question: '¿Qué hace el Ecofiltro?', 
-        answer: 'Purifica agua de cualquier fuente eliminando bacterias, sedimentos, mal olor, mal sabor y color.',
+        answer: 'Purifica agua de cualquier fuente eliminando microbios, sedimentos, mal olor, mal sabor y color.',
         type: 'General'
     },
     2:{

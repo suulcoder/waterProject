@@ -24,7 +24,7 @@ const Info = ({}) => (
                             width:normalize(180),
                         }} source={require('../../public/icons/coliform.png')} ></Image>
                     </TouchableOpacity>
-                    <Text style={styles.text}> {'Bacterias en el agua'} </Text>
+                    <Text style={styles.text}> {'Microbios en el agua'} </Text>
                 </View>
                 <View>
                     <TouchableOpacity style={styles.element} onPress={()=>Actions.Health(true)}>
