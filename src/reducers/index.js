@@ -14,6 +14,7 @@ export const getName = state => settingsSelectors.getName(state.settings);
 export const getPhone = state => settingsSelectors.getPhone(state.settings);
 export const getMail = state => settingsSelectors.getMail(state.settings);
 export const getCode = state => settingsSelectors.getCode(state.settings);
+export const getLocation = state => settingsSelectors.getLocation(state.settings);
 export const getAutomatizedAudio = state => settingsSelectors.getAutomatizedAudio(state.settings);
 
 export const getQuestions = state => FAQSelectors.getQuestions(state.FAQ);

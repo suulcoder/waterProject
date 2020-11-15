@@ -10,12 +10,13 @@ import * as actions from '../../actions/settings'
 import { Actions } from 'react-native-router-flux';
 import { validateEmail } from '../../utils/validate';
 
-const Settings = ({name_,phone_,mail_,code_,language_,automatizedAudio,submit, setLanguage, setAudio}) => {
+const Settings = ({name_,phone_,mail_,code_,language_,location_,automatizedAudio,submit, setLanguage, setAudio}) => {
   
     const [name, changeName] = useState(name_);
     const [phone, changePhone] = useState(phone_);
     const [mail, changeEmail] = useState(mail_);
     const [code, changeCode] = useState(code_);
+    const [location, changeLocation] = useState(location_);
     const [language, changeLanguage] = useState(language_)
     const [audio, changeAudio] = useState(automatizedAudio)
 
@@ -78,11 +79,18 @@ const Settings = ({name_,phone_,mail_,code_,language_,automatizedAudio,submit, s
                 <TextInput
                     style={styles.input}
                     placeholderTextColor="#777777" 
+                    placeholder="Ubicación/Municipio/Departemento"
+                    value={location}
+                    onChangeText={changeLocation}   
+                />
+                <TextInput
+                    style={styles.input}
+                    placeholderTextColor="#777777" 
                     placeholder="Código de ecofiltro"
                     value={code}
                     onChangeText={changeCode}   
                 />
-                <TouchableOpacity style={styles.submit} onPress={() => submit({name,phone,mail,code})}>
+                <TouchableOpacity style={styles.submit} onPress={() => submit({name,phone,mail,code,location})}>
                     <Text style={styles.submitText}> {'Guardar'} </Text>
                 </TouchableOpacity>
             </ScrollView>
@@ -96,16 +104,18 @@ export default connect(
         name_: selectors.getName(state),
         phone_: selectors.getPhone(state),
         code_: selectors.getCode(state),
+        location_: selectors.getLocation(state),
         mail_: selectors.getMail(state),
         automatizedAudio: selectors.getAutomatizedAudio(state)
     }),
     dispatch=>({
-        submit({name,phone,mail,code}){
+        submit({name,phone,mail,code,location}){
             if(phone!=='' || validateEmail(mail)){
                 dispatch(actions.set_name(name))
                 dispatch(actions.set_code(code))
                 dispatch(actions.set_phone(phone))
                 dispatch(actions.set_mail(mail))
+                dispatch(actions.set_location(location))
                 Actions.pop(true)
             }
         },

@@ -8,12 +8,13 @@ import * as selectors from '../../reducers'
 import { validateEmail } from '../../utils/validate';
 import { Linking } from 'react-native';
 
-const Contact = ({name_,phone_,mail_,code_,submit}) => {
+const Contact = ({name_,phone_,mail_,code_,location_,submit}) => {
   
     const [name, changeName] = useState(name_);
     const [phone, changePhone] = useState(phone_);
     const [mail, changeEmail] = useState(mail_);
     const [code, changeCode] = useState(code_);
+    const [location, changeLocation] = useState(location_);
     const [message, changeMessage] = useState('');
 
     return (
@@ -70,6 +71,13 @@ const Contact = ({name_,phone_,mail_,code_,submit}) => {
                 <TextInput
                     style={styles.input}
                     placeholderTextColor="#777777" 
+                    placeholder="Ubicación/Municipio/Departemento"
+                    value={location}
+                    onChangeText={changeLocation}   
+                />
+                <TextInput
+                    style={styles.input}
+                    placeholderTextColor="#777777" 
                     placeholder="Código de ecofiltro"
                     value={code}
                     onChangeText={changeCode}   
@@ -82,7 +90,7 @@ const Contact = ({name_,phone_,mail_,code_,submit}) => {
                     value={message}
                     onChangeText={changeMessage}   
                 />
-                <TouchableOpacity style={styles.submit} onPress={() => submit({name,phone,mail,code,message})}>
+                <TouchableOpacity style={styles.submit} onPress={() => submit({name,phone,mail,code,message,location})}>
                     <Text style={styles.submitText}> {'Enviar'} </Text>
                 </TouchableOpacity>
             </ScrollView>
@@ -95,15 +103,16 @@ export default connect(
         name_: selectors.getName(state),
         phone_: selectors.getPhone(state),
         code_: selectors.getCode(state),
+        location_: selectors.getLocation(state),
         mail_: selectors.getMail(state),
     }),
     dispatch=>({
-        submit({name,phone,mail,code,message}){
+        submit({name,phone,mail,code,message,location}){
             if(phone!=='' || validateEmail(mail)){
                 const to = ['info@ecofiltro.com'] // Must add all the valid
                 email(to, { 
                     subject: 'Ecofiltro-App Contact',
-                    body: `name: ${name}\n phone: ${phone}\n email: ${mail}\n ecofiltro code: ${code}\n message: ${message}`
+                    body: `name: ${name}\n phone: ${phone}\n email: ${mail}\n location: ${location}\n ecofiltro code: ${code}\n message: ${message}`
                 })
             }
         }

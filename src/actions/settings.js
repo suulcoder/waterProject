@@ -25,6 +25,11 @@ export const set_code = (code) => ({
     payload: code
 })
 
+export const set_location = (location) => ({
+    type: types.LOCATION_SETTED,
+    payload: location
+})
+
 export const set_automatized_audio = (value) => ({
     type: types.AUTOMATIZED_AUDIO_SETTED,
     payload: value
