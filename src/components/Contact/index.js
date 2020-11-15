@@ -60,12 +60,12 @@ const Contact = ({name_,phone_,mail_,code_,submit}) => {
                     style={styles.input}
                     placeholderTextColor="#777777" 
                     keyboardType={'email-address'}
-                    placeholder="Email*"
+                    placeholder="Email"
                     value={mail}
                     onChangeText={changeEmail}   
                 />
                 {
-                    !validateEmail(mail) && mail!=='' && <Text style={styles.error}> {'WRITE A VALID EMAIL'} </Text>
+                    !validateEmail(mail) && mail!=='' && <Text style={styles.error}> {'ESCRIBE UN CORREO VÁLIDO'} </Text>
                 }
                 <TextInput
                     style={styles.input}
@@ -99,7 +99,7 @@ export default connect(
     }),
     dispatch=>({
         submit({name,phone,mail,code,message}){
-            if(validateEmail(mail)){
+            if(phone!=='' || validateEmail(mail)){
                 const to = ['info@ecofiltro.com'] // Must add all the valid
                 email(to, { 
                     subject: 'Ecofiltro-App Contact',

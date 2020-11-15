@@ -68,12 +68,12 @@ const Settings = ({name_,phone_,mail_,code_,language_,automatizedAudio,submit, s
                     style={styles.input}
                     placeholderTextColor="#777777" 
                     keyboardType={'email-address'}
-                    placeholder="Email*"
+                    placeholder="Email"
                     value={mail}
                     onChangeText={changeEmail}   
                 />
                 {
-                    !validateEmail(mail) && mail!=='' && <Text style={styles.error}> {'WRITE A VALID EMAIL'} </Text>
+                    !validateEmail(mail) && mail!=='' && <Text style={styles.error}> {'ESCRIBE UN CORREO VÁLIDO'} </Text>
                 }
                 <TextInput
                     style={styles.input}
@@ -101,7 +101,7 @@ export default connect(
     }),
     dispatch=>({
         submit({name,phone,mail,code}){
-            if(validateEmail(mail)){
+            if(phone!=='' || validateEmail(mail)){
                 dispatch(actions.set_name(name))
                 dispatch(actions.set_code(code))
                 dispatch(actions.set_phone(phone))
