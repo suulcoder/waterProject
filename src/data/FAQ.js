@@ -44,37 +44,37 @@ const FAQ = {
         type: 'Compra y pago'
     },
     7:{
-        id: 8,
+        id: 7,
         question: '¿Dónde se ubican las tiendas?', 
         answer: 'Tenemos tiendas en la mayor parte del territorio nacional. Puedes escribir distribuidor de Ecofiltro en el buscador de Google Maps y te indicará los distribuidores más cercanos a tu ubicación. También puedes utilizar nuestro mapa interactivo en esta misma aplicación en la página de contáctanos. También puedes escribir por whatsapp al número 3128-4550',
         type: 'Compra y pago'
     },
     8:{
-        id: 9,
+        id: 8,
         question: '¿Cómo debo usar el dispositivo?', 
         answer: 'La primera vez no se lava la unidad filtrante de barro, unicamente las piezas externas como la tapadera, el recipiente, el chorro y la base. Se lavaría con agua, jabón y cloro.',
         type: 'Servicio y Soporte'
     },
     9:{
-        id: 10,
+        id: 9,
         question: '¿Cómo cambio el filtro?', 
         answer: 'La unidad filtrante se cambia cada dos años, se compra unicamente el repuesto de barro.',
         type: 'Servicio y Soporte'
     },
     10:{
-        id: 11,
+        id: 10,
         question: '¿Cómo se que esta funcionando?', 
         answer: 'Cuando me brinda de uno a dos litros de agua por hora.',
         type: 'Servicio y Soporte'
     },
     11:{
-        id: 12,
+        id: 11,
         question: '¿Hay algún requisito específico para la fuente de agua?', 
         answer: 'Sí, no puede ser agua de cualquier fuente para consumo humano.',
         type: 'Tecnología del producto'
     },
     12:{
-        id: 7,
+        id: 12,
         question: '¿Cual es el precio de la unidad filtrante o repuesto del Ecofiltro?', 
         answer: 'El precio es Q.200.00',
         type: 'Compra y pago'

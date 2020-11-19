@@ -7,6 +7,7 @@ import email from 'react-native-email'
 import * as selectors from '../../reducers'
 import { validateEmail } from '../../utils/validate';
 import { Linking } from 'react-native';
+import moment from 'moment';
 
 const Contact = ({name_,phone_,mail_,code_,location_,submit}) => {
   
@@ -109,10 +110,17 @@ export default connect(
     dispatch=>({
         submit({name,phone,mail,code,message,location}){
             if(phone!=='' || validateEmail(mail)){
-                const to = ['info@ecofiltro.com'] // Must add all the valid
+                //const to = ['info@ecofiltro.com'] // Must add all the valid
+                const to = ['dele18607@uvg.edu.gt']
                 email(to, { 
                     subject: 'Ecofiltro-App Contact',
-                    body: `name: ${name}\n phone: ${phone}\n email: ${mail}\n location: ${location}\n ecofiltro code: ${code}\n message: ${message}`
+                    body: `name: ${name}\n 
+                    phone: ${phone}\n 
+                    email: ${mail}\n 
+                    location: ${location}\n 
+                    ecofiltro code: ${code}\n 
+                    message: ${message}\n
+                    consult date: ${moment().format('MMMM Do YYYY, h:mm:ss a')}`
                 })
             }
         }
