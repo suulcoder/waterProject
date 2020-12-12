@@ -79,7 +79,7 @@ const Settings = ({name_,phone_,mail_,code_,language_,location_,automatizedAudio
                 <TextInput
                     style={styles.input}
                     placeholderTextColor="#777777" 
-                    placeholder="Ubicación/Municipio/Departemento"
+                    placeholder="Ubicación/Municipio/Departamento"
                     value={location}
                     onChangeText={changeLocation}   
                 />

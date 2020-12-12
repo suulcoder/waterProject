@@ -72,7 +72,7 @@ const Contact = ({name_,phone_,mail_,code_,location_,submit}) => {
                 <TextInput
                     style={styles.input}
                     placeholderTextColor="#777777" 
-                    placeholder="Ubicación/Municipio/Departemento"
+                    placeholder="Ubicación/Municipio/Departamento"
                     value={location}
                     onChangeText={changeLocation}   
                 />
