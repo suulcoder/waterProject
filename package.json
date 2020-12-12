@@ -16,7 +16,7 @@
     "moment": "^2.29.1",
     "react": "~16.11.0",
     "react-dom": "~16.11.0",
-    "react-native": "~0.62.2",
+    "react-native": "^0.63.4",
     "react-native-email": "^1.1.0",
     "react-native-gesture-handler": "~1.6.1",
     "react-native-maps": "0.27.1",
