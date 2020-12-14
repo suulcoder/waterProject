@@ -79,7 +79,8 @@ public class PackageList {
       new RNSoundPackage(),
       new RNSoundPlayerPackage(),
       new ReactVideoPackage(),
-      new RNCWebViewPackage()
+      new RNCWebViewPackage(),
+      new RNSmtpMailerPackage()
     ));
   }
 }
