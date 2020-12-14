@@ -3,15 +3,11 @@ import { Text, View, Image, ScrollView, TextInput, TouchableOpacity, Button } fr
 import Header from '../Header';
 import React, { useState } from 'react';
 import styles from './styles'
-import email from 'react-native-email'
 import * as selectors from '../../reducers'
 import { validateEmail } from '../../utils/validate';
 import { Linking } from 'react-native';
 import moment from 'moment';
 import { Audio } from 'expo-av';
-//import Mailer from 'react-native-mail';
-//import MailCompose from 'react-native-mail-compose';
-// import RNSmtpMailer from "react-native-smtp-mailer";
 import * as MailComposer from "expo-mail-composer";
 
 const Contact = ({ name_, phone_, mail_, code_, location_, submit }) => {
@@ -27,30 +23,25 @@ const Contact = ({ name_, phone_, mail_, code_, location_, submit }) => {
 
     async function startRecording() {
         try {
-            console.log('Requesting permissions..');
             await Audio.requestPermissionsAsync();
             await Audio.setAudioModeAsync({
                 allowsRecordingIOS: true,
                 playsInSilentModeIOS: true,
             });
-            console.log('Starting recording..');
             const recording = new Audio.Recording();
             await recording.prepareToRecordAsync(Audio.RECORDING_OPTIONS_PRESET_HIGH_QUALITY);
             await recording.startAsync();
             setRecording(recording);
-            console.log('Recording started');
         } catch (err) {
             console.error('Failed to start recording', err);
         }
     }
 
     async function stopRecording() {
-        console.log('Stopping recording..');
         setRecording(undefined);
         await recording.stopAndUnloadAsync();
         const uri1 = recording.getURI();
         setUri(uri1);
-        console.log('Recording stopped and stored at', uri1, uri);
     }
 
     return (
@@ -127,7 +118,7 @@ const Contact = ({ name_, phone_, mail_, code_, location_, submit }) => {
                         onChangeText={changeMessage}
                     />
                     <Button
-                        title={recording ? 'Stop Recording' : 'Start Recording'}
+                        title={recording ? 'Detener grabación' : 'Iniciar grabación'}
                         onPress={recording ? stopRecording : startRecording}
                     />
                     <TouchableOpacity style={styles.submit} onPress={() => submit({ name, phone, mail, code, message, location, uri })}>
@@ -149,17 +140,16 @@ export default connect(
     }),
     dispatch => ({
         submit({ name, phone, mail, code, message, location, uri }) {
-            console.log("llego aca", uri.substr(8))
             if (phone !== '' || validateEmail(mail)) {
                 options = {
                     recipients: ['info@ecofiltro.com'],
                     subject: "Ecofiltro-App Contact",
-                    body: `name: ${name}\n 
-                    phone: ${phone}\n 
-                    email: ${mail}\n 
-                    location: ${location}\n 
-                    ecofiltro code: ${code}\n 
-                    message: ${message}\n
+                    body: `name: ${name} 
+                    phone: ${phone} 
+                    email: ${mail} 
+                    location: ${location} 
+                    ecofiltro code: ${code} 
+                    message: ${message}
                     consult date: ${moment().format('MMMM Do YYYY, h:mm:ss a')}`,
                     isHtml: false,
                     attachments: [uri]
