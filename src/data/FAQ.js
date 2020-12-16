@@ -4,7 +4,7 @@ const FAQ = {
     0:{
         id: 0,
         question: '¿Qué es un Ecofiltro?', 
-        answer: 'Es un purificador para agua hecho de materiales que la misma naturaleza produce, como el barro y el aserrin.',
+        answer: 'Es un purificador para agua hecho de materiales que la misma naturaleza produce, como el barro y el aserrín.',
         type: 'General'
     },
     1:{

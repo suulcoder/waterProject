@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { Text, View, Image, ScrollView, TextInput, TouchableOpacity } from 'react-native';
 import Header from '../Header';
-import React, { useState } from 'react';
+import React, { useState, createRef } from 'react';
 import styles from './styles'
 import * as selectors from '../../reducers'
 import { validateEmail } from '../../utils/validate';
@@ -74,7 +74,8 @@ const Contact = ({ name_, phone_, mail_, code_, location_, submit }) => {
                         placeholder="Nombre*"
                         value={name}
                         placeholderTextColor="#777777"
-                        onChangeText={changeName}
+                        onChangeText={text => changeName(text)}
+                        returnKeyType='next'
                     />
                     <TextInput
                         style={styles.input}
@@ -82,7 +83,8 @@ const Contact = ({ name_, phone_, mail_, code_, location_, submit }) => {
                         keyboardType={'numeric'}
                         placeholder="Teléfono*"
                         value={phone}
-                        onChangeText={changePhone}
+                        onChangeText={text => changePhone(text)}
+                        returnKeyType='next'
                     />
                     <TextInput
                         style={styles.input}
@@ -90,7 +92,8 @@ const Contact = ({ name_, phone_, mail_, code_, location_, submit }) => {
                         keyboardType={'email-address'}
                         placeholder="Email"
                         value={mail}
-                        onChangeText={changeEmail}
+                        onChangeText={text => changeEmail(text)}
+                        returnKeyType='next'
                     />
                     {
                         !validateEmail(mail) && mail !== '' && <Text style={styles.error}> {'ESCRIBE UN CORREO VÁLIDO'} </Text>
@@ -100,14 +103,16 @@ const Contact = ({ name_, phone_, mail_, code_, location_, submit }) => {
                         placeholderTextColor="#777777"
                         placeholder="Ubicación/Municipio/Departamento"
                         value={location}
-                        onChangeText={changeLocation}
+                        onChangeText={text => changeLocation(text)}
+                        returnKeyType='next'
                     />
                     <TextInput
                         style={styles.input}
                         placeholderTextColor="#777777"
                         placeholder="Código de ecofiltro"
                         value={code}
-                        onChangeText={changeCode}
+                        onChangeText={text => changeCode(text)}
+                        returnKeyType='next'
                     />
                     <TextInput
                         style={styles.input_multiline}
@@ -115,7 +120,8 @@ const Contact = ({ name_, phone_, mail_, code_, location_, submit }) => {
                         multiline={true}
                         placeholder="Mensaje*"
                         value={message}
-                        onChangeText={changeMessage}
+                        onChangeText={text => changeMessage(text)}
+                        returnKeyType='next'
                     />
                     <View style={styles.voicenote_section}>
                         <Text style={styles.text}>{'Presiona el botón para agregar mensaje de voz'}</Text>
