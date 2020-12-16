@@ -100,6 +100,13 @@ const styles = StyleSheet.create({
         padding: 10,
         width: '80%',
     },
+    voicenote_section: {
+        alignSelf: 'center',
+        margin: normalize(0.5),
+        padding: 5,
+        width: '80%',
+        alignItems: 'center',
+    },
     input_multiline: {
         alignSelf: 'center',
         backgroundColor: colors.white,
@@ -127,9 +134,10 @@ const styles = StyleSheet.create({
         backgroundColor: colors.primaryD,
         borderRadius: normalize(20),
         color: colors.white,
-        padding:normalize(5),
-        paddingBottom: normalize(1),
-        paddingTop: normalize(1),
+        padding: normalize(10),
+        paddingBottom: normalize(1.5),
+        paddingTop: normalize(1.5),
+        textAlign: 'center',
     },
     submit:{
         alignSelf:'flex-end',
@@ -137,6 +145,12 @@ const styles = StyleSheet.create({
         marginBottom: normalize(10),
         marginTop: normalize(5),
         right: '15%',
+    },
+    record:{
+        borderRadius: normalize(15),
+        marginBottom: normalize(5),
+        marginTop: normalize(5),
+        right: '20%',
     },
     geo:{
         alignSelf:'center',

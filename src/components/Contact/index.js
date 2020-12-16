@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { Text, View, Image, ScrollView, TextInput, TouchableOpacity, Button } from 'react-native';
+import { Text, View, Image, ScrollView, TextInput, TouchableOpacity } from 'react-native';
 import Header from '../Header';
 import React, { useState } from 'react';
 import styles from './styles'
@@ -117,10 +117,12 @@ const Contact = ({ name_, phone_, mail_, code_, location_, submit }) => {
                         value={message}
                         onChangeText={changeMessage}
                     />
-                    <Button
-                        title={recording ? 'Detener grabación' : 'Iniciar grabación'}
-                        onPress={recording ? stopRecording : startRecording}
-                    />
+                    <View style={styles.voicenote_section}>
+                        <Text style={styles.text}>{'Presiona el botón para agregar mensaje de voz'}</Text>
+                        <TouchableOpacity style={styles.record} onPress={recording ? stopRecording : startRecording}>
+                            <Text style={styles.submitText}>{recording ? 'Detener grabación' : 'Iniciar grabación'}</Text>
+                        </TouchableOpacity>
+                    </View>
                     <TouchableOpacity style={styles.submit} onPress={() => submit({ name, phone, mail, code, message, location, uri })}>
                         <Text style={styles.submitText}> {'Enviar'} </Text>
                     </TouchableOpacity>
