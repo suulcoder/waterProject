@@ -1104,13 +1104,6 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@egjs/hammerjs@^2.0.17":
-  version "2.0.17"
-  resolved "https://registry.yarnpkg.com/@egjs/hammerjs/-/hammerjs-2.0.17.tgz#5dc02af75a6a06e4c2db0202cae38c9263895124"
-  integrity sha512-XQsZgjm2EcVUiZQf11UBJQfmZeEmOW8DpI1gsFeln6w0ae0ii4dMQEQ0kjl6DspdWX1aGY1/loyXnP0JS06e/A==
-  dependencies:
-    "@types/hammerjs" "^2.0.36"
-
 "@expo/babel-preset-cli@0.2.17":
   version "0.2.17"
   resolved "https://registry.yarnpkg.com/@expo/babel-preset-cli/-/babel-preset-cli-0.2.17.tgz#308ce8a8519e10e3756eb7b5d550bcda99b24159"
@@ -2075,11 +2068,6 @@
   integrity sha512-AiHRaEB50LQg0pZmm659vNBb9f4SJ0qrAnteuzhSeAUcJKxoYgEnprg/83kppCnc2zvtCKbdZry1a5pVY3lOTQ==
   dependencies:
     "@types/node" "*"
-
-"@types/hammerjs@^2.0.36":
-  version "2.0.36"
-  resolved "https://registry.yarnpkg.com/@types/hammerjs/-/hammerjs-2.0.36.tgz#17ce0a235e9ffbcdcdf5095646b374c2bf615a4c"
-  integrity sha512-7TUK/k2/QGpEAv/BCwSHlYu3NXZhQ9ZwBYpzr9tjlPIL2C5BeGhH3DmVavRx3ZNyELX5TLC91JTz/cen6AAtIQ==
 
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0", "@types/istanbul-lib-coverage@^2.0.1":
   version "2.0.3"
@@ -3436,11 +3424,6 @@ domexception@^1.0.1:
   integrity sha512-raigMkn7CJNNo6Ihro1fzG7wr3fHuYVytzquZKX5n0yizGsTcYgzdIUwj1X9pK0VvjeihV+XiclP+DjwbsSKug==
   dependencies:
     webidl-conversions "^4.0.2"
-
-dooboolab-welcome@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/dooboolab-welcome/-/dooboolab-welcome-1.2.0.tgz#295818ce85a8e97dc90c0ec0510b4008e2d722dc"
-  integrity sha512-XgEbjJHAsKLge/e8jtuHsv84Ovg1Gx0GvnOTOmOlVGV1643nduTAkT3fyo/mxKbzvyXBr47RHaJAY4R2toI0UA==
 
 ecc-jsbn@~0.1.1:
   version "0.1.2"
@@ -6942,7 +6925,7 @@ punycode@^2.1.0, punycode@^2.1.1:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
-qs@6.9.4, qs@^6.5.0:
+qs@^6.5.0:
   version "6.9.4"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.9.4.tgz#9090b290d1f91728d3c22e54843ca44aea5ab687"
   integrity sha512-A1kFqHekCTM7cz0udomYUoYNWjBebHm/5wzU/XqrBRBNWectVH0QIiN+NEcZ0Dte5hvzHwbr8+XQmguPhJ6WdQ==
@@ -7008,49 +6991,10 @@ react-native-appearance@~0.3.3:
     invariant "^2.2.4"
     use-subscription "^1.0.0"
 
-react-native-audio-recorder-player@^2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/react-native-audio-recorder-player/-/react-native-audio-recorder-player-2.6.0.tgz#7cd4b302547afae231639a4769e436a0987006ce"
-  integrity sha512-MdbekBj5iKaDy2QXax8xDXcr952yVZrkqwUvQ36ffQWNsdUH6nKvlTJz70ELW6tJO40EbI4I3OoNnV2SlwOtWw==
-  dependencies:
-    dooboolab-welcome "^1.2.0"
-
-react-native-email@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/react-native-email/-/react-native-email-1.1.0.tgz#b41ddd3d67476fb6d703d65f250f0cc9eff747a8"
-  integrity sha512-vyH8gkk+Rz/l7QF76bSr6EclBu1yF7DMWejfspGdbOsDe6/6TGbReP0t4zx2FXR4mh6h4GjmZNPwFEwycepGRA==
-  dependencies:
-    qs "6.9.4"
-
-react-native-gesture-handler@~1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.6.1.tgz#678e2dce250ed66e93af409759be22cd6375dd17"
-  integrity sha512-gQgIKhDiYf754yzhhliagLuLupvGb6ZyBdzYzr7aus3Fyi87TLOw63ers+r4kGw0h26oAWTAdHd34JnF4NeL6Q==
-  dependencies:
-    "@egjs/hammerjs" "^2.0.17"
-    hoist-non-react-statics "^2.3.1"
-    invariant "^2.2.4"
-    prop-types "^15.7.2"
-
-react-native-mail-compose@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/react-native-mail-compose/-/react-native-mail-compose-0.0.6.tgz#03716429103fbc17cf9d1b6ebe43cbb028458296"
-  integrity sha512-00vJhqanyBtiF0g8i3mKScE/EXbtlHoQO/4O+HH/ENPNlegPcM2i8KL551sQnafn4Qc31XEbIiQo6xy+f8hKYQ==
-
-react-native-mail@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/react-native-mail/-/react-native-mail-6.0.0.tgz#7e8014cccff794098f8de012fc822c57d28f7d72"
-  integrity sha512-aQjCxKmPIwwX+voC2oK5Lj54Gfuvkodhp9lYFpPMxYYCXXtADuuZMsNWN7jSeqVuQHQzJZvYhgRtYqx0UDoKoQ==
-
 react-native-maps@0.27.1:
   version "0.27.1"
   resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.27.1.tgz#2f10cd417bb2fd938c9e015b1c9b6d9b1a44b97f"
   integrity sha512-HygBkZBecTnIVRYrSiLRAvu4OmXOYso/A7c6Cy73HkOh9CgGV8Ap5eBea24tvmFGptjj5Hg8AJ94/YbmWK1Okw==
-
-react-native-media-controls@^2.0.3:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/react-native-media-controls/-/react-native-media-controls-2.1.0.tgz#70901894790fe304395e503b0d48d686130e1ec3"
-  integrity sha512-g0dx3JGVh1+HXsmrYvXMeHqtRbcD/jBkfqnPws//Sov83MGyfQfRXwcNNPOU9hmd1u3Tjk+os18RVPLaXLquHQ==
 
 react-native-reanimated@~1.9.0:
   version "1.9.0"
@@ -7092,21 +7036,6 @@ react-native-screens@~2.9.0:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-2.9.0.tgz#ead2843107ba00fee259aa377582e457c74f1f3b"
   integrity sha512-5MaiUD6HA3nzY3JbVI8l3V7pKedtxQF3d8qktTVI0WmWXTI4QzqOU8r8fPVvfKo3MhOXwhWBjr+kQ7DZaIQQeg==
-
-react-native-smtp-mailer@^1.2.4:
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/react-native-smtp-mailer/-/react-native-smtp-mailer-1.2.4.tgz#86dae238f93ed98832fefc88636fdbc977a61688"
-  integrity sha512-HLgqevfRWxSUmy5lFFCff5/9URbg2mN/WXVuMIBSqGko7brcuRGk18svghqFVzP+RMFeYZrDABHW11rAmaQHog==
-
-react-native-sound-player@^0.10.4:
-  version "0.10.4"
-  resolved "https://registry.yarnpkg.com/react-native-sound-player/-/react-native-sound-player-0.10.4.tgz#982822b23de39c05debe9c8aa60b0f7a0048799f"
-  integrity sha512-SOKRryMnRKP0zii4oWkNhBTEyvZqaKF7bzDKpj4CqzBI78u92ivMjWXXIEw70v98RiWGJ2S4gB99iErPPo/5BQ==
-
-react-native-sound@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/react-native-sound/-/react-native-sound-0.11.0.tgz#ad60b55ba8c6dc89917f381ad3713f2738de530f"
-  integrity sha512-4bGAZfni6E2L695NQjOZwNLBQGXgBGYC4Sy+h99K5h0HqNZjCqR0+aLel+ezASxEJDpaH83gylNObXpiqJgdwg==
 
 react-native-tab-view@^2.11.0:
   version "2.15.1"

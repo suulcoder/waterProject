@@ -55,7 +55,8 @@ const Settings = ({name_,phone_,mail_,code_,language_,location_,automatizedAudio
                     placeholder="Nombre*"
                     value={name}
                     placeholderTextColor="#777777" 
-                    onChangeText={changeName}   
+                    onChangeText={text => changeName(text)}
+                    returnKeyType='next'   
                 />
                 <TextInput
                     style={styles.input}
@@ -63,7 +64,8 @@ const Settings = ({name_,phone_,mail_,code_,language_,location_,automatizedAudio
                     keyboardType={'numeric'}x
                     placeholder="Teléfono*"
                     value={phone}
-                    onChangeText={changePhone}   
+                    onChangeText={text => changePhone(text)}
+                    returnKeyType='next'   
                 />
                 <TextInput
                     style={styles.input}
@@ -71,7 +73,8 @@ const Settings = ({name_,phone_,mail_,code_,language_,location_,automatizedAudio
                     keyboardType={'email-address'}
                     placeholder="Email"
                     value={mail}
-                    onChangeText={changeEmail}   
+                    onChangeText={text => changeEmail(text)}
+                    returnKeyType='next'   
                 />
                 {
                     !validateEmail(mail) && mail!=='' && <Text style={styles.error}> {'ESCRIBE UN CORREO VÁLIDO'} </Text>
@@ -81,16 +84,18 @@ const Settings = ({name_,phone_,mail_,code_,language_,location_,automatizedAudio
                     placeholderTextColor="#777777" 
                     placeholder="Ubicación/Municipio/Departamento"
                     value={location}
-                    onChangeText={changeLocation}   
+                    onChangeText={text => changeLocation(text)}
+                    returnKeyType='next'   
                 />
                 <TextInput
                     style={styles.input}
                     placeholderTextColor="#777777" 
                     placeholder="Código de ecofiltro"
                     value={code}
-                    onChangeText={changeCode}   
+                    onChangeText={text => changeCode(text)}
+                    returnKeyType='next'   
                 />
-                <TouchableOpacity style={styles.submit} onPress={() => submit({name,phone,mail,code,location})}>
+                <TouchableOpacity style={styles.submit} onPress={() => submit({name, phone, mail, code, location})}>
                     <Text style={styles.submitText}> {'Guardar'} </Text>
                 </TouchableOpacity>
             </ScrollView>
