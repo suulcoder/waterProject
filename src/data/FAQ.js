@@ -10,12 +10,12 @@ const FAQ = {
     1:{
         id: 1,
         question: '¿Qué hace el Ecofiltro?', 
-        answer: 'Purifica agua de cualquier fuente eliminando microbios, sedimentos, mal olor, mal sabor y color.',
+        answer: 'Purifica agua de cualquier fuente eliminando los microbios, sedimentos, mal olor, mal sabor y color.',
         type: 'General'
     },
     2:{
         id: 2,
-        question: '¿Porqué necesito un Ecofiltro?', 
+        question: '¿Por qué necesito un Ecofiltro?', 
         answer: 'Para tener agua purficada sin salir de casa y a bajo costo.',
         type: 'General'
     },
@@ -33,20 +33,20 @@ const FAQ = {
     },
     5:{
         id: 5,
-        question: '¿Si quiero comprar varios Con quién debo hablar?', 
+        question: 'Si quiero comprar varios, ¿Con quién debo hablar?', 
         answer: 'Puedes escribir por whatsapp al número 3128-4550 o por correo electrónico a mreyes@ecofiltro.com',
         type: 'Compra y pago'
     },
     6:{
         id: 6,
-        question: '¿Cual es el precio de Ecofiltro?', 
+        question: '¿Cuál es el precio de Ecofiltro?', 
         answer: 'El modelo más común tiene un precio de Q.350.00',
         type: 'Compra y pago'
     },
     7:{
         id: 7,
         question: '¿Dónde se ubican las tiendas?', 
-        answer: 'Tenemos tiendas en la mayor parte del territorio nacional. Puedes escribir distribuidor de Ecofiltro en el buscador de Google Maps y te indicará los distribuidores más cercanos a tu ubicación. También puedes utilizar nuestro mapa interactivo en esta misma aplicación en la página de contáctanos. También puedes escribir por whatsapp al número 3128-4550',
+        answer: 'Tenemos tiendas en la mayor parte del territorio nacional. Puedes escribir distribuidor de Ecofiltro en el buscador de Google Maps y te indicará los distribuidores más cercanos a tu ubicación. También puedes utilizar nuestro mapa interactivo en esta misma aplicación en la página de contáctanos. También puedes escribir por whatsapp al número 3128-4550.',
         type: 'Compra y pago'
     },
     8:{
@@ -58,7 +58,7 @@ const FAQ = {
     9:{
         id: 9,
         question: '¿Cómo cambio el filtro?', 
-        answer: 'La unidad filtrante se cambia cada dos años, se compra unicamente el repuesto de barro.',
+        answer: 'La unidad filtrante se cambia cada dos años, se compra únicamente el repuesto de barro.',
         type: 'Servicio y Soporte'
     },
     10:{
@@ -75,7 +75,7 @@ const FAQ = {
     },
     12:{
         id: 12,
-        question: '¿Cual es el precio de la unidad filtrante o repuesto del Ecofiltro?', 
+        question: '¿Cuál es el precio de la unidad filtrante o repuesto del Ecofiltro?', 
         answer: 'El precio es Q.200.00',
         type: 'Compra y pago'
     }
