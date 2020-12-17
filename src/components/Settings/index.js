@@ -50,7 +50,7 @@ const Settings = ({ name_, phone_, mail_, code_, language_, location_, automatiz
                                             value: null,
                                             color: '#9EA0A4',
                                         }}
-                                        onValueChange={(value) => console.log(value)}
+                                        onValueChange={(value) => setLanguage_(value)}
                                         items={[
                                             { label: 'Español', value: 'Español', color: 'black' },
                                         ]}

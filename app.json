@@ -8,6 +8,10 @@
       "package": "com.suulcoder.ecofiltro",
       "versionCode": 1
     },
+    "ios": {
+      "bundleIdentifier": "com.suulcoder.ecofiltro",
+      "buildNumber": "1.0.0"
+    },
     "sdkVersion": "38.0.0",
     "platforms": [
       "ios",
