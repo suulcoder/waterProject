@@ -1,15 +1,15 @@
 import { Actions } from 'react-native-router-flux';
 import { connect } from 'react-redux';
-import {Text, View, Image, ScrollView, TextInput, TouchableOpacity } from 'react-native';
+import { Text, View, Image, ScrollView, TextInput, TouchableOpacity } from 'react-native';
 import * as actions from '../../actions/FAQ'
 import * as selectors from '../../reducers'
 import Header from '../Header';
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './styles';
 import { Audio } from 'expo-av';
 import { normalize } from '../../utils/normalize';
 
-const FAQ = ({questions, search, settings}) => {
+const FAQ = ({ questions, search, settings }) => {
 
     useEffect(() => {
         // returned function will be called on component unmount 
@@ -20,8 +20,8 @@ const FAQ = ({questions, search, settings}) => {
                 //do nothing
             }
         }
-      }, [])
-  
+    }, [])
+
     const [query, changeQuery] = useState('');
     const [selected, changeSelected] = useState();
     const [isPlaying, changeIsPlaying] = useState(false);
@@ -33,13 +33,13 @@ const FAQ = ({questions, search, settings}) => {
     }
 
     const select = (id) => {
-        if(selected===id){
+        if (selected === id) {
             changeSelected(null)
         }
-        else{
+        else {
             changeSelected(id)
         }
-        if(settings){
+        if (settings) {
             play(id)
         }
     }
@@ -82,15 +82,15 @@ const FAQ = ({questions, search, settings}) => {
         }
     }
 
-    async function play(file){ 
+    async function play(file) {
         try {
-            if(isPlaying){
+            if (isPlaying) {
                 await soundObject.pauseAsync()
                 changeIsPlaying(false)
                 await soundObject.unloadAsync();
                 setSoundObject(soundObject)
             }
-            else{
+            else {
                 await soundObject.loadAsync(file);
                 changeIsPlaying(true)
                 await soundObject.playAsync();
@@ -102,60 +102,70 @@ const FAQ = ({questions, search, settings}) => {
     }
 
     return (
-    <View style={styles.container}>
-        <Header></Header>
-        <View style={styles.content}>
-            <Text style={styles.title}>
-                {'Preguntas Frecuentes'}
-            </Text>
-            <TextInput
-                style={styles.input}
-                placeholderTextColor="#777777" 
-                placeholder="Busca una pregunta aquí"
-                value={query}
-                onChangeText={searchQuery}   
-            />
-            <ScrollView style={styles.questions}>
-                {Object.keys(questions).map(section=>
+        <View style={styles.container}>
+            <Header></Header>
+            <View style={styles.content}>
+                <Text style={styles.title}>
+                    {'Preguntas Frecuentes'}
+                </Text>
+                <TextInput
+                    style={styles.input}
+                    placeholderTextColor="#777777"
+                    placeholder="Busca una pregunta aquí"
+                    value={query}
+                    onChangeText={searchQuery}
+                />
+                <ScrollView style={styles.questions}>
+                    {Object.keys(questions).map(section =>
                         <View style={styles.section} >
                             <Text style={styles.title}>
                                 {section}
                             </Text>
-                            {questions[section].map(question=>
+                            {questions[section].map(question =>
                                 <View key={question.id}>
-                                    <TouchableOpacity onPress={()=>select(question.id)}>
-                                        <Text  style={styles.text}> {question.question} </Text> 
+                                    <TouchableOpacity onPress={() => select(question.id)}>
+                                        <Text style={styles.text}> {question.question} </Text>
                                     </TouchableOpacity>
-                                    {(selected===question.id) && 
-                                        <View style={styles.answer}>
-                                            <TouchableOpacity onPress={()=>play(getFileByID(question.id))}>
-                                                <Image style={{
-                                                    height:normalize(50),
-                                                    width:normalize(50),
-                                                }} source={isPlaying?require('../../public/icons/pause.png'):require('../../public/icons/sound.png')} ></Image>
-                                            </TouchableOpacity>
-                                            <Text style={styles.answerText} > {question.answer} </Text>
-                                        </View> 
-                                    }    
+                                    {(selected === question.id) &&
+                                        <View>
+                                            <View style={styles.answer}>
+                                                <TouchableOpacity onPress={() => play(getFileByID(question.id))}>
+                                                    <Image style={{
+                                                        height: normalize(50),
+                                                        width: normalize(50),
+                                                    }} source={isPlaying ? require('../../public/icons/pause.png') : require('../../public/icons/sound.png')} ></Image>
+                                                </TouchableOpacity>
+                                                <Text style={styles.answerText} > {question.answer} </Text>
+                                            </View>
+                                            {
+                                                (selected === 7) &&
+                                                <TouchableOpacity style={styles.viewLocation}
+                                                    onPress={() => Linking.openURL('https://www.google.com.gt/maps/search/distribuidor+de+ecofiltro/@14.9099828,-90.7388792,8z')}>
+                                                    <Text style={styles.submitText}> {'Haz click aquí para ver los puntos de distribuición'} </Text>
+                                                </TouchableOpacity>
+                                            }
+                                        </View>
+                                    }
                                 </View>
                             )}
                         </View>
-                )}
-                <TouchableOpacity>
-                    <Text style={styles.link} onPress={()=>Actions.Contact(true)} > {'¿Tu pregunta no se encuentra en la lista? Contáctanos'} </Text>
-                </TouchableOpacity>
-            </ScrollView>
+                    )}
+                    <TouchableOpacity>
+                        <Text style={styles.link} onPress={() => Actions.Contact(true)} > {'¿Tu pregunta no se encuentra en la lista? Contáctanos'} </Text>
+                    </TouchableOpacity>
+                </ScrollView>
+            </View>
         </View>
-    </View>
-)};
+    )
+};
 
 export default connect(
     state => ({
         questions: selectors.getQuestions(state),
         settings: selectors.getAutomatizedAudio(state),
     }),
-    dispatch=>({
-        search(query){
+    dispatch => ({
+        search(query) {
             dispatch(actions.search_question(query))
         }
     }),

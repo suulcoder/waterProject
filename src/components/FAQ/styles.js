@@ -156,6 +156,18 @@ const styles = StyleSheet.create({
         fontSize: normalize(3),
         marginBottom: normalize(0.25),
     },
+    viewLocation:{
+        alignSelf: 'center',
+        textAlign: 'center',
+        backgroundColor: colors.primaryB,
+        textDecorationLine: 'underline',
+        borderRadius: normalize(1),
+        color: colors.white,
+        padding:normalize(6),
+        paddingBottom: normalize(1),
+        paddingTop: normalize(1),
+        marginBottom: normalize(1),
+    },
   });
   
 export default styles
