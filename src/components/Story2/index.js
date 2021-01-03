@@ -14,7 +14,7 @@ const Story2 = ({}) => (
             {'Testimonial familiar anónimo'}
         </Text>
         <Video
-            source={require('../../public/video/experiencias2.mp4')}
+            source={require('../../../assets/video/experiencias2.mp4')}
             shouldPlay
             useNativeControls
             style={styles.video}

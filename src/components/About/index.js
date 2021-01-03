@@ -24,7 +24,7 @@ const About = ({ }) => (
                                 height: normalize(250),
                                 width: normalize(250),
                                 borderRadius: normalize(50),
-                            }} source={require('../../public/img/howToUse.jpg')} ></Image>
+                            }} source={require('../../../assets/img/howToUse.jpg')} ></Image>
                         </TouchableOpacity>
                         <Text style={styles.text}> {'¿Cómo usar el Ecofiltro?'} </Text>
                     </View>
@@ -35,7 +35,7 @@ const About = ({ }) => (
                                 height: normalize(250),
                                 width: normalize(250),
                                 borderRadius: normalize(50),
-                            }} source={require('../../public/img/stories_.jpeg')} ></Image>
+                            }} source={require('../../../assets/img/stories_.jpeg')} ></Image>
                         </TouchableOpacity>
                         <Text style={styles.text}> {'Testimoniales'} </Text>
                     </View>
@@ -48,7 +48,7 @@ const About = ({ }) => (
                                 height: normalize(130),
                                 width: normalize(60),
                             }}
-                                source={require('../../public/icons/mapa.png')} ></Image>
+                                source={require('../../../assets/icons/mapa.png')} ></Image>
                         </TouchableOpacity>
                         <Text style={styles.text}> {'¡Encuentra el punto de venta más cercano a tí!'} </Text>
                     </View>
@@ -59,7 +59,7 @@ const About = ({ }) => (
                                 height: normalize(130),
                                 width: normalize(60),
                             }}
-                                source={require('../../public/img/productos.png')} ></Image>
+                                source={require('../../../assets/img/productos.png')} ></Image>
                         </TouchableOpacity>
                         <Text style={styles.text}> {'Descubre los diferentes productos que ofrecemos'} </Text>
                     </View>
@@ -72,7 +72,7 @@ const About = ({ }) => (
                                 height: normalize(130),
                                 width: normalize(60),
                             }}
-                                source={require('../../public/icons/about.png')} ></Image>
+                                source={require('../../../assets/icons/about.png')} ></Image>
                         </TouchableOpacity>
                         <Text style={styles.text}> {'¿Cómo funciona Ecofiltro?'} </Text>
                     </View>
@@ -82,7 +82,7 @@ const About = ({ }) => (
                                 alignSelf: 'center',
                                 height: normalize(90),
                                 width: normalize(95),
-                            }} source={require('../../public/icons/question.png')} ></Image>
+                            }} source={require('../../../assets/icons/question.png')} ></Image>
                         </TouchableOpacity>
                         <Text style={styles.text}> {'Preguntas frecuentes'} </Text>
                     </View>

@@ -52,31 +52,31 @@ const FAQ = ({ questions, search, settings }) => {
     const getFileByID = (id) => {
         switch (id) {
             case 0:
-                return require(`../../public/audio/ecofiltro_faq_0.m4a`)
+                return require(`../../../assets/audio/ecofiltro_faq_0.m4a`)
             case 1:
-                return require(`../../public/audio/ecofiltro_faq_1.m4a`)
+                return require(`../../../assets/audio/ecofiltro_faq_1.m4a`)
             case 2:
-                return require(`../../public/audio/ecofiltro_faq_2.m4a`)
+                return require(`../../../assets/audio/ecofiltro_faq_2.m4a`)
             case 3:
-                return require(`../../public/audio/ecofiltro_faq_3.m4a`)
+                return require(`../../../assets/audio/ecofiltro_faq_3.m4a`)
             case 4:
-                return require(`../../public/audio/ecofiltro_faq_4.m4a`)
+                return require(`../../../assets/audio/ecofiltro_faq_4.m4a`)
             case 5:
-                return require(`../../public/audio/ecofiltro_faq_5.m4a`)
+                return require(`../../../assets/audio/ecofiltro_faq_5.m4a`)
             case 6:
-                return require(`../../public/audio/ecofiltro_faq_6.m4a`)
+                return require(`../../../assets/audio/ecofiltro_faq_6.m4a`)
             case 7:
-                return require(`../../public/audio/ecofiltro_faq_7.m4a`)
+                return require(`../../../assets/audio/ecofiltro_faq_7.m4a`)
             case 8:
-                return require(`../../public/audio/ecofiltro_faq_8.m4a`)
+                return require(`../../../assets/audio/ecofiltro_faq_8.m4a`)
             case 9:
-                return require(`../../public/audio/ecofiltro_faq_9.m4a`)
+                return require(`../../../assets/audio/ecofiltro_faq_9.m4a`)
             case 10:
-                return require(`../../public/audio/ecofiltro_faq_10.m4a`)
+                return require(`../../../assets/audio/ecofiltro_faq_10.m4a`)
             case 11:
-                return require(`../../public/audio/ecofiltro_faq_11.m4a`)
+                return require(`../../../assets/audio/ecofiltro_faq_11.m4a`)
             case 12:
-                return require(`../../public/audio/ecofiltro_faq_12.m4a`)
+                return require(`../../../assets/audio/ecofiltro_faq_12.m4a`)
             default:
                 break;
         }
@@ -133,7 +133,7 @@ const FAQ = ({ questions, search, settings }) => {
                                                     <Image style={{
                                                         height: normalize(50),
                                                         width: normalize(50),
-                                                    }} source={isPlaying ? require('../../public/icons/pause.png') : require('../../public/icons/sound.png')} ></Image>
+                                                    }} source={isPlaying ? require('../../../assets/icons/pause.png') : require('../../../assets/icons/sound.png')} ></Image>
                                                 </TouchableOpacity>
                                                 <Text style={styles.answerText} > {question.answer} </Text>
                                             </View>

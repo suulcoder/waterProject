@@ -36,7 +36,7 @@ const Bacterias = ({settings, back}) => {
                 setSoundObject(soundObject)
             }
             else{
-                await soundObject.loadAsync(require(`../../public/audio/bacterias.m4a`));
+                await soundObject.loadAsync(require(`../../../assets/audio/bacterias.m4a`));
                 changeIsPlaying(true)
                 await soundObject.playAsync();
                 setSoundObject(soundObject)
@@ -50,17 +50,17 @@ const Bacterias = ({settings, back}) => {
     <View style={styles.container}>
         <View style={styles.header}>
             <TouchableOpacity onPress={back}>
-                <Image style={styles.icon} source={require('../../public/icons/back.png')} ></Image>
+                <Image style={styles.icon} source={require('../../../assets/icons/back.png')} ></Image>
             </TouchableOpacity>  
-            <Image style={styles.logo} source={require('../../public/logo/logo.png')} ></Image>
+            <Image style={styles.logo} source={require('../../../assets/logo/logo.png')} ></Image>
             <TouchableOpacity onPress={play}>
-                <Image style={styles.icon_sound} source={isPlaying?require('../../public/icons/pause.png'):require('../../public/icons/sound.png')} ></Image>
+                <Image style={styles.icon_sound} source={isPlaying?require('../../../assets/icons/pause.png'):require('../../../assets/icons/sound.png')} ></Image>
             </TouchableOpacity>  
         </View>
             <ScrollView
             contentContainerStyle={{alignItems: 'center', backgroundColor:'#44AFFD'}}>
                 <Image
-                source={require('../../public/img/bacterias.png')}
+                source={require('../../../assets/img/bacterias.png')}
                 resizeMode='stretch'
                 style={{width: '100%',
                 height: undefined,

@@ -7,11 +7,11 @@ import styles from './styles'
 const Header = ({home, back}) => (
     <View style={styles.header}>
         <TouchableOpacity onPress={back}>
-            <Image style={styles.icon} source={require('../../public/icons/back.png')} ></Image>
+            <Image style={styles.icon} source={require('../../../assets/icons/back.png')} ></Image>
         </TouchableOpacity>  
-        <Image style={styles.logo} source={require('../../public/logo/logo.png')} ></Image>
+        <Image style={styles.logo} source={require('../../../assets/logo/logo.png')} ></Image>
         <TouchableOpacity onPress={home}>
-            <Image style={styles.icon} source={require('../../public/icons/home.png')} ></Image>
+            <Image style={styles.icon} source={require('../../../assets/icons/home.png')} ></Image>
         </TouchableOpacity>  
     </View>
 );

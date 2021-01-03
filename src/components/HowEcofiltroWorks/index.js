@@ -14,7 +14,7 @@ const HowEcofiltroWorks = ({}) => (
             {'¿Cómo funciona un ecofiltro?'}
         </Text>
         <Video
-            source={require('../../public/video/ecofiltro.mp4')}
+            source={require('../../../assets/video/ecofiltro.mp4')}
             shouldPlay
             useNativeControls
             style={styles.video}

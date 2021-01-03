@@ -14,7 +14,7 @@ const Story3 = ({}) => (
             {'La historia de Doña Catalina Pop'}
         </Text>
         <Video
-            source={require('../../public/video/experiencias3.mp4')}
+            source={require('../../../assets/video/experiencias3.mp4')}
             shouldPlay
             useNativeControls
             style={styles.video}

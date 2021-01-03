@@ -22,7 +22,7 @@ const Info = ({}) => (
                             alignSelf: 'center',
                             height:normalize(100),
                             width:normalize(180),
-                        }} source={require('../../public/icons/coliform.png')} ></Image>
+                        }} source={require('../../../assets/icons/coliform.png')} ></Image>
                     </TouchableOpacity>
                     <Text style={styles.text}> {'Microbios en el agua'} </Text>
                 </View>
@@ -32,7 +32,7 @@ const Info = ({}) => (
                             alignSelf: 'center',
                             height:normalize(150),
                             width:normalize(150),
-                        }} source={require('../../public/icons/health.png')} ></Image>
+                        }} source={require('../../../assets/icons/health.png')} ></Image>
                     </TouchableOpacity>
                     <Text style={styles.text}> {'Agua y tu salud'} </Text>
                 </View>
@@ -45,7 +45,7 @@ const Info = ({}) => (
                             height:normalize(140),
                             width:normalize(140),
                             borderRadius: normalize(50),
-                        }} source={require('../../public/icons/pollution.png')} ></Image>
+                        }} source={require('../../../assets/icons/pollution.png')} ></Image>
                     </TouchableOpacity>
                     <Text style={styles.text}> {'Otros contaminantes'} </Text>
                 </View>

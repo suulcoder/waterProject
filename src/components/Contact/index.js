@@ -61,7 +61,7 @@ const Contact = ({ name_, phone_, mail_, code_, location_, submit }) => {
                     </View>
                     <View style={styles.row}>
                         <View style={styles.circle}>
-                            <Image style={styles.icon} source={require('../../public/icons/location.png')} ></Image>
+                            <Image style={styles.icon} source={require('../../../assets/icons/location.png')} ></Image>
                         </View>
                         <View style={styles.info}>
                             <Text style={styles.text}> {'Tel.: (+502) 7955-8555'} </Text>

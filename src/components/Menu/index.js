@@ -18,7 +18,7 @@ const Menu = ({ about, contact, info }) => (
                         alignSelf: 'center',
                         height: normalize(100),
                         width: normalize(100),
-                    }} source={require('../../public/icons/test.png')} ></Image>
+                    }} source={require('../../../assets/icons/test.png')} ></Image>
                 </TouchableOpacity>
                 <Text style={styles.text}> {'Evalúa el agua'} </Text>
             </View>
@@ -29,7 +29,7 @@ const Menu = ({ about, contact, info }) => (
                         height: normalize(100),
                         width: normalize(100),
                     }}
-                        source={require('../../public/icons/contaminated-water.png')} ></Image>
+                        source={require('../../../assets/icons/contaminated-water.png')} ></Image>
                 </TouchableOpacity>
                 <Text style={styles.text}> {'Agua contaminada y tu salud'} </Text>
             </View>
@@ -41,7 +41,7 @@ const Menu = ({ about, contact, info }) => (
                         alignSelf: 'center',
                         height: normalize(120),
                         width: normalize(70),
-                    }} source={require('../../public/icons/about.png')} ></Image>
+                    }} source={require('../../../assets/icons/about.png')} ></Image>
                 </TouchableOpacity>
                 <Text style={styles.text}> {'Sobre Ecofiltro'} </Text>
             </View>
@@ -51,7 +51,7 @@ const Menu = ({ about, contact, info }) => (
                         alignSelf: 'center',
                         height: normalize(80),
                         width: normalize(120),
-                    }} source={require('../../public/icons/contactus.png')} ></Image>
+                    }} source={require('../../../assets/icons/contactus.png')} ></Image>
                 </TouchableOpacity>
                 <Text style={styles.text}> {'Contáctanos'} </Text>
             </View>

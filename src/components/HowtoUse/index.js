@@ -13,7 +13,7 @@ const HowtoUse = ({}) => (
             {'¿Cómo usar el ecofiltro?'}
         </Text>
         <Video
-            source={require('../../public/video/comousar.mp4')}
+            source={require('../../../assets/video/comousar.mp4')}
             shouldPlay
             useNativeControls
             style={styles.video}

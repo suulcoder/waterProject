@@ -21,7 +21,7 @@ const Whyitworks = ({}) => (
                             height:normalize(200),
                             width:normalize(100),
                             borderRadius: normalize(50),
-                        }} source={require('../../public/icons/about.png')} ></Image>
+                        }} source={require('../../../assets/icons/about.png')} ></Image>
                     </TouchableOpacity>
                     <Text style={styles.text}> {'¿Cómo funciona un ecofiltro?'} </Text>
                 </View>
@@ -32,7 +32,7 @@ const Whyitworks = ({}) => (
                             height:normalize(20),
                             width:normalize(250),
                             borderRadius: normalize(50),
-                        }} source={require('../../public/logo/logo.png')} ></Image>
+                        }} source={require('../../../assets/logo/logo.png')} ></Image>
                     </TouchableOpacity>
                     <Text style={styles.text}> {'¿Cómo funciona la empresa?'} </Text>
                 </View>
