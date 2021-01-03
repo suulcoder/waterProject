@@ -53,6 +53,17 @@ const About = ({ }) => (
                         </TouchableOpacity>
                         <Text style={styles.text}> {'¡Encuentra el punto de venta más cercano a tí!'} </Text>
                     </View>
+                    <View>
+                        <TouchableOpacity style={styles.element} onPress={() => Linking.openURL('https://ecofiltro.com/es/catalogo-productos')}>
+                            <Image style={{
+                                alignSelf: 'center',
+                                height: normalize(130),
+                                width: normalize(60),
+                            }}
+                                source={require('../../public/img/productos.png')} ></Image>
+                        </TouchableOpacity>
+                        <Text style={styles.text}> {'Descubre los diferentes productos que ofrecemos'} </Text>
+                    </View>
                 </View>
                 <View style={styles.row}>
                     <View>

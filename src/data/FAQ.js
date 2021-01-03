@@ -28,7 +28,7 @@ const FAQ = {
     4:{
         id: 4,
         question: '¿Cómo puedo comprar un Ecofiltro?', 
-        answer: 'Puedes escribir por whatsapp al número 3128-4550 o por correo electrónico a mreyes@ecofiltro.com, para recibir el ecofiltro en tu casa',
+        answer: 'Puedes escribir por whatsapp al número 3128-4550 o por correo electrónico a mreyes@ecofiltro.com, para recibir el ecofiltro en tu casa.',
         type: 'Compra y pago'
     },
     5:{
@@ -46,7 +46,7 @@ const FAQ = {
     7:{
         id: 7,
         question: '¿Dónde se ubican las tiendas?', 
-        answer: 'Tenemos tiendas en la mayor parte del territorio nacional. Puedes escribir distribuidor de Ecofiltro en el buscador de Google Maps y te indicará los distribuidores más cercanos a tu ubicación. También puedes utilizar nuestro mapa interactivo en esta misma aplicación en la página de contáctanos. También puedes escribir por whatsapp al número 3128-4550.',
+        answer: 'Tenemos tiendas en la mayor parte del territorio nacional. Puedes escribir distribuidor de Ecofiltro en el buscador de Google Maps y te indicará los distribuidores más cercanos a tu ubicación. También puedes utilizar nuestro mapa interactivo en esta misma aplicación. También puedes escribir por whatsapp al número 3128-4550.',
         type: 'Compra y pago'
     },
     8:{
