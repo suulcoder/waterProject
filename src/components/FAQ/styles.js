@@ -159,9 +159,9 @@ const styles = StyleSheet.create({
     viewLocation:{
         alignSelf: 'center',
         textAlign: 'center',
-        backgroundColor: colors.primaryB,
+        /*backgroundColor: colors.primaryB,
         textDecorationLine: 'underline',
-        borderRadius: normalize(1),
+        borderRadius: normalize(1),*/
         color: colors.white,
         padding:normalize(6),
         paddingBottom: normalize(1),

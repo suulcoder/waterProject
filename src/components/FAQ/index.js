@@ -141,7 +141,7 @@ const FAQ = ({ questions, search, settings }) => {
                                                 (selected === 7) &&
                                                 <TouchableOpacity style={styles.viewLocation}
                                                     onPress={() => Linking.openURL('https://www.google.com.gt/maps/search/distribuidor+de+ecofiltro/@14.9099828,-90.7388792,8z')}>
-                                                    <Text style={styles.submitText}> {'Haz click aquí para ver los puntos de distribuición'} </Text>
+                                                    <Text style={styles.submitText}> {'Mapa'} </Text>
                                                 </TouchableOpacity>
                                             }
                                         </View>

@@ -54,7 +54,7 @@ const Health = ({settings, back}) => {
             </TouchableOpacity>  
             <Image style={styles.logo} source={require('../../public/logo/logo.png')} ></Image>
             <TouchableOpacity onPress={play}>
-                <Image style={styles.icon} source={isPlaying?require('../../public/icons/pause.png'):require('../../public/icons/sound.png')} ></Image>
+                <Image style={styles.icon_sound} source={isPlaying?require('../../public/icons/pause.png'):require('../../public/icons/sound.png')} ></Image>
             </TouchableOpacity>  
         </View>
             <ScrollView

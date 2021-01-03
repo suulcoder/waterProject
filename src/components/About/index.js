@@ -16,7 +16,6 @@ const About = ({ }) => (
                 {'Sobre Ecofiltro'}
             </Text>
             <ScrollView>
-
                 <View style={styles.row}>
                     <View>
                         <TouchableOpacity style={styles.element} onPress={() => Actions.HowtoUse(true)}>
