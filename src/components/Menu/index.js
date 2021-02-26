@@ -6,14 +6,14 @@ import { URL } from '../../../configuration'
 import React from 'react';
 import styles from './styles'
 
-const Menu = ({ about, contact, info }) => (
+const Menu = ({ about, contact, info, evaluate }) => (
     <View style={styles.container} >
         <Text style={styles.welcomeText}>
             {'¡Bienvenido!'}
         </Text>
         <View style={styles.row}>
             <View>
-                <TouchableOpacity style={styles.element}>
+                <TouchableOpacity style={styles.element} onPress={evaluate}>
                     <Image style={{
                         alignSelf: 'center',
                         height: normalize(100),
@@ -72,6 +72,9 @@ export default connect(
         },
         info() {
             Actions.Info()
+        },
+        evaluate(){
+            Actions.Evaluate()
         }
     }),
 )(Menu);

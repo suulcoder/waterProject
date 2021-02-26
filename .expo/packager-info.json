@@ -3,8 +3,8 @@
   "packagerPid": null,
   "devToolsPort": 19002,
   "expoServerPort": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null,
+  "expoServerNgrokUrl": "https://n6-dbn.dianaxime.waterproject.exp.direct",
+  "packagerNgrokUrl": "https://packager.n6-dbn.dianaxime.waterproject.exp.direct",
+  "ngrokPid": 6976,
   "webpackServerPort": null
 }

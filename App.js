@@ -26,6 +26,7 @@ import Story1 from './src/components/Story1';
 import Story2 from './src/components/Story2';
 import Story3 from './src/components/Story3';
 import Story4 from './src/components/Story4';
+import EvaluateWater from './src/components/EvaluateWater';
 
 //localStorage.clear();
 let persistedState = loadState()
@@ -46,6 +47,7 @@ export default function App() {
           <Scene key="Contact" component={Contact}  hideNavBar={true} />
           <Scene key="About" component={About}  hideNavBar={true} />
           <Scene key="Info" component={Info}  hideNavBar={true} />
+          <Scene key="Evaluate" component={EvaluateWater}  hideNavBar={true} />
           <Scene key="Settings" component={Settings}  hideNavBar={true} />
           <Scene key="Whyitworks" component={Whyitworks}  hideNavBar={true} />
           <Scene key="HowEcofiltroWorks" component={HowEcofiltroWorks}  hideNavBar={true} />
