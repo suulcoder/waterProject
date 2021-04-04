@@ -7,11 +7,13 @@
 export const URL = 'https://localhost:19006/'
 
 export const colors = {
-    primaryA: '#384C60',
-    primaryB: '#4A86E8',
-    primaryC: '#75A2EB',
-    primaryD: '#266786',
-    secondaryA: '#FD8414',
+    primaryA: '#00B2E6',
+    primaryB: '#FF9E36',
+    secondaryA: '#8FD4D5',
+    secondaryB: '#1C4E60',
+    secondaryC: '#F8B4B6',
+    secondaryD: '#FDBD43',
+    secondaryE: '#9FBC41',
     yellow: '#cda100',
     red: '#cf1d1d',
     white: '#FFFFFF',

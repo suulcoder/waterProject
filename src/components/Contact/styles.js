@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
       marginTop: normalize(10), 
     },
     content: {
-        backgroundColor: colors.primaryB,
+        backgroundColor: colors.primaryA,
         flex: 1,
         flexDirection: 'column',
         padding: normalize(3),
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
           backgroundColor: colors.white,
       },
     bottom:{
-        backgroundColor: colors.primaryB,
+        backgroundColor: colors.primaryA,
         bottom: 0,
         height: normalize(7),
         position: 'absolute',
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
     viewLocation:{
         alignSelf: 'center',
         textAlign: 'center',
-        backgroundColor: colors.primaryB,
+        backgroundColor: colors.primaryA,
         textDecorationLine: 'underline',
         borderRadius: normalize(1),
         color: colors.white,
@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
         paddingTop: normalize(1),
     },
     submitText:{
-        backgroundColor: colors.primaryD,
+        backgroundColor: colors.secondaryB,
         borderRadius: normalize(20),
         color: colors.white,
         padding: normalize(10),

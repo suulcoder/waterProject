@@ -12,14 +12,14 @@ const styles = StyleSheet.create({
       marginTop: normalize(10), 
     },
     content: {
-        backgroundColor: colors.primaryB,
+        backgroundColor: colors.primaryA,
         flex: 1,
         flexDirection: 'column',
         padding: normalize(3),
         width: '100%',
       },
     bottom:{
-        backgroundColor: colors.primaryB,
+        backgroundColor: colors.primaryA,
         bottom: 0,
         height: normalize(7),
         position: 'absolute',
@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
         width: '80%',
     },
     submitText:{
-        backgroundColor: colors.primaryD,
+        backgroundColor: colors.secondaryB,
         borderRadius: normalize(20),
         color: colors.white,
         padding:normalize(5),
@@ -159,7 +159,7 @@ const styles = StyleSheet.create({
     viewLocation:{
         alignSelf: 'center',
         textAlign: 'center',
-        /*backgroundColor: colors.primaryB,
+        /*backgroundColor: colors.primaryA,
         textDecorationLine: 'underline',
         borderRadius: normalize(1),*/
         color: colors.white,

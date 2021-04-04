@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     },
     carousel: {
         flex: 1, 
-        backgroundColor: colors.primaryB,
+        backgroundColor: colors.primaryA,
         borderTopRightRadius: normalize(10),
         borderTopLeftRadius: normalize(10),
         height: normalize(450),
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     item: {
-        backgroundColor: colors.primaryB,
+        backgroundColor: colors.primaryA,
         marginLeft: 20,
         marginRight: 20,
         width: '100%',

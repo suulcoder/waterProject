@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         width: normalize(600),
     },
     bottom:{
-        backgroundColor: colors.primaryB,
+        backgroundColor: colors.primaryA,
         bottom: 0,
         height: normalize(7),
         position: 'absolute',
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     },
     title:{
         alignSelf: 'center',
-        color: colors.secondaryA,
+        color: colors.secondaryB,
         fontSize: normalize(3),
         fontWeight: "bold",
     },

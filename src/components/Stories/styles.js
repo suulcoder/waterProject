@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     },
     content: {
         alignSelf: 'center',
-        backgroundColor: colors.primaryB,
+        backgroundColor: colors.primaryA,
         flex: 1,
         justifyContent: 'center',
         marginTop: normalize(4),
