@@ -1,6 +1,7 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 import { colors } from '../../../configuration';
 import { normalize } from '../../utils/normalize';
+const { width: viewportWidth, height: viewportHeight } = Dimensions.get('window');
 
 const styles = StyleSheet.create({
     container: {
@@ -12,7 +13,7 @@ const styles = StyleSheet.create({
     },
     carousel: {
         flex: 1, 
-        backgroundColor: colors.primaryA,
+        backgroundColor: colors.white,
         borderTopRightRadius: normalize(10),
         borderTopLeftRadius: normalize(10),
         height: normalize(450),
@@ -20,11 +21,12 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     item: {
-        backgroundColor: colors.primaryA,
+        backgroundColor: colors.white,
         marginLeft: 20,
-        marginRight: 20,
-        width: '100%',
+        marginRight: 20, 
+        width: viewportWidth,
         height: '100%',
+        flex: 1,
     },
     image: {
         width: '100%',

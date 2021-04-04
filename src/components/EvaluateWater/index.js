@@ -11,8 +11,6 @@ import Header from '../Header';
 import styles from './styles'
 
 const SLIDER_WIDTH = Dimensions.get('window').width;
-const ITEM_WIDTH = Math.round(SLIDER_WIDTH * 0.7);
-const ITEM_HEIGHT = Math.round(ITEM_WIDTH * 3 / 4);
 
 export default class EvaluateWater extends React.Component {
 
@@ -82,7 +80,7 @@ export default class EvaluateWater extends React.Component {
             ref={ref => this.carousel = ref}
             data={this.state.carouselItems}
             sliderWidth={SLIDER_WIDTH}
-            itemWidth={ITEM_WIDTH}
+            itemWidth={SLIDER_WIDTH}
             renderItem={this._renderItem}
             onSnapToItem={index => this.setState({ activeIndex: index })} 
           />
