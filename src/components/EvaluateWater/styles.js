@@ -18,16 +18,30 @@ const styles = StyleSheet.create({
     item: {
         backgroundColor: colors.white,
         width: viewportWidth,
-        height: '100%',
         flex: 1,
         alignItems: 'flex-start',
         flexDirection: 'column',
         padding: normalize(3),
-        marginTop: normalize(20)
+        marginTop: normalize(10)
     },
     image: {
         width: normalize(600),
         height: normalize(600),
+        alignSelf: 'center',
+    },
+    imageResult: {
+        alignSelf: 'center',
+        width: normalize(1200),
+        height: normalize(1200),
+        margin: normalize(5),
+    },
+    textResult: {
+        textAlign: 'center',
+        alignSelf: 'center',
+        fontSize: normalize(5),
+        margin: normalize(2),
+        padding: 10,
+        width: '80%',
     }
 });
 

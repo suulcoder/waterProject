@@ -10,7 +10,7 @@ import Carousel from 'react-native-snap-carousel';
 import Header from '../Header';
 import styles from './styles'
 
-const SLIDER_WIDTH = Dimensions.get('window').width;
+const { width: viewportWidth, height: viewportHeight } = Dimensions.get('window');
 
 export default class EvaluateWater extends React.Component {
 
@@ -89,9 +89,11 @@ export default class EvaluateWater extends React.Component {
           <Image
             source={item.image}
             resizeMode='contain'
-            style={styles.image}
+            style={styles.imageResult}
           />
-          <Text>{item.text}</Text>
+          <Text
+            style={styles.textResult}
+          >{item.text}</Text>
         </View>
       );
     }
@@ -106,8 +108,8 @@ export default class EvaluateWater extends React.Component {
             layout={"default"}
             ref={ref => this.carousel = ref}
             data={this.state.carouselItems}
-            sliderWidth={SLIDER_WIDTH}
-            itemWidth={SLIDER_WIDTH}
+            sliderWidth={viewportWidth}
+            itemWidth={viewportWidth}
             renderItem={this._renderItem}
             onSnapToItem={index => this.setState({ activeIndex: index })}
           />
