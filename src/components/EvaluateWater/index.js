@@ -20,54 +20,81 @@ export default class EvaluateWater extends React.Component {
       activeIndex: 0,
       carouselItems: [
         {
-          image: require("../../../assets/img/Paso1.png"),
+          type: "step",
+          image: require("../../../assets/pics/paso1.png"),
         },
         {
-          image: require("../../../assets/img/Paso2.png"),
+          type: "step",
+          image: require("../../../assets/pics/paso2.png"),
         },
         {
-          image: require("../../../assets/img/Paso3.png"),
+          type: "step",
+          image: require("../../../assets/pics/paso3.png"),
         },
         {
-          image: require("../../../assets/img/Paso4.png"),
+          type: "step",
+          image: require("../../../assets/pics/paso4.png"),
         },
         {
-          image: require("../../../assets/img/Paso5.png"),
+          type: "step",
+          image: require("../../../assets/pics/moreInfo.png"),
         },
         {
-          image: require("../../../assets/img/Paso6.png"),
+          type: "step",
+          image: require("../../../assets/pics/moreInfo.png"),
         },
         {
-          image: require("../../../assets/img/Paso7.png"),
+          type: "step",
+          image: require("../../../assets/pics/moreInfo.png"),
         },
         {
-          image: require("../../../assets/img/Paso8.png"),
+          type: "step",
+          image: require("../../../assets/pics/load.png"),
         },
         {
-          image: require("../../../assets/img/ResultadoPositivo.png"),
+          type: "result",
+          image: require("../../../assets/pics/resultadoPositivo.png"),
+          text: "Esta muestra de agua contiene una cantidad problemática de microbios y no se debería consumir.",
         },
         {
-          image: require("../../../assets/img/ResultadoNegativo.png"),
+          type: "result",
+          image: require("../../../assets/pics/resultadoNegativo.png"),
+          text: "Esta muestra de agua no contiene una cantidad problemática de microbios y se puede consumir.",
         },
         {
-          image: require("../../../assets/img/ResultadoNoConcluyente.png"),
+          type: "result",
+          image: require("../../../assets/pics/resultadoNoConcluyente.png"),
+          text: "La imagen analizada quizás se encuentra muy borrosa, con mucha luz, o la muestra contiene otro tipo de contaminante.",
         },
       ]
     }
   }
 
   _renderItem({ item, index }) {
-    return (
-      <View style={styles.item}
-      >
-        <Image
-          source={item.image}
-          resizeMode='stretch'
-          style={styles.image}
-        />
-      </View>
-
-    )
+    if (item.type === 'step') {
+      return (
+        <View style={styles.item}
+        >
+          <Image
+            source={item.image}
+            resizeMode='contain'
+            style={styles.image}
+          />
+        </View>
+      );
+    } else if (item.type === 'result') {
+      return (
+        <View style={styles.item}
+        >
+          <Image
+            source={item.image}
+            resizeMode='contain'
+            style={styles.image}
+          />
+          <Text>{item.text}</Text>
+        </View>
+      );
+    }
   }
 
   render() {
@@ -82,7 +109,7 @@ export default class EvaluateWater extends React.Component {
             sliderWidth={SLIDER_WIDTH}
             itemWidth={SLIDER_WIDTH}
             renderItem={this._renderItem}
-            onSnapToItem={index => this.setState({ activeIndex: index })} 
+            onSnapToItem={index => this.setState({ activeIndex: index })}
           />
         </View>
       </View>
