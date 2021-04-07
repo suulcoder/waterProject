@@ -24,16 +24,21 @@ const styles = StyleSheet.create({
         padding: normalize(3),
         marginTop: normalize(5),
     },
+    arrows: {
+        width: normalize(100),
+        height: normalize(200),
+        alignSelf: 'center',
+    },
     image: {
-        width: normalize(600),
-        height: normalize(600),
+        width: normalize(700),
+        height: normalize(200),
         alignSelf: 'center',
     },
     imageResult: {
         alignSelf: 'center',
-        width: normalize(1200),
-        height: normalize(1200),
-        margin: normalize(5),
+        width: normalize(800),
+        height: normalize(800),
+        //margin: normalize(5),
     },
     textStep: {
         textAlign: 'justify',
@@ -67,6 +72,12 @@ const styles = StyleSheet.create({
         borderRadius: normalize(15),
         // marginBottom: normalize(10),
         margin: normalize(5),
+    },
+    row:{
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        padding: normalize(5),
+        width: '100%',
     },
 });
 

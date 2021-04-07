@@ -2,7 +2,7 @@ import { Text, View, Image, TouchableOpacity } from 'react-native';
 import React from 'react';
 import styles from './styles'
 
-const Step1 = ({ home }) => (
+const Step1 = () => (
     <View style={styles.item}
     >
         <View style={styles.step}>
@@ -37,14 +37,31 @@ const Step1 = ({ home }) => (
         <Image
             source={require("../../../assets/pics/paso1.png")}
             resizeMode='contain'
-            style={styles.image}
+            style={styles.imageResult}
         />
-        <TouchableOpacity style={styles.submit}>
-            <Text style={styles.submitText}> {'Analizar otra imagen'} </Text>
-        </TouchableOpacity >
-        <TouchableOpacity style={styles.submit} onPress={home}>
-            <Text style={styles.submitText}> {'Página Principal'} </Text>
-        </TouchableOpacity>
+        <View style={styles.row}>
+            <TouchableOpacity>
+                <Image
+                    source={require("../../../assets/pics/regresar.png")}
+                    resizeMode='contain'
+                    style={styles.arrows}
+                />
+            </TouchableOpacity>
+            <TouchableOpacity>
+                <Image
+                    source={require("../../../assets/pics/more.png")}
+                    resizeMode='contain'
+                    style={styles.image}
+                />
+            </TouchableOpacity>
+            <TouchableOpacity>
+                <Image
+                    source={require("../../../assets/pics/avanzar.png")}
+                    resizeMode='contain'
+                    style={styles.arrows}
+                />
+            </TouchableOpacity>
+        </View>
     </View>
 );
 
