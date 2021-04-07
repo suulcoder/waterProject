@@ -12,6 +12,7 @@ import Header from '../Header';
 import styles from './styles';
 import NegativeResult from '../NegativeResult';
 import PositiveResult from '../PositiveResult';
+import InconclusiveResult from '../InconclusiveResult';
 
 const { width: viewportWidth, height: viewportHeight } = Dimensions.get('window');
 
@@ -58,9 +59,7 @@ export default class EvaluateWater extends React.Component {
           component: PositiveResult,
         },
         {
-          type: "result",
-          image: require("../../../assets/pics/resultadoNoConcluyente.png"),
-          text: "La imagen analizada quizás se encuentra muy borrosa, con mucha luz, o la muestra contiene otro tipo de contaminante.",
+          component: InconclusiveResult,
         },
         {
           component: NegativeResult,
