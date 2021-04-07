@@ -11,6 +11,7 @@ import Carousel from 'react-native-snap-carousel';
 import Header from '../Header';
 import styles from './styles';
 import NegativeResult from '../NegativeResult';
+import PositiveResult from '../PositiveResult';
 
 const { width: viewportWidth, height: viewportHeight } = Dimensions.get('window');
 
@@ -54,9 +55,7 @@ export default class EvaluateWater extends React.Component {
           image: require("../../../assets/pics/load.png"),
         },
         {
-          type: "result",
-          image: require("../../../assets/pics/resultadoPositivo.png"),
-          text: "Esta muestra de agua contiene una cantidad problemática de microbios y no se debería consumir.",
+          component: PositiveResult,
         },
         {
           type: "result",
