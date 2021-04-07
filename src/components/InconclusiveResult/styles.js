@@ -4,17 +4,6 @@ import { normalize } from '../../utils/normalize';
 const { width: viewportWidth, height: viewportHeight } = Dimensions.get('window');
 
 const styles = StyleSheet.create({
-    container: {
-        alignItems: 'flex-start',
-        backgroundColor: colors.white,
-        flex: 1,
-        flexDirection: 'column',
-        marginTop: normalize(10),
-    },
-    carousel: {
-        flex: 1,
-        backgroundColor: colors.white,
-    },
     item: {
         backgroundColor: colors.white,
         width: viewportWidth,
