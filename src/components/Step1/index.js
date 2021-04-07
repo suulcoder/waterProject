@@ -2,7 +2,7 @@ import { Text, View, Image, TouchableOpacity } from 'react-native';
 import React from 'react';
 import styles from './styles'
 
-const Step1 = () => (
+const Step1 = ({ back, go }) => (
     <View style={styles.item}
     >
         <View style={styles.step}>
@@ -40,7 +40,7 @@ const Step1 = () => (
             style={styles.imageResult}
         />
         <View style={styles.row}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={back}>
                 <Image
                     source={require("../../../assets/pics/regresar.png")}
                     resizeMode='contain'
@@ -54,7 +54,7 @@ const Step1 = () => (
                     style={styles.image}
                 />
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={go}>
                 <Image
                     source={require("../../../assets/pics/avanzar.png")}
                     resizeMode='contain'

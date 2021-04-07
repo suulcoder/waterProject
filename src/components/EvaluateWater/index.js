@@ -25,9 +25,10 @@ export default class EvaluateWater extends React.Component {
       activeIndex: 0,
       carouselItems: [
         {
+          type: "step",
           component: Step1,
         },
-        {
+        /*{
           type: "step",
           image: require("../../../assets/pics/paso1.png"),
         },
@@ -58,7 +59,7 @@ export default class EvaluateWater extends React.Component {
         {
           type: "step",
           image: require("../../../assets/pics/load.png"),
-        },
+        }, */
         {
           component: PositiveResult,
         },
@@ -74,38 +75,9 @@ export default class EvaluateWater extends React.Component {
 
   _renderItem({ item, index }) {
     if (item.type === 'step') {
-      return (
-        <View style={styles.item}
-        >
-          <Image
-            source={item.image}
-            resizeMode='contain'
-            style={styles.image}
-          />
-        </View>
-      );
-    } else if (item.type === 'result') {
-      return (
-        <View style={styles.item}
-        >
-          <Image
-            source={item.image}
-            resizeMode='contain'
-            style={styles.imageResult}
-          />
-          <Text
-            style={styles.textResult}
-          >{item.text}</Text>
-          <TouchableOpacity style={styles.submit}>
-            <Text style={styles.submitText}> {'Analizar otra imagen'} </Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.submit}>
-            <Text style={styles.submitText}> {'Página Principal'} </Text>
-          </TouchableOpacity>
-        </View>
-      );
+      return <item.component go={() => { this._carousel.snapToNext()}} back={() => { this._carousel.snapToPrev()}} />;
     } else {
-      return <item.component />
+      return <item.component />;
     }
   }
 
@@ -116,14 +88,14 @@ export default class EvaluateWater extends React.Component {
         <View style={styles.carousel}>
           <Carousel
             layout={"default"}
-            ref={ref => this.carousel = ref}
+            ref={ref => this._carousel = ref}
             data={this.state.carouselItems}
             sliderWidth={viewportWidth}
             itemWidth={viewportWidth}
-            renderItem={this._renderItem}
+            renderItem={this._renderItem.bind(this)}
             onSnapToItem={index => this.setState({ activeIndex: index })}
           />
-        </View>
+          </View>
       </View>
     );
   }
