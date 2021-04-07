@@ -3,12 +3,14 @@ import {
   Text,
   View,
   Image,
+  TouchableOpacity,
   Dimensions
 } from 'react-native';
 
 import Carousel from 'react-native-snap-carousel';
 import Header from '../Header';
-import styles from './styles'
+import styles from './styles';
+import NegativeResult from '../NegativeResult';
 
 const { width: viewportWidth, height: viewportHeight } = Dimensions.get('window');
 
@@ -58,13 +60,11 @@ export default class EvaluateWater extends React.Component {
         },
         {
           type: "result",
-          image: require("../../../assets/pics/resultadoNegativo.png"),
-          text: "Esta muestra de agua no contiene una cantidad problemática de microbios y se puede consumir.",
-        },
-        {
-          type: "result",
           image: require("../../../assets/pics/resultadoNoConcluyente.png"),
           text: "La imagen analizada quizás se encuentra muy borrosa, con mucha luz, o la muestra contiene otro tipo de contaminante.",
+        },
+        {
+          component: NegativeResult,
         },
       ]
     }
@@ -94,8 +94,16 @@ export default class EvaluateWater extends React.Component {
           <Text
             style={styles.textResult}
           >{item.text}</Text>
+          <TouchableOpacity style={styles.submit}>
+            <Text style={styles.submitText}> {'Analizar otra imagen'} </Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.submit}>
+            <Text style={styles.submitText}> {'Página Principal'} </Text>
+          </TouchableOpacity>
         </View>
       );
+    } else {
+      return <item.component />
     }
   }
 
