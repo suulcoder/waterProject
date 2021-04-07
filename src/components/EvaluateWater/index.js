@@ -20,6 +20,7 @@ import Step4 from '../Step4';
 import Step5 from '../Step5';
 import Step6 from '../Step6';
 import Step7 from '../Step7';
+import Step8 from '../Step8';
 
 const { width: viewportWidth, height: viewportHeight } = Dimensions.get('window');
 
@@ -58,23 +59,10 @@ export default class EvaluateWater extends React.Component {
           type: "step",
           component: Step7,
         },
-        /*
         {
           type: "step",
-          image: require("../../../assets/pics/moreInfo.png"),
+          component: Step8,
         },
-        {
-          type: "step",
-          image: require("../../../assets/pics/moreInfo.png"),
-        },
-        {
-          type: "step",
-          image: require("../../../assets/pics/moreInfo.png"),
-        },
-        {
-          type: "step",
-          image: require("../../../assets/pics/load.png"),
-        }, */
         {
           component: PositiveResult,
         },
