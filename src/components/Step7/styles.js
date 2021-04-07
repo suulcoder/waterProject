@@ -15,12 +15,12 @@ const styles = StyleSheet.create({
     },
     arrows: {
         width: normalize(100),
-        height: normalize(300),
+        height: normalize(100),
         alignSelf: 'center',
     },
     space : {
         width: normalize(700),
-        height: normalize(300),
+        height: normalize(100),
         alignSelf: 'center',
     },
     image: {
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     imageResult: {
         alignSelf: 'center',
         width: normalize(800),
-        height: normalize(800),
+        height: normalize(700),
         margin: normalize(5),
     },
     textStep: {
