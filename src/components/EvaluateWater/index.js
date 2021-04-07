@@ -13,6 +13,7 @@ import styles from './styles';
 import NegativeResult from '../NegativeResult';
 import PositiveResult from '../PositiveResult';
 import InconclusiveResult from '../InconclusiveResult';
+import Step1 from '../Step1';
 
 const { width: viewportWidth, height: viewportHeight } = Dimensions.get('window');
 
@@ -23,6 +24,9 @@ export default class EvaluateWater extends React.Component {
     this.state = {
       activeIndex: 0,
       carouselItems: [
+        {
+          component: Step1,
+        },
         {
           type: "step",
           image: require("../../../assets/pics/paso1.png"),
