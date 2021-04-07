@@ -11,22 +11,22 @@ const styles = StyleSheet.create({
         alignItems: 'flex-start',
         flexDirection: 'column',
         padding: normalize(3),
-        //marginTop: normalize(5),
+        // marginTop: normalize(5),
     },
     arrows: {
         width: normalize(100),
-        height: normalize(300),
+        height: normalize(100),
         alignSelf: 'center',
     },
     image: {
         width: normalize(700),
-        height: normalize(300),
+        height: normalize(100),
         alignSelf: 'center',
     },
     imageResult: {
         alignSelf: 'center',
         width: normalize(800),
-        height: normalize(800),
+        height: normalize(600),
         //margin: normalize(5),
     },
     textStep: {
