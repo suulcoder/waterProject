@@ -16,6 +16,7 @@ import InconclusiveResult from '../InconclusiveResult';
 import Step1 from '../Step1';
 import Step2 from '../Step2';
 import Step3 from '../Step3';
+import Step4 from '../Step4';
 
 const { width: viewportWidth, height: viewportHeight } = Dimensions.get('window');
 
@@ -38,22 +39,11 @@ export default class EvaluateWater extends React.Component {
           type: "step",
           component: Step3,
         },
-        /*{
-          type: "step",
-          image: require("../../../assets/pics/paso1.png"),
-        },
         {
           type: "step",
-          image: require("../../../assets/pics/paso2.png"),
+          component: Step4,
         },
-        {
-          type: "step",
-          image: require("../../../assets/pics/paso3.png"),
-        },
-        {
-          type: "step",
-          image: require("../../../assets/pics/paso4.png"),
-        },
+        /*
         {
           type: "step",
           image: require("../../../assets/pics/moreInfo.png"),
