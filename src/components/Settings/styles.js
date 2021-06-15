@@ -27,9 +27,8 @@ const styles = StyleSheet.create({
     title:{
         alignSelf: 'center',
         color: colors.gray,
-        fontFamily: 'Poppins',
+        fontFamily: 'Poppins-Bold',
         fontSize: normalize(7),
-        fontWeight: "bold",
         marginBottom: normalize(5),
         marginTop: normalize(1),
         padding: normalize(0.5),

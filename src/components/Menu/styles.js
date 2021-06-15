@@ -24,11 +24,10 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         color: colors.gray,
         width: normalize(500),
-        fontSize: normalize(4),
-        fontWeight: "bold",
+        fontSize: normalize(3),
         marginTop: normalize(1.5),
         textAlign: 'center',
-        fontFamily: 'Poppins',
+        fontFamily: 'Poppins-Bold',
     },
     row:{
         flexDirection: 'row',
@@ -38,8 +37,7 @@ const styles = StyleSheet.create({
     welcomeText:{
       color:colors.secondaryE,
       fontSize: normalize(20),
-      fontWeight: "bold",
-      fontFamily: 'Poppins',
+      fontFamily: 'Poppins-Bold',
       textAlign: 'left',
       marginLeft: normalize(15),
     },
