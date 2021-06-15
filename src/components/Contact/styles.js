@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
         marginBottom: normalize(0.005),
         marginTop: normalize(1),
         padding: normalize(0.5),
+        fontFamily: 'Poppins',
     },
     subtitle:{
         alignSelf: 'center',
@@ -48,6 +49,7 @@ const styles = StyleSheet.create({
         marginBottom: normalize(0.005),
         marginTop: normalize(1),
         padding: normalize(0.5),
+        fontFamily: 'Poppins',
     },
     row:{
         alignItems: 'center',
@@ -78,6 +80,7 @@ const styles = StyleSheet.create({
         color:colors.gray,
         fontSize: normalize(2.5),
         marginBottom: normalize(0.25),
+        fontFamily: 'Poppins',
     },
     map:{
         alignSelf: 'center',
@@ -137,6 +140,7 @@ const styles = StyleSheet.create({
         paddingBottom: normalize(1.5),
         paddingTop: normalize(1.5),
         textAlign: 'center',
+        fontFamily: 'Poppins',
     },
     submit:{
         alignSelf:'flex-end',
@@ -160,6 +164,7 @@ const styles = StyleSheet.create({
     error:{
         alignSelf: 'center',
         color:colors.red,
+        fontFamily: 'Poppins',
         fontSize: normalize(3),
         marginBottom: normalize(0.25),
     },

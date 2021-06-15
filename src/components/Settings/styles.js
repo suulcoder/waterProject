@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
     title:{
         alignSelf: 'center',
         color: colors.gray,
+        fontFamily: 'Poppins',
         fontSize: normalize(7),
         fontWeight: "bold",
         marginBottom: normalize(5),
@@ -70,10 +71,12 @@ const styles = StyleSheet.create({
         color: colors.black,
         fontSize: normalize(4),
         margin: normalize(2),
+        fontFamily: 'Poppins',
     },
     text_:{
         alignSelf: 'center',
         color:colors.gray,
+        fontFamily: 'Poppins',
         fontSize: normalize(4),
         marginBottom: normalize(15),
     },
@@ -130,6 +133,7 @@ const styles = StyleSheet.create({
         padding:normalize(5),
         paddingBottom: normalize(1),
         paddingTop: normalize(1),
+        fontFamily: 'Poppins',
     },
     submit:{
         alignSelf:'flex-end',

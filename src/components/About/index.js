@@ -27,11 +27,28 @@ const About = ({ }) => {
     <View style={styles.container}>
       <Header></Header>
       <View style={styles.content}>
-        <Text style={styles.welcomeText}>
-          {'Sobre Ecofiltro'}
-        </Text>
+        <View style={styles.row}>
+          <Image style={{
+            alignSelf: 'center',
+            height: normalize(1500),
+            width: '100%',
+            resizeMode: 'cover',
+            borderRadius: normalize(10),
+          }}
+            source={require('../../../assets/pics/About.jpg')}
+          >
+          </Image>
+          <View style={{ position: 'absolute', top: 0, left: 0, width: 120, height: 300, alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={styles.welcomeText}>{'Sobre\nEcofiltro'}</Text>
+          </View>
+        </View>
         <ScrollView>
           <View style={styles.row}>
+            <TouchableOpacity style={styles.element} onPress={() => Actions.HowtoUse(true)}>
+              <Text style={styles.text}> {'¿Cómo usar el Ecofiltro?'} </Text>
+            </TouchableOpacity>
+          </View>
+          { /* <View style={styles.row}>
             <View>
               <TouchableOpacity style={styles.element} onPress={() => Actions.HowtoUse(true)}>
                 <Image style={{
@@ -101,10 +118,10 @@ const About = ({ }) => {
               </TouchableOpacity>
               <Text style={styles.text}> {'Preguntas frecuentes'} </Text>
             </View>
-          </View>
+              </View> */}
         </ScrollView>
       </View>
-      <AwesomeAlert
+      {/*<AwesomeAlert
         show={alert}
         showProgress={false}
         title="Recordatorio"
@@ -118,7 +135,7 @@ const About = ({ }) => {
         confirmButtonColor="#DD6B55"
         onCancelPressed={() => hideAlert()}
         onConfirmPressed={() => hideAlert()}
-      />
+      />*/}
     </View>
   );
 }
