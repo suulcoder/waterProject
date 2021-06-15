@@ -5,13 +5,13 @@ import { normalize } from '../../utils/normalize';
 const styles = StyleSheet.create({
     container: {
       alignItems: 'flex-start',
-      backgroundColor: colors.white,
+      backgroundColor: colors.primaryA,
       flex: 1,
       flexDirection: 'column',
       marginTop: normalize(10), 
     },
     content: {
-        backgroundColor: colors.primaryA,
+        backgroundColor: colors.white,
         flex: 1,
         flexDirection: 'column',
         padding: normalize(3),
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     },
     title:{
         alignSelf: 'center',
-        color: colors.white,
+        color: colors.gray,
         fontSize: normalize(7),
         fontWeight: "bold",
         marginBottom: normalize(5),
@@ -67,19 +67,19 @@ const styles = StyleSheet.create({
     },
     text:{
         alignSelf: 'center',
-        color:colors.black,
+        color: colors.black,
         fontSize: normalize(4),
         margin: normalize(2),
     },
     text_:{
         alignSelf: 'center',
-        color:colors.white,
+        color:colors.gray,
         fontSize: normalize(4),
         marginBottom: normalize(15),
     },
     error:{
         alignSelf: 'center',
-        color:colors.white,
+        color: colors.red,
         fontSize: normalize(3),
         marginBottom: normalize(0.25),
     },
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
         marginBottom: normalize(30),
         height: normalize(0.1),
         width: '90%',
-        backgroundColor: colors.white,
+        backgroundColor: colors.primaryA,
     },
     map:{
         alignSelf: 'center',
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     input: {
         alignSelf: 'center',
         backgroundColor: colors.white,
-        borderColor: colors.white,
+        borderColor: colors.gray,
         borderRadius: 20,
         borderWidth: 1,
         fontSize: normalize(2),
@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
     input_multiline: {
         alignSelf: 'center',
         backgroundColor: colors.white,
-        borderColor: colors.white,
+        borderColor: colors.gray,
         borderRadius: 20,
         borderWidth: 1,
         fontSize: normalize(2),

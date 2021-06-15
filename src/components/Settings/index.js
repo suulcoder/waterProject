@@ -60,7 +60,7 @@ const Settings = ({ name_, phone_, mail_, code_, language_, location_, automatiz
                                 :
                                 <Picker
                                     selectedValue={language}
-                                    style={{ height: normalize(50), width: normalize(550), color: colors.black }}
+                                    style={{ height: normalize(50), width: normalize(550), color: colors.black, }}
                                     onValueChange={(itemValue, itemIndex) => setLanguage_(itemValue)}
                                 >
                                     <Picker.Item label="Español" value="Español" color='black' />
