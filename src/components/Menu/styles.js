@@ -6,8 +6,6 @@ const styles = StyleSheet.create({
     container: {
       alignSelf: 'center',
       backgroundColor: colors.white,
-      borderTopLeftRadius: normalize(55),
-      borderTopRightRadius: normalize(55),
       flex: 1,
       justifyContent: 'center',
       marginTop: normalize(4),
@@ -15,20 +13,22 @@ const styles = StyleSheet.create({
     },
     element:{
         alignSelf: 'center',
-        backgroundColor: colors.white,
-        borderRadius: normalize(150),
-        height: normalize(450),
+        backgroundColor: colors.secondaryB,
+        borderRadius: normalize(10),
+        height: normalize(400),
         justifyContent: 'center',
         padding: normalize(1),
-        width: normalize(450),
+        width: normalize(400),
     },
     text: {
         alignSelf: 'center',
-        color: colors.white,
+        color: colors.gray,
         width: normalize(500),
-        fontSize: normalize(2.5),
+        fontSize: normalize(4),
+        fontWeight: "bold",
         marginTop: normalize(1.5),
         textAlign: 'center',
+        fontFamily: 'Poppins',
     },
     row:{
         flexDirection: 'row',
@@ -36,11 +36,19 @@ const styles = StyleSheet.create({
         padding: normalize(15),
     },
     welcomeText:{
-      alignSelf: 'center',
-      color:colors.white,
-      fontSize: normalize(8),
+      color:colors.secondaryE,
+      fontSize: normalize(20),
       fontWeight: "bold",
-      marginBottom: normalize(25),
+      fontFamily: 'Poppins',
+      textAlign: 'left',
+      marginLeft: normalize(15),
+    },
+    introText:{
+      color:colors.gray,
+      fontSize: normalize(5),
+      textAlign: 'left',
+      fontFamily: 'Poppins',
+      marginLeft: normalize(15),
     }
   });
   

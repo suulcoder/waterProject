@@ -9,7 +9,8 @@ const styles = StyleSheet.create({
       flex: 1,
       flexDirection: 'column',
       justifyContent: 'center',
-      marginTop: normalize(10), 
+      marginTop: normalize(10),
+      paddingTop: normalize(5), 
     },
     header:{
         flexDirection: 'row',

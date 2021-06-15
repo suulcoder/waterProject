@@ -9,16 +9,20 @@ import styles from './styles'
 const Menu = ({ about, contact, info, evaluate }) => (
     <View style={styles.container} >
         <Text style={styles.welcomeText}>
-            {'¡Bienvenido!'}
+            {'¡Hola!'}
+        </Text>
+        <Text style={styles.introText}>
+            {'Hagamos Eco, el cambio está en ti'}
         </Text>
         <View style={styles.row}>
             <View>
                 <TouchableOpacity style={styles.element} onPress={evaluate}>
                     <Image style={{
                         alignSelf: 'center',
-                        height: normalize(100),
-                        width: normalize(100),
-                    }} source={require('../../../assets/icons/test.png')} ></Image>
+                        height: normalize(80),
+                        width: normalize(80),
+                        resizeMode: 'contain',
+                    }} source={require('../../../assets/icons/evaluate.png')} ></Image>
                 </TouchableOpacity>
                 <Text style={styles.text}> {'Evalúa el agua'} </Text>
             </View>
@@ -26,10 +30,11 @@ const Menu = ({ about, contact, info, evaluate }) => (
                 <TouchableOpacity style={styles.element} onPress={info}>
                     <Image style={{
                         alignSelf: 'center',
-                        height: normalize(100),
-                        width: normalize(100),
+                        height: normalize(80),
+                        width: normalize(80),
+                        resizeMode: 'contain',
                     }}
-                        source={require('../../../assets/icons/contaminated-water.png')} ></Image>
+                        source={require('../../../assets/icons/contaminated.png')} ></Image>
                 </TouchableOpacity>
                 <Text style={styles.text}> {'Agua contaminada y tu salud'} </Text>
             </View>
@@ -39,9 +44,10 @@ const Menu = ({ about, contact, info, evaluate }) => (
                 <TouchableOpacity style={styles.element} onPress={about}>
                     <Image style={{
                         alignSelf: 'center',
-                        height: normalize(120),
-                        width: normalize(70),
-                    }} source={require('../../../assets/icons/about.png')} ></Image>
+                        height: normalize(80),
+                        width: normalize(80),
+                        resizeMode: 'contain',
+                    }} source={require('../../../assets/icons/aboutEco.png')} ></Image>
                 </TouchableOpacity>
                 <Text style={styles.text}> {'Sobre Ecofiltro'} </Text>
             </View>
@@ -50,10 +56,11 @@ const Menu = ({ about, contact, info, evaluate }) => (
                     <Image style={{
                         alignSelf: 'center',
                         height: normalize(80),
-                        width: normalize(120),
-                    }} source={require('../../../assets/icons/contactus.png')} ></Image>
+                        width: normalize(80),
+                        resizeMode: 'contain',
+                    }} source={require('../../../assets/icons/contact.png')} ></Image>
                 </TouchableOpacity>
-                <Text style={styles.text}> {'Contáctanos'} </Text>
+                <Text style={styles.text}> {'Contacto'} </Text>
             </View>
         </View>
     </View>
@@ -73,7 +80,7 @@ export default connect(
         info() {
             Actions.Info()
         },
-        evaluate(){
+        evaluate() {
             Actions.Evaluate()
         }
     }),

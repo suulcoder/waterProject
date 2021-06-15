@@ -1,10 +1,10 @@
 {
-  "packagerPort": null,
-  "packagerPid": null,
+  "packagerPort": 19001,
+  "packagerPid": 16388,
   "devToolsPort": 19002,
-  "expoServerPort": null,
+  "expoServerPort": 19000,
   "expoServerNgrokUrl": "https://n6-dbn.dianaxime.waterproject.exp.direct",
   "packagerNgrokUrl": "https://packager.n6-dbn.dianaxime.waterproject.exp.direct",
-  "ngrokPid": 1980,
+  "ngrokPid": 13756,
   "webpackServerPort": null
 }
