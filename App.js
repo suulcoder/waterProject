@@ -94,6 +94,7 @@ async function cacheAssets() {
   const fontAssets = cacheFonts([
     { 'Crewniverse': require('./assets/fonts/Crewniverse/crewniverse_font.otf') },
     { 'Poppins': require('./assets/fonts/Poppins/Poppins-Regular.ttf') },
+    { 'Poppins-Bold': require('./assets/fonts/Poppins/Poppins-Bold.ttf') },
   ]);
 
   await Promise.all([...fontAssets]);

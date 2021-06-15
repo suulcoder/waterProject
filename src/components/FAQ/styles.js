@@ -6,13 +6,13 @@ import { color } from 'react-native-reanimated';
 const styles = StyleSheet.create({
     container: {
       alignItems: 'flex-start',
-      backgroundColor: colors.white,
+      backgroundColor: colors.primaryA,
       flex: 1,
       flexDirection: 'column',
       marginTop: normalize(10), 
     },
     content: {
-        backgroundColor: colors.primaryA,
+        backgroundColor: colors.white,
         flex: 1,
         flexDirection: 'column',
         padding: normalize(3),
@@ -25,21 +25,35 @@ const styles = StyleSheet.create({
         position: 'absolute',
         width: '100%',
     },
-    link:{
+    element: {
+        backgroundColor: colors.secondaryB,
+        borderRadius: normalize(10),
+        width: '100%',
+        padding: normalize(2),
+    },
+    welcome: {
         alignSelf: 'center',
         color: colors.white,
-        fontSize: normalize(7),
-        fontWeight: "bold",
+        fontSize: normalize(10),
+        /* marginBottom: normalize(1),
+        marginTop: normalize(1), 
+        padding: normalize(0.5),*/
+        textAlign: 'center',
+        fontFamily: 'Poppins-Bold',
+    },
+    link:{
+        alignSelf: 'center',
+        color: colors.secondaryB,
+        fontSize: normalize(5),
         marginBottom: normalize(5),
         marginTop: normalize(1),
         padding: normalize(0.5),
         textAlign: 'center',
-        textDecorationStyle: 'solid',
-        textDecorationColor: colors.white,
-        textDecorationLine: 'underline',
+        fontFamily: 'Poppins-Bold',
     },
     answerText:{
-        color: colors.black,
+        color: colors.white,
+        fontFamily: 'Poppins',
         textAlign: 'justify',
         maxWidth: normalize(1000),
         margin: normalize(1),
@@ -47,23 +61,25 @@ const styles = StyleSheet.create({
     section:{
         width: '90%',
         alignSelf: 'center',
-        marginBottom: normalize(25)
+        marginBottom: normalize(10)
     },
     questions:{
         marginTop: normalize(5),
     },
     title:{
-        alignSelf: 'center',
-        color: colors.white,
+        color: colors.primaryA,
         fontSize: normalize(7),
-        fontWeight: "bold",
+        fontFamily: 'Poppins',
         marginBottom: normalize(5),
         marginTop: normalize(1),
         padding: normalize(0.5),
     },
     row:{
+        alignSelf: 'center',
         alignItems: 'center',
         flexDirection: 'row',
+        margin: normalize(2),
+        justifyContent: 'space-around',
     },
     icon:{
         height:normalize(20),
@@ -85,17 +101,18 @@ const styles = StyleSheet.create({
         maxWidth: '80%',
     },
     text:{
-        color:colors.white,
+        color:colors.gray,
         fontSize: normalize(2.8),
         marginBottom: normalize(0.25),
-        textDecorationStyle: 'solid',
-        textDecorationColor: colors.white,
-        textDecorationLine: 'underline',
+        /* textDecorationStyle: 'solid',
+        textDecorationColor: colors.gray,
+        textDecorationLine: 'underline',*/
+        fontFamily: 'Poppins',
     },
     answer:{
-        backgroundColor: colors.white,
+        backgroundColor: colors.secondaryB,
         borderRadius: normalize(3),
-        color:colors.black,
+        color: colors.gray,
         fontSize: normalize(2.8),
         flexDirection: 'row',
         margin: normalize(5),
@@ -114,14 +131,15 @@ const styles = StyleSheet.create({
     input: {
         alignSelf: 'center',
         backgroundColor: colors.white,
-        borderColor: colors.white,
+        borderColor: colors.gray,
         borderRadius: 20,
         borderWidth: 1,
-        fontSize: normalize(2),
+        fontSize: normalize(4),
         height: normalize(50),
         margin: normalize(0.5),
         padding: 10,
         width: '80%',
+        fontFamily: 'Poppins',
     },
     input_multiline: {
         alignSelf: 'center',
@@ -162,7 +180,7 @@ const styles = StyleSheet.create({
         /*backgroundColor: colors.primaryA,
         textDecorationLine: 'underline',
         borderRadius: normalize(1),*/
-        color: colors.white,
+        color: colors.primaryA,
         padding:normalize(6),
         paddingBottom: normalize(1),
         paddingTop: normalize(1),

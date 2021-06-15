@@ -105,9 +105,21 @@ const FAQ = ({ questions, search, settings }) => {
         <View style={styles.container}>
             <Header></Header>
             <View style={styles.content}>
-                <Text style={styles.title}>
-                    {'Preguntas Frecuentes'}
-                </Text>
+                <View style={styles.row}>
+                    <View style={styles.element}>
+                        <Image style={{
+                            height: normalize(40),
+                            width: normalize(40),
+                            resizeMode: 'contain',
+                            alignSelf: 'center',
+                        }}
+                            source={require('../../../assets/icons/FAQS.png')}
+                        ></Image>
+                        <Text style={styles.welcome}>
+                            {'Preguntas Frecuentes'}
+                        </Text>
+                    </View>
+                </View>
                 <TextInput
                     style={styles.input}
                     placeholderTextColor="#777777"
@@ -124,7 +136,7 @@ const FAQ = ({ questions, search, settings }) => {
                             {questions[section].map(question =>
                                 <View key={question.id}>
                                     <TouchableOpacity onPress={() => select(question.id)}>
-                                        <Text style={styles.text}> {question.question} </Text>
+                                        <Text style={styles.text}>{question.question}</Text>
                                     </TouchableOpacity>
                                     {(selected === question.id) &&
                                         <View>
@@ -133,9 +145,10 @@ const FAQ = ({ questions, search, settings }) => {
                                                     <Image style={{
                                                         height: normalize(50),
                                                         width: normalize(50),
-                                                    }} source={isPlaying ? require('../../../assets/icons/pause.png') : require('../../../assets/icons/sound.png')} ></Image>
+                                                        resizeMode: 'contain',
+                                                    }} source={isPlaying ? require('../../../assets/icons/pause.png') : require('../../../assets/icons/speaker.png')} ></Image>
                                                 </TouchableOpacity>
-                                                <Text style={styles.answerText} > {question.answer} </Text>
+                                                <Text style={styles.answerText} >{question.answer}</Text>
                                             </View>
                                             {
                                                 (selected === 7) &&
@@ -151,7 +164,7 @@ const FAQ = ({ questions, search, settings }) => {
                         </View>
                     )}
                     <TouchableOpacity>
-                        <Text style={styles.link} onPress={() => Actions.Contact(true)} > {'¿Tu pregunta no se encuentra en la lista? Contáctanos'} </Text>
+                        <Text style={styles.link} onPress={() => Actions.Contact(true)} > {'¿Tu pregunta no se encuentra en la lista?\nContáctanos'} </Text>
                     </TouchableOpacity>
                 </ScrollView>
             </View>
