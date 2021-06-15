@@ -8,15 +8,13 @@ import { Actions } from 'react-native-router-flux';
 const Home = ({}) => (
     <View style={styles.container}>
         <View style={styles.header}>
-            <Image style={styles.icon} source={require('../../../assets/logo/icon.png')} ></Image>
-            <Image style={styles.logo} source={require('../../../assets/logo/logo.png')} ></Image>
+            <View style={styles.logoContainer}>
+                <Image style={styles.logo} source={require('../../../assets/logo/Logoldpi.png')} ></Image>
+            </View>
             <TouchableOpacity onPress={()=>Actions.Settings(true)} >
-                <Image style={styles.icon} source={require('../../../assets/icons/settings.png')} ></Image>
+                <Image style={styles.icon} source={require('../../../assets/icons/Configuracionldpi.png')} ></Image>
             </TouchableOpacity>  
         </View>
-        <Text style={styles.title}>
-            {'Aplicación Móvil'}
-        </Text>
         <Menu></Menu>
     </View>
 );

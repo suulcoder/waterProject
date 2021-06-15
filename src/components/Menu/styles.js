@@ -5,7 +5,7 @@ import { normalize } from '../../utils/normalize';
 const styles = StyleSheet.create({
     container: {
       alignSelf: 'center',
-      backgroundColor: colors.primaryA,
+      backgroundColor: colors.white,
       borderTopLeftRadius: normalize(55),
       borderTopRightRadius: normalize(55),
       flex: 1,

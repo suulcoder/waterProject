@@ -5,7 +5,7 @@ import { normalize } from '../../utils/normalize';
 const styles = StyleSheet.create({
     container: {
       alignItems: 'flex-start',
-      backgroundColor: colors.white,
+      backgroundColor: colors.primaryA,
       flex: 1,
       flexDirection: 'column',
       justifyContent: 'center',
@@ -13,30 +13,20 @@ const styles = StyleSheet.create({
     },
     header:{
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        justifyContent: 'flex-end',
         padding: normalize(3),
         width: '100%',
     },
+    logoContainer: {
+        width: '68%',
+    },
     icon:{
-        height:normalize(15),
-        width:normalize(15),
+        height:normalize(20),
+        width:normalize(20),
     },
     logo:{
         height: normalize(30),
-        width: normalize(600),
-    },
-    bottom:{
-        backgroundColor: colors.primaryA,
-        bottom: 0,
-        height: normalize(7),
-        position: 'absolute',
-        width: '100%',
-    },
-    title:{
-        alignSelf: 'center',
-        color: colors.secondaryB,
-        fontSize: normalize(3),
-        fontWeight: "bold",
+        width: normalize(850),
     },
   });
   
