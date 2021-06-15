@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
       flexDirection: 'column',
       justifyContent: 'center',
       marginTop: normalize(10),
-      paddingTop: normalize(5), 
+      paddingTop: normalize(2), 
     },
     header:{
         flexDirection: 'row',
@@ -24,10 +24,12 @@ const styles = StyleSheet.create({
     icon:{
         height:normalize(20),
         width:normalize(20),
+        resizeMode: 'contain',
     },
     logo:{
         height: normalize(30),
         width: normalize(850),
+        resizeMode: 'contain',
     },
   });
   

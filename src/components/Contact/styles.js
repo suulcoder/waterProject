@@ -5,13 +5,13 @@ import { normalize } from '../../utils/normalize';
 const styles = StyleSheet.create({
     container: {
       alignItems: 'flex-start',
-      backgroundColor: colors.white,
+      backgroundColor: colors.primaryA,
       flex: 1,
       flexDirection: 'column',
       marginTop: normalize(10), 
     },
     content: {
-        backgroundColor: colors.primaryA,
+        backgroundColor: colors.white,
         flex: 1,
         flexDirection: 'column',
         padding: normalize(3),
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
           marginBottom: normalize(30),
           height: normalize(0.1),
           width: '90%',
-          backgroundColor: colors.white,
+          backgroundColor: colors.primaryA,
       },
     bottom:{
         backgroundColor: colors.primaryA,
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     },
     title:{
         alignSelf: 'center',
-        color: colors.white,
+        color: colors.gray,
         fontSize: normalize(7),
         fontWeight: "bold",
         marginBottom: normalize(0.005),
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     },
     subtitle:{
         alignSelf: 'center',
-        color: colors.white,
+        color: colors.gray,
         fontSize: normalize(5),
         fontWeight: "bold",
         marginBottom: normalize(0.005),
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     },
     circle:{
         alignItems:'center',
-        backgroundColor: colors.white,
+        backgroundColor: colors.primaryA,
         borderRadius: normalize(50),
         height: normalize(80),
         marginRight: normalize(1),
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
         maxWidth: '80%',
     },
     text:{
-        color:colors.white,
+        color:colors.gray,
         fontSize: normalize(2.5),
         marginBottom: normalize(0.25),
     },
@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
     input: {
         alignSelf: 'center',
         backgroundColor: colors.white,
-        borderColor: colors.white,
+        borderColor: colors.gray,
         borderRadius: 20,
         borderWidth: 1,
         fontSize: normalize(2),
@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
     input_multiline: {
         alignSelf: 'center',
         backgroundColor: colors.white,
-        borderColor: colors.white,
+        borderColor: colors.gray,
         borderRadius: 20,
         borderWidth: 1,
         fontSize: normalize(2),
@@ -122,7 +122,6 @@ const styles = StyleSheet.create({
     viewLocation:{
         alignSelf: 'center',
         textAlign: 'center',
-        backgroundColor: colors.primaryA,
         textDecorationLine: 'underline',
         borderRadius: normalize(1),
         color: colors.white,
@@ -160,7 +159,7 @@ const styles = StyleSheet.create({
     },
     error:{
         alignSelf: 'center',
-        color:colors.white,
+        color:colors.red,
         fontSize: normalize(3),
         marginBottom: normalize(0.25),
     },

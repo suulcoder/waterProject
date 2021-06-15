@@ -10,16 +10,18 @@ const styles = StyleSheet.create({
         paddingTop: normalize(5),
         paddingLeft: normalize(5),
         paddingRight: normalize(5),
-        paddingBottom: normalize(1),
+        paddingBottom: normalize(5),
         width: '100%',
     },
     icon:{
         height:normalize(15),
         width:normalize(15),
+        resizeMode: 'contain',
     },
     logo:{
         height: normalize(30),
         width: normalize(600),
+        resizeMode: 'contain',
     },
   });
   
