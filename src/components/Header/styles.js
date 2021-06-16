@@ -7,10 +7,7 @@ const styles = StyleSheet.create({
         alignItems:'center',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        paddingTop: normalize(5),
-        paddingLeft: normalize(5),
-        paddingRight: normalize(5),
-        paddingBottom: normalize(5),
+        padding: normalize(5),
         width: '100%',
     },
     icon:{
