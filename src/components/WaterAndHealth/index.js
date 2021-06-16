@@ -50,11 +50,11 @@ const Health = ({settings, back}) => {
     <View style={styles.container}>
         <View style={styles.header}>
             <TouchableOpacity onPress={back}>
-                <Image style={styles.icon} source={require('../../../assets/icons/back.png')} ></Image>
+                <Image style={styles.icon} source={require('../../../assets/icons/Regresar.png')} ></Image>
             </TouchableOpacity>  
-            <Image style={styles.logo} source={require('../../../assets/logo/logo.png')} ></Image>
+            <Image style={styles.logo} source={require('../../../assets/logo/Logoldpi.png')} ></Image>
             <TouchableOpacity onPress={play}>
-                <Image style={styles.icon_sound} source={isPlaying?require('../../../assets/icons/pause.png'):require('../../../assets/icons/sound.png')} ></Image>
+                <Image style={styles.icon_sound} source={isPlaying?require('../../../assets/icons/pause.png'):require('../../../assets/icons/speaker.png')} ></Image>
             </TouchableOpacity>  
         </View>
             <ScrollView

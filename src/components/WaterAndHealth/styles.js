@@ -16,18 +16,22 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     padding: normalize(3),
     width: '100%',
+    backgroundColor: colors.primaryA,
   },
   icon: {
     height: normalize(15),
     width: normalize(15),
+    resizeMode: 'contain',
   },
   icon_sound: {
     height: normalize(20),
     width: normalize(20),
+    resizeMode: 'contain',
   },
   logo: {
     height: normalize(30),
     width: normalize(600),
+    resizeMode: 'contain',
   },
 });
 
