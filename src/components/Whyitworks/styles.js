@@ -5,35 +5,37 @@ import { normalize } from '../../utils/normalize';
 const styles = StyleSheet.create({
     container: {
       alignItems: 'flex-start',
-      backgroundColor: colors.white,
+      backgroundColor: colors.primaryA,
       flex: 1,
       flexDirection: 'column',
       marginTop: normalize(10), 
     },
     content: {
         alignSelf: 'center',
-        backgroundColor: colors.primaryA,
+        backgroundColor: colors.white,
         flex: 1,
         justifyContent: 'center',
         marginTop: normalize(4),
         width: '100%',
       },
-    element:{
+      element:{
         alignSelf: 'center',
-        backgroundColor: colors.white,
-        borderRadius: normalize(150),
-        height: normalize(450),
+        backgroundColor: colors.secondaryB,
+        borderRadius: normalize(5),
+        height: normalize(60),
         justifyContent: 'center',
         padding: normalize(1),
-        width: normalize(450),
+        width: '100%',
     },
     text: {
         alignSelf: 'center',
         color: colors.white,
-        width: normalize(500),
-        fontSize: normalize(2.5),
-        marginTop: normalize(1.5),
-        textAlign: 'center',
+        //width: normalize(500),
+        fontSize: normalize(6),
+        fontFamily: 'Poppins-Bold',
+        marginLeft: normalize(1),
+        //marginTop: normalize(1.5),
+        //textAlign: 'center',
     },
     welcomeText:{
       alignSelf: 'center',
@@ -54,7 +56,13 @@ const styles = StyleSheet.create({
     row:{
         flexDirection: 'row',
         justifyContent: 'space-around',
-        padding: normalize(15),
+        padding: normalize(5),
+    },
+    row1:{
+        flexDirection: 'row',
+        justifyContent: 'flex-start',
+        //padding: normalize(15),
+        margin: normalize(5),
     },
     icon:{
         height:normalize(20),
@@ -74,6 +82,11 @@ const styles = StyleSheet.create({
         marginLeft: normalize(1),
         marginRight: normalize(1),
         maxWidth: '80%',
+    },
+    video: {
+        backgroundColor: colors.black,
+        width: "100%",
+        height: normalize(700),
     },
 });
   
