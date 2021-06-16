@@ -5,34 +5,48 @@ import { normalize } from '../../utils/normalize';
 const styles = StyleSheet.create({
   container: {
     alignItems: 'flex-start',
-    backgroundColor: colors.white,
+    backgroundColor: colors.primaryA,
     flex: 1,
     flexDirection: 'column',
     width: '100%',
-    marginTop: normalize(10), 
+    marginTop: normalize(10),
   },
   content: {
-      alignSelf: 'center',
-      backgroundColor: colors.primaryA,
-      flex: 1,
-      justifyContent: 'center',
-      marginTop: normalize(4),
-      width: '100%',
+    alignSelf: 'center',
+    backgroundColor: colors.white,
+    flex: 1,
+    justifyContent: 'center',
+    marginTop: normalize(4),
+    width: '100%',
   },
-  video: { 
-      backgroundColor: colors.black,
-      width: "100%", 
-      height: "75%" 
+  video: {
+    backgroundColor: colors.black,
+    width: "100%",
+    height: "75%"
   },
-  welcomeText:{
-      textAlign: 'center',
-      alignSelf: 'center',
-      color:colors.white,
-      fontSize: normalize(8),
-      fontWeight: "bold",
-      marginBottom: normalize(25),
-      marginTop: normalize(25)
-    },
+  element: {
+    backgroundColor: colors.secondaryB,
+    borderRadius: normalize(10),
+    width: '100%',
+    padding: normalize(2),
+  },
+  welcome: {
+    alignSelf: 'center',
+    color: colors.white,
+    fontSize: normalize(10),
+    /* marginBottom: normalize(1),
+    marginTop: normalize(1), 
+    padding: normalize(0.5),*/
+    textAlign: 'center',
+    fontFamily: 'Poppins-Bold',
+  },
+  row: {
+    alignSelf: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
+    margin: normalize(2),
+    justifyContent: 'space-around',
+  },
 });
-  
+
 export default styles
