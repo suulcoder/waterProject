@@ -26,22 +26,21 @@ const styles = StyleSheet.create({
     imageResult: {
         alignSelf: 'center',
         width: normalize(800),
-        height: normalize(400),
+        height: normalize(350),
         //margin: normalize(5),
     },
     textStep: {
         textAlign: 'justify',
         alignSelf: 'center',
         fontSize: normalize(5),
-        margin: normalize(0.5),
+        margin: normalize(0.2),
         // padding: 10,
         width: '90%',
         fontFamily: 'Poppins',
     },
     textBold: {
         fontSize: normalize(5),
-        fontFamily: 'Poppins',
-        fontWeight: 'bold',
+        fontFamily: 'Poppins-Bold',
         textAlign: 'justify',
     },
     stepTitle:{
@@ -53,14 +52,13 @@ const styles = StyleSheet.create({
         paddingTop: normalize(1.5),
         textAlign: 'center',
         fontFamily: 'Crewniverse',
-        fontWeight: 'bold',
-        fontSize: normalize(12),
+        fontSize: normalize(8),
     },
     step:{
         alignSelf:'center',
         borderRadius: normalize(15),
         // marginBottom: normalize(10),
-        margin: normalize(5),
+        margin: normalize(2),
     },
     row:{
         flexDirection: 'row',

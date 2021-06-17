@@ -45,8 +45,7 @@ const styles = StyleSheet.create({
     },
     textBold: {
         fontSize: normalize(5),
-        fontFamily: 'Poppins',
-        fontWeight: 'bold',
+        fontFamily: 'Poppins-Bold',
         textAlign: 'justify',
     },
     stepTitle:{
@@ -58,8 +57,7 @@ const styles = StyleSheet.create({
         paddingTop: normalize(1.5),
         textAlign: 'center',
         fontFamily: 'Crewniverse',
-        fontWeight: 'bold',
-        fontSize: normalize(12),
+        fontSize: normalize(8),
     },
     step:{
         alignSelf:'center',
