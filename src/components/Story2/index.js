@@ -9,10 +9,13 @@ const Story2 = ({}) => (
     <View style={styles.container}>
         <Header></Header>
         <View style={styles.content}>
-        
-        <Text style={styles.welcomeText}>
-            {'Testimonial familiar anónimo'}
-        </Text>
+        <View style={styles.row}>
+                <View style={styles.element}>
+                    <Text style={styles.welcome}>
+                        {'Testimonial familiar anónimo'}
+                    </Text>
+                </View>
+            </View>
         <Video
             source={require('../../../assets/video/experiencias2.mp4')}
             shouldPlay
