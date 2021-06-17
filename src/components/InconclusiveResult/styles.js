@@ -42,8 +42,7 @@ const styles = StyleSheet.create({
         paddingBottom: normalize(1.5),
         paddingTop: normalize(1.5),
         textAlign: 'center',
-        fontFamily: 'Poppins',
-        fontWeight: 'bold',
+        fontFamily: 'Poppins-Bold',
         fontSize: 12,
     },
     submit:{
