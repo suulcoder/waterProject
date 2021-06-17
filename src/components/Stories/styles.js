@@ -4,45 +4,53 @@ import { normalize } from '../../utils/normalize';
 
 const styles = StyleSheet.create({
     container: {
-      alignItems: 'flex-start',
-      backgroundColor: colors.white,
-      flex: 1,
-      flexDirection: 'column',
-      marginTop: normalize(10), 
+        alignItems: 'flex-start',
+        backgroundColor: colors.primaryA,
+        flex: 1,
+        flexDirection: 'column',
+        marginTop: normalize(10),
     },
     content: {
         alignSelf: 'center',
-        backgroundColor: colors.primaryA,
+        backgroundColor: colors.white,
         flex: 1,
         justifyContent: 'center',
         marginTop: normalize(4),
         width: '100%',
-      },
-    element:{
+    },
+    element: {
         alignSelf: 'center',
-        backgroundColor: colors.white,
-        borderRadius: normalize(150),
-        height: normalize(450),
+        backgroundColor: colors.secondaryB,
+        borderRadius: normalize(5),
+        height: normalize(75),
         justifyContent: 'center',
         padding: normalize(1),
-        width: normalize(450),
-    },
+        width: '100%',
+    }, 
     text: {
         alignSelf: 'center',
-        color: colors.white,
+        color: colors.gray,
         width: normalize(500),
-        fontSize: normalize(2.5),
+        fontSize: normalize(3),
         marginTop: normalize(1.5),
-        textAlign: 'center',
+        textAlign: 'left',
+        fontFamily: 'Poppins-Bold',
+        width: '65%',
     },
-    welcomeText:{
-      alignSelf: 'center',
-      color:colors.white,
-      fontSize: normalize(8),
-      fontWeight: "bold",
-      marginBottom: normalize(25),
+    welcomeText: {
+        alignSelf: 'center',
+        color: colors.white,
+        fontSize: normalize(6),
+        fontFamily: 'Poppins-Bold',
+        marginLeft: normalize(1),
     },
-    title:{
+    row1: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        //padding: normalize(15),
+        margin: normalize(5),
+    },
+    title: {
         alignSelf: 'center',
         color: colors.white,
         fontSize: normalize(7),
@@ -51,18 +59,20 @@ const styles = StyleSheet.create({
         marginTop: normalize(1),
         padding: normalize(0.5),
     },
-    row:{
+    row: {
         flexDirection: 'row',
         justifyContent: 'space-around',
-        padding: normalize(15),
+        paddingLeft: normalize(5),
+        paddingRight: normalize(5),
+        paddingTop: normalize(5),
     },
-    icon:{
-        height:normalize(20),
+    icon: {
+        height: normalize(20),
         margin: normalize(1),
-        width:normalize(20),
+        width: normalize(20),
     },
-    circle:{
-        alignItems:'center',
+    circle: {
+        alignItems: 'center',
         backgroundColor: colors.white,
         borderRadius: normalize(50),
         height: normalize(80),
@@ -70,11 +80,11 @@ const styles = StyleSheet.create({
         padding: normalize(1),
         width: normalize(80),
     },
-    info:{
+    info: {
         marginLeft: normalize(1),
         marginRight: normalize(1),
         maxWidth: '80%',
     },
 });
-  
+
 export default styles
