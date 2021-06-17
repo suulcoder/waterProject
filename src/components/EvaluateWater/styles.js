@@ -6,7 +6,7 @@ const { width: viewportWidth, height: viewportHeight } = Dimensions.get('window'
 const styles = StyleSheet.create({
     container: {
         alignItems: 'flex-start',
-        backgroundColor: colors.white,
+        backgroundColor: colors.primaryA,
         flex: 1,
         flexDirection: 'column',
         marginTop: normalize(10),
