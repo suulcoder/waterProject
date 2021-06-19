@@ -10,17 +10,27 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'flex-start',
         flexDirection: 'column',
-        padding: normalize(3),
+        //padding: normalize(3),
+        // marginTop: normalize(5),
+    },
+    itemScroll: {
+        //backgroundColor: colors.white,
+        width: viewportWidth,
+        flex: 1,
+        //alignItems: 'flex-start',
+        flexDirection: 'column',
+        //padding: normalize(3),
+        height: viewportHeight,
         // marginTop: normalize(5),
     },
     arrows: {
         width: normalize(100),
-        height: normalize(500),
+        height: normalize(100),
         alignSelf: 'center',
     },
     image: {
         width: normalize(700),
-        height: normalize(500),
+        height: normalize(100),
         alignSelf: 'center',
     },
     imageResult: {
@@ -58,7 +68,7 @@ const styles = StyleSheet.create({
         alignSelf:'center',
         borderRadius: normalize(15),
         // marginBottom: normalize(10),
-        margin: normalize(2),
+        margin: normalize(5),
     },
     row:{
         flexDirection: 'row',
@@ -66,6 +76,9 @@ const styles = StyleSheet.create({
         padding: normalize(5),
         width: '100%',
     },
+    subItems: {
+        marginLeft: normalize(5),
+    }
 });
 
 export default styles;
