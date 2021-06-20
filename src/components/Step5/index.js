@@ -1,58 +1,68 @@
-import { Text, View, Image, TouchableOpacity } from 'react-native';
+import { Text, View, Image, TouchableOpacity, ScrollView } from 'react-native';
 import React from 'react';
 import styles from './styles'
 
 const Step5 = ({ back, go }) => (
-    <View style={styles.item}
-    >
-        <View style={styles.step}>
-            <Text style={styles.stepTitle}>Paso 5</Text>
-        </View>
-        <Text
-            style={styles.textStep}
+    <ScrollView style={styles.itemScroll}>
+        <View style={styles.item}
         >
-            <Text style={styles.textBold}>{'1. '}</Text>
-            {'Enfocar la muestra desplazando la rampa de enfoque hacia la izquierda o derecha, '}
-            <Text style={styles.textBold}>
-                {'según sea necesario.'}
+            <View style={styles.step}>
+                <Text style={styles.stepTitle}>Paso 5</Text>
+            </View>
+            <Text
+                style={styles.textStep}
+            >
+                <Text style={styles.textBold}>{'A. '}</Text>
+                {'Adherir la lámpara LED al microscopio entre el teléfono y el foldscopio, y encender.'}
             </Text>
-        </Text>
-        <Text
-            style={styles.textStep}
-        >
-            <Text style={styles.textBold}>{'2. '}</Text>
-            {'Aumentar la magnificación manualmente '}
-            <Text style={styles.textBold}>
-                {'del dispositivo móvil.'}
+            <Text
+                style={styles.textStep}
+            >
+                <Text style={styles.textBold}>{'a. Esta puede causar más interferencia en ciertas ocasiones, por lo cual no es siempre necesario utilizarla.'}</Text>
             </Text>
-        </Text>
-        <View style={styles.row}>
-            <TouchableOpacity>
-                <Image
-                    source={require("../../../assets/pics/moreInfo.png")}
-                    resizeMode='contain'
-                    style={styles.imageResult}
-                />
-            </TouchableOpacity>
+            <Text
+                style={styles.textStep}
+            >
+                <Text style={styles.textBold}>{'B. '}</Text>
+                {'Puede enfocar la muestra desplazando la rampa de enfoque hacia la izquierda o derecha, según sea necesario.'}
+            </Text>
+            <Text
+                style={styles.textStep}
+            >
+                <Text style={styles.textBold}>{'C. '}</Text>
+                {'Para explorar la muestra, puede mover la lámina y platina de desplazamiento más exteriores.'}
+            </Text>
+            <Text
+                style={styles.textStep}
+            >
+                <Text style={styles.textBold}>{'D. '}</Text>
+                {'También puede aumentar la magnificación manualmente, haciendo zoom desde el dispositivo móvil, según sea necesario.'}
+            </Text>
+            <View style={styles.row}>
+                <TouchableOpacity onPress={back}>
+                    <Image
+                        source={require("../../../assets/pics/regresar.png")}
+                        resizeMode='contain'
+                        style={styles.arrows}
+                    />
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <Image
+                        source={require("../../../assets/pics/more.png")}
+                        resizeMode='contain'
+                        style={styles.image}
+                    />
+                </TouchableOpacity>
+                <TouchableOpacity onPress={go}>
+                    <Image
+                        source={require("../../../assets/pics/avanzar.png")}
+                        resizeMode='contain'
+                        style={styles.arrows}
+                    />
+                </TouchableOpacity>
+            </View>
         </View>
-        <View style={styles.row}>
-            <TouchableOpacity onPress={back}>
-                <Image
-                    source={require("../../../assets/pics/regresar.png")}
-                    resizeMode='contain'
-                    style={styles.arrows}
-                />
-            </TouchableOpacity>
-            <View style={styles.space} />
-            <TouchableOpacity onPress={go}>
-                <Image
-                    source={require("../../../assets/pics/avanzar.png")}
-                    resizeMode='contain'
-                    style={styles.arrows}
-                />
-            </TouchableOpacity>
-        </View>
-    </View>
+    </ScrollView>
 );
 
 export default Step5;

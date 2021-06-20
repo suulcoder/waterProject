@@ -6,16 +6,27 @@ const { width: viewportWidth, height: viewportHeight } = Dimensions.get('window'
 const styles = StyleSheet.create({
     item: {
         backgroundColor: colors.white,
-        width: viewportWidth,
+        width: '100%',
         flex: 1,
         alignItems: 'flex-start',
         flexDirection: 'column',
-        padding: normalize(3),
+        padding: normalize(5),
         //marginTop: normalize(5),
+    },
+    itemScroll: {
+        //backgroundColor: colors.white,
+        width: viewportWidth,
+        flex: 1,
+        //alignItems: 'flex-start',
+        flexDirection: 'column',
+        //justifyContent: 'center',
+        //padding: normalize(3),
+        height: viewportHeight,
+        // marginTop: normalize(5),
     },
     arrows: {
         width: normalize(100),
-        height: normalize(100),
+        height: normalize(200),
         alignSelf: 'center',
     },
     space : {
@@ -25,7 +36,7 @@ const styles = StyleSheet.create({
     },
     image: {
         width: normalize(700),
-        height: normalize(300),
+        height: normalize(200),
         alignSelf: 'center',
     },
     imageResult: {
@@ -36,15 +47,15 @@ const styles = StyleSheet.create({
     },
     textStep: {
         textAlign: 'justify',
-        alignSelf: 'center',
-        fontSize: normalize(5),
+        // alignSelf: 'center',
+        fontSize: normalize(3.5),
         margin: normalize(0.5),
         // padding: 10,
-        width: '90%',
+        // width: '90%',
         fontFamily: 'Poppins',
     },
     textBold: {
-        fontSize: normalize(5),
+        fontSize: normalize(3.5),
         fontFamily: 'Poppins-Bold',
         textAlign: 'justify',
     },
@@ -71,6 +82,9 @@ const styles = StyleSheet.create({
         padding: normalize(5),
         width: '100%',
     },
+    subItems: {
+        marginLeft: normalize(5),
+    }
 });
 
 export default styles;
