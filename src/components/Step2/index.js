@@ -1,6 +1,7 @@
 import { Text, View, Image, TouchableOpacity, ScrollView } from 'react-native';
 import React from 'react';
 import styles from './styles'
+import { Actions } from 'react-native-router-flux';
 
 const Step2 = ({ back, go }) => (
     <ScrollView style={styles.itemScroll}>
@@ -59,7 +60,7 @@ const Step2 = ({ back, go }) => (
                         style={styles.arrows}
                     />
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => Actions.Demo2(false)}>
                     <Image
                         source={require("../../../assets/pics/more.png")}
                         resizeMode='contain'

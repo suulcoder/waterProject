@@ -26,6 +26,11 @@ import Story1 from './src/components/Story1';
 import Story2 from './src/components/Story2';
 import Story3 from './src/components/Story3';
 import Story4 from './src/components/Story4';
+import Demo1 from './src/components/Demo1';
+import Demo2 from './src/components/Demo2';
+import Demo3 from './src/components/Demo3';
+import Demo4 from './src/components/Demo4';
+import Demo5 from './src/components/Demo5';
 import EvaluateWater from './src/components/EvaluateWater';
 import * as Font from 'expo-font';
 import { AppLoading } from 'expo';
@@ -82,6 +87,11 @@ export default class App extends React.Component {
               <Scene key="Story2" component={Story2} hideNavBar={true} />
               <Scene key="Story3" component={Story3} hideNavBar={true} />
               <Scene key="Story4" component={Story4} hideNavBar={true} />
+              <Scene key="Demo1" component={Demo1} hideNavBar={true} />
+              <Scene key="Demo2" component={Demo2} hideNavBar={true} />
+              <Scene key="Demo3" component={Demo3} hideNavBar={true} />
+              <Scene key="Demo4" component={Demo4} hideNavBar={true} />
+              <Scene key="Demo5" component={Demo5} hideNavBar={true} />
             </Stack>
           </Router>
         </Provider>
