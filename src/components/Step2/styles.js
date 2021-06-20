@@ -26,12 +26,12 @@ const styles = StyleSheet.create({
     },
     arrows: {
         width: normalize(100),
-        height: normalize(100),
+        height: normalize(300),
         alignSelf: 'center',
     },
     image: {
         width: normalize(700),
-        height: normalize(100),
+        height: normalize(300),
         alignSelf: 'center',
     },
     imageResult: {

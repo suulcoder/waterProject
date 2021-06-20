@@ -42,8 +42,9 @@ const styles = StyleSheet.create({
     imageResult: {
         alignSelf: 'center',
         width: normalize(800),
-        height: normalize(800),
+        height: normalize(400),
         margin: normalize(5),
+        resizeMode: 'contain',
     },
     textStep: {
         textAlign: 'justify',

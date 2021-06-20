@@ -20,18 +20,33 @@ const Step5 = ({ back, go }) => (
             >
                 <Text style={styles.textBold}>{'a. Esta puede causar más interferencia en ciertas ocasiones, por lo cual no es siempre necesario utilizarla.'}</Text>
             </Text>
+            <Image
+                source={require("../../../assets/pics/paso5Aa.png")}
+                resizeMode='contain'
+                style={styles.imageResult}
+            />
             <Text
                 style={styles.textStep}
             >
                 <Text style={styles.textBold}>{'B. '}</Text>
                 {'Puede enfocar la muestra desplazando la rampa de enfoque hacia la izquierda o derecha, según sea necesario.'}
             </Text>
+            <Image
+                source={require("../../../assets/pics/paso5B.png")}
+                resizeMode='contain'
+                style={styles.imageResult}
+            />
             <Text
                 style={styles.textStep}
             >
                 <Text style={styles.textBold}>{'C. '}</Text>
                 {'Para explorar la muestra, puede mover la lámina y platina de desplazamiento más exteriores.'}
             </Text>
+            <Image
+                source={require("../../../assets/pics/paso5C.png")}
+                resizeMode='contain'
+                style={styles.imageResult}
+            />
             <Text
                 style={styles.textStep}
             >

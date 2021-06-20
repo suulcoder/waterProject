@@ -29,6 +29,11 @@ const Step4 = ({ back, go }) => (
                 <Text style={styles.textBold}>{'B. '}</Text>
                 {'Deje secar completamente la muestra al aire libre por al menos 5 minutos.'}
             </Text>
+            <Image
+                source={require("../../../assets/pics/paso4B.png")}
+                resizeMode='contain'
+                style={styles.imageResult}
+            />
             <Text
                 style={styles.textStep}
             >
@@ -47,12 +52,22 @@ const Step4 = ({ back, go }) => (
                     {'y que el agujero en medio del imán quede exactamente en el centro del lente del dispositivo.'}
                 </Text>
             </View>
+            <Image
+                source={require("../../../assets/pics/paso4Ca.png")}
+                resizeMode='contain'
+                style={styles.imageResult}
+            />
             <Text
                 style={styles.textStep}
             >
                 <Text style={styles.textBold}>{'D. '}</Text>
                 {'Cuando la muestra se haya secado, coloque el portaobjeto en el sostén del lado amarillo del foldoscopio, exponiéndolo al abrir la apertura hacia abajo.'}
             </Text>
+            <Image
+                source={require("../../../assets/pics/paso4D.png")}
+                resizeMode='contain'
+                style={styles.imageResult}
+            />
             <View style={styles.subItems}>
                 <Text
                     style={styles.textStep}
@@ -64,6 +79,11 @@ const Step4 = ({ back, go }) => (
                     </Text>
                 </Text>
             </View>
+            <Image
+                source={require("../../../assets/pics/paso4Da.png")}
+                resizeMode='contain'
+                style={styles.imageResult}
+            />
             <Text
                 style={styles.textStep}
             >
@@ -71,7 +91,7 @@ const Step4 = ({ back, go }) => (
                 {'Coloque el lente del lado azul del foldoscopio junto la extensión magnética previamente adherida a la cámara del dispositivo móvil.'}
             </Text>
             <Image
-                source={require("../../../assets/pics/paso4.png")}
+                source={require("../../../assets/pics/paso4E.png")}
                 resizeMode='contain'
                 style={styles.imageResult}
             />

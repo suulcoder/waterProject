@@ -38,6 +38,11 @@ const Step3 = ({ back, go }) => (
                 <Text style={styles.textBold}>{'C. '}</Text>
                 {'Coloque una gota de cristal violeta sobre la muestra y déjela actuar durante 1 minuto.'}
             </Text>
+            <Image
+                source={require("../../../assets/pics/paso3C.png")}
+                resizeMode='contain'
+                style={styles.imageResult}
+            />
             <Text
                 style={styles.textStep}
             >
@@ -52,11 +57,6 @@ const Step3 = ({ back, go }) => (
                     {'Evite dejar caer el agua directamente sobre la área de la muestra.'}
                 </Text>
             </View>
-            <Image
-                source={require("../../../assets/pics/paso3.png")}
-                resizeMode='contain'
-                style={styles.imageResult}
-            />
             <View style={styles.row}>
                 <TouchableOpacity onPress={back}>
                     <Image

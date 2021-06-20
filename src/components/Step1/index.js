@@ -27,6 +27,11 @@ const Step1 = ({ back, go }) => (
                 <Text style={styles.textBold}>{'C. '}</Text>
                 {'Abra la bolsa estirando las pestañas centrales hacia lados opuestos.'}
             </Text>
+            <Image
+                source={require("../../../assets/pics/paso1C.png")}
+                resizeMode='contain'
+                style={styles.imageResult}
+            />
             <Text
                 style={styles.textStep}
             >
@@ -45,6 +50,11 @@ const Step1 = ({ back, go }) => (
                     <Text style={styles.textBold}>{'b. Nunca deje que el interior de la bolsa haga contacto con sus manos o el grifo.'}</Text>
                 </Text>
             </View>
+            <Image
+                source={require("../../../assets/pics/paso1Grifo.png")}
+                resizeMode='contain'
+                style={styles.imageResult}
+            />
             <Text
                 style={styles.textStep}
             >
@@ -212,11 +222,6 @@ const Step1 = ({ back, go }) => (
                     {'Pegue la calcomanía sobre la bolsa de muestra a la cual le corresponde y mantengala dentro de la lonchera.'}
                 </Text>
             </View>
-            <Image
-                source={require("../../../assets/pics/paso1.png")}
-                resizeMode='contain'
-                style={styles.imageResult}
-            />
             <View style={styles.row}>
                 <TouchableOpacity onPress={back}>
                     <Image

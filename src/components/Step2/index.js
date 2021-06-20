@@ -51,11 +51,6 @@ const Step2 = ({ back, go }) => (
                 <Text style={styles.textBold}>{'E. '}</Text>
                 {'Quite el filtro y deposite la gota restante sobre la área indicada en el portaobjeto.'}
             </Text>
-            <Image
-                source={require("../../../assets/pics/paso2.png")}
-                resizeMode='contain'
-                style={styles.imageResult}
-            />
             <View style={styles.row}>
                 <TouchableOpacity onPress={back}>
                     <Image
