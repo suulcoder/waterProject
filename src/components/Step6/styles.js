@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     },
     arrows: {
         width: normalize(100),
-        height: normalize(100),
+        height: normalize(300),
         alignSelf: 'center',
     },
     space : {
@@ -37,14 +37,14 @@ const styles = StyleSheet.create({
     textStep: {
         textAlign: 'justify',
         alignSelf: 'center',
-        fontSize: normalize(5),
+        fontSize: normalize(3.5),
         margin: normalize(0.5),
         // padding: 10,
         width: '90%',
         fontFamily: 'Poppins',
     },
     textBold: {
-        fontSize: normalize(5),
+        fontSize: normalize(3.5),
         fontFamily: 'Poppins-Bold',
         textAlign: 'justify',
     },
