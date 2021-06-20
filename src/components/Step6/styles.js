@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     },
     arrows: {
         width: normalize(100),
-        height: normalize(300),
+        height: normalize(100),
         alignSelf: 'center',
     },
     space : {

@@ -11,20 +11,13 @@ const Step6 = ({ back, go }) => (
         <Text
             style={styles.textStep}
         >
-            <Text style={styles.textBold}>{'1. '}</Text>
-            {'Cuando observe claramente '}
-            <Text style={styles.textBold}>
-                {'la sección teñida de violeta, '}
-            </Text>
-            {'gire el foldoscopio alrededor de la fuente de luz '}
-            <Text style={styles.textBold}>
-                {'con el fin de oscurecer el fondo de la imagen.'}
-            </Text>
+            <Text style={styles.textBold}>{'A. '}</Text>
+            {'Tome la imagen y súbala a la aplicación utilizando el botón que se encuentra abajo, lo cual dejará que sea analizada por el algoritmo con la capacidad de identificar contaminación bacteriana.'}
         </Text>
         <View style={styles.row}>
             <TouchableOpacity>
                 <Image
-                    source={require("../../../assets/pics/moreInfo.png")}
+                    source={require("../../../assets/pics/load.png")}
                     resizeMode='contain'
                     style={styles.imageResult}
                 />
