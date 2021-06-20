@@ -3,8 +3,8 @@ import React from 'react';
 import styles from './styles'
 
 const Step2 = ({ back, go }) => (
-    <View style={styles.item}>
-        <ScrollView style={styles.itemScroll}>
+    <ScrollView style={styles.itemScroll}>
+        <View style={styles.item}>
             <View style={styles.step}>
                 <Text style={styles.stepTitle}>Paso 2</Text>
             </View>
@@ -79,8 +79,8 @@ const Step2 = ({ back, go }) => (
                     />
                 </TouchableOpacity>
             </View>
-        </ScrollView>
-    </View>
+        </View>
+    </ScrollView>
 );
 
 export default Step2;

@@ -6,11 +6,11 @@ const { width: viewportWidth, height: viewportHeight } = Dimensions.get('window'
 const styles = StyleSheet.create({
     item: {
         backgroundColor: colors.white,
-        width: viewportWidth,
+        width: '100%',
         flex: 1,
         alignItems: 'flex-start',
         flexDirection: 'column',
-        //padding: normalize(3),
+        padding: normalize(5),
         // marginTop: normalize(5),
     },
     itemScroll: {
@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
         flex: 1,
         //alignItems: 'flex-start',
         flexDirection: 'column',
+        //justifyContent: 'center',
         //padding: normalize(3),
         height: viewportHeight,
         // marginTop: normalize(5),
@@ -36,16 +37,16 @@ const styles = StyleSheet.create({
     imageResult: {
         alignSelf: 'center',
         width: normalize(800),
-        height: normalize(900),
+        height: normalize(400),
         //margin: normalize(5),
     },
     textStep: {
         textAlign: 'justify',
-        alignSelf: 'center',
+        //alignSelf: 'center',
         fontSize: normalize(5),
         margin: normalize(0.5),
         // padding: 10,
-        width: '90%',
+        //width: '90%',
         fontFamily: 'Poppins',
     },
     textBold: {
@@ -68,7 +69,7 @@ const styles = StyleSheet.create({
         alignSelf:'center',
         borderRadius: normalize(15),
         // marginBottom: normalize(10),
-        margin: normalize(5),
+        margin: normalize(2),
     },
     row:{
         flexDirection: 'row',
