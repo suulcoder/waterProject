@@ -24,6 +24,7 @@
     "react-dom": "~16.11.0",
     "react-native": "^0.63.4",
     "react-native-awesome-alerts": "^1.4.2",
+    "react-native-camera": "^3.44.1",
     "react-native-gesture-handler": "~1.6.0",
     "react-native-maps": "0.27.1",
     "react-native-picker-select": "^8.0.4",
