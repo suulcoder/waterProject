@@ -30,7 +30,7 @@ export default class EvaluateWater extends React.Component {
       activeIndex: 0,
       carouselItems: [
         {
-          type: "step",
+          type: "step1",
           component: Step1,
         },
         {
@@ -62,13 +62,23 @@ export default class EvaluateWater extends React.Component {
         {
           component: NegativeResult,
         },
-      ]
+      ],
+      fuentedeagua: 0,
     }
+  }
+
+  cambiarFuente( selected ) {
+    this.setState({
+      fuentedeagua: selected
+    });
+    this._carousel.snapToNext();
   }
 
   _renderItem({ item, index }) {
     if (item.type === 'step') {
       return <item.component go={() => { this._carousel.snapToNext()}} back={() => { this._carousel.snapToPrev()}} />;
+    } else if (item.type === 'step1') {
+      return <item.component go={() => { this._carousel.snapToNext()}} back={() => { this._carousel.snapToPrev()}} fuente={selected => this.cambiarFuente(selected)} />;
     } else {
       return <item.component />;
     }
