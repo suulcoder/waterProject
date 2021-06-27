@@ -54,14 +54,14 @@ const styles = StyleSheet.create({
         textAlign: 'justify',
     },
     stepTitle:{
-        backgroundColor: colors.primaryA,
+        backgroundColor: colors.secondaryB,
         borderRadius: normalize(20),
         color: colors.white,
         padding: normalize(10),
         paddingBottom: normalize(1.5),
         paddingTop: normalize(1.5),
         textAlign: 'center',
-        fontFamily: 'Crewniverse',
+        fontFamily: 'Poppins-Bold',
         fontSize: normalize(8),
     },
     step:{
