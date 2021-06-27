@@ -34,40 +34,6 @@ const Step1 = ({ back, go, fuente }) => (
                 style={styles.imageResult}
             />
             <View style={styles.row}>
-                <TouchableOpacity style={styles.button} onPress={() => fuente(1)}>
-                    <View>
-                        <Image
-                            source={require("../../../assets/icons/grifo-de-agua.png")}
-                            style={styles.icon}
-                        />
-                    </View>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.button} onPress={() => fuente(2)}>
-                    <View>
-                        <Image
-                            source={require("../../../assets/icons/botella-de-agua.png")}
-                            style={styles.icon}
-                        />
-                    </View>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.button} onPress={() => fuente(3)}>
-                    <View>
-                        <Image
-                            source={require("../../../assets/icons/pozo.png")}
-                            style={styles.icon}
-                        />
-                    </View>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.button} onPress={() => fuente(4)}>
-                    <View>
-                        <Image
-                            source={require("../../../assets/icons/lago.png")}
-                            style={styles.icon}
-                        />
-                    </View>
-                </TouchableOpacity>
-            </View>
-            <View style={styles.row}>
                 <TouchableOpacity onPress={back}>
                     <Image
                         source={require("../../../assets/pics/regresar.png")}

@@ -19,6 +19,8 @@ import Step3 from '../Step3';
 import Step4 from '../Step4';
 import Step5 from '../Step5';
 import Step6 from '../Step6';
+import Step1Parte2 from '../Step1Parte2';
+import Step1Parte3 from '../Step1Parte3';
 
 const { width: viewportWidth, height: viewportHeight } = Dimensions.get('window');
 
@@ -30,8 +32,16 @@ export default class EvaluateWater extends React.Component {
       activeIndex: 0,
       carouselItems: [
         {
-          type: "step1",
+          type: "step",
           component: Step1,
+        },
+        {
+          type: "step",
+          component: Step1Parte2,
+        },
+        {
+          type: "step",
+          component: Step1Parte3,
         },
         {
           type: "step",
@@ -67,18 +77,9 @@ export default class EvaluateWater extends React.Component {
     }
   }
 
-  cambiarFuente( selected ) {
-    this.setState({
-      fuentedeagua: selected
-    });
-    this._carousel.snapToNext();
-  }
-
   _renderItem({ item, index }) {
     if (item.type === 'step') {
       return <item.component go={() => { this._carousel.snapToNext()}} back={() => { this._carousel.snapToPrev()}} />;
-    } else if (item.type === 'step1') {
-      return <item.component go={() => { this._carousel.snapToNext()}} back={() => { this._carousel.snapToPrev()}} fuente={selected => this.cambiarFuente(selected)} />;
     } else {
       return <item.component />;
     }

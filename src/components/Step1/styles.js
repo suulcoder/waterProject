@@ -25,12 +25,12 @@ const styles = StyleSheet.create({
     },
     arrows: {
         width: normalize(100),
-        height: normalize(100),
+        height: normalize(700),
         alignSelf: 'center',
     },
     image: {
         width: normalize(700),
-        height: normalize(100),
+        height: normalize(700),
         alignSelf: 'center',
     },
     imageResult: {
@@ -80,19 +80,6 @@ const styles = StyleSheet.create({
         marginLeft: normalize(5),
         //marginRight: normalize(5)
     },
-    button:{
-        backgroundColor: colors.secondaryB,
-        borderRadius: normalize(5),
-        padding: normalize(1),
-        width: normalize(150),
-        height: normalize(150),
-    },
-    icon: {
-        width: normalize(80),
-        height: normalize(80),
-        resizeMode: 'contain',
-        alignSelf: 'center'
-    }
 });
 
 export default styles;
