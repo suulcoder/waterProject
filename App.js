@@ -32,6 +32,7 @@ import Demo3 from './src/components/Demo3';
 import Demo4 from './src/components/Demo4';
 import Demo5 from './src/components/Demo5';
 import EvaluateWater from './src/components/EvaluateWater';
+import TakePicture from './src/components/TakePicture';
 import * as Font from 'expo-font';
 import { AppLoading } from 'expo';
 
@@ -92,6 +93,7 @@ export default class App extends React.Component {
               <Scene key="Demo3" component={Demo3} hideNavBar={true} />
               <Scene key="Demo4" component={Demo4} hideNavBar={true} />
               <Scene key="Demo5" component={Demo5} hideNavBar={true} />
+              <Scene key="TakePicture" component={TakePicture} hideNavBar={true} />
             </Stack>
           </Router>
         </Provider>

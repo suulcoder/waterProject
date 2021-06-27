@@ -1,6 +1,7 @@
 import { Text, View, Image, TouchableOpacity } from 'react-native';
 import React from 'react';
 import styles from './styles'
+import { Actions } from 'react-native-router-flux';
 
 const Step6 = ({ back, go }) => (
     <View style={styles.item}
@@ -15,7 +16,7 @@ const Step6 = ({ back, go }) => (
             {'Tome la imagen y súbala a la aplicación utilizando el botón que se encuentra abajo, lo cual dejará que sea analizada por el algoritmo con la capacidad de identificar contaminación bacteriana.'}
         </Text>
         <View style={styles.row}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => Actions.TakePicture(false)}>
                 <Image
                     source={require("../../../assets/pics/load.png")}
                     resizeMode='contain'
