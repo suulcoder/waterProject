@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "886248964837",
+    "project_id": "ecofiltro-e2087",
+    "storage_bucket": "ecofiltro-e2087.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886248964837:android:5f76656e81976d674d0a0c",
+        "android_client_info": {
+          "package_name": "com.ecofiltro.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "886248964837-gk27u6un8n5npqfiiguvii0q8t0d9blo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9Lf28Hp22u9_pECRc5emMLNvX-ZqP83I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "886248964837-gk27u6un8n5npqfiiguvii0q8t0d9blo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
