@@ -5,6 +5,7 @@
     "version": "1.0.0",
     "slug": "ecofiltro",
     "android": {
+      "googleServicesFile": "./google-services.json",
       "package": "com.suulcoder.ecofiltro",
       "versionCode": 1
     },
