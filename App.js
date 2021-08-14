@@ -33,7 +33,6 @@ import Demo4 from './src/components/Demo4';
 import Demo5 from './src/components/Demo5';
 import EvaluateWater from './src/components/EvaluateWater';
 import TakePicture from './src/components/TakePicture';
-import Prueba from './src/components/Prueba';
 import * as Font from 'expo-font';
 import { AppLoading } from 'expo';
 
@@ -70,8 +69,7 @@ export default class App extends React.Component {
         <Provider store={store}>
           <Router>
             <Stack key="root" >
-              <Scene key="Home" component={Prueba} />
-              <Scene key="Home1" component={Home} hideNavBar={true} />
+              <Scene key="Home" component={Home} hideNavBar={true} />
               <Scene key="Contact" component={Contact} hideNavBar={true} />
               <Scene key="About" component={About} hideNavBar={true} />
               <Scene key="Info" component={Info} hideNavBar={true} />
