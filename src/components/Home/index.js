@@ -6,6 +6,7 @@ import * as Notifications from 'expo-notifications';
 import React, { useState, useEffect, useRef } from 'react';
 import styles from './styles'
 import { Actions } from 'react-native-router-flux';
+import { Linking } from 'react-native';
 
 Notifications.setNotificationHandler({
     handleNotification: async () => ({
@@ -32,11 +33,18 @@ const Home = ({ }) => {
             console.log(response);
         });
 
+        if (
+            notification &&
+            notification.request.content.data.url !== ''
+        ) {
+            Linking.openURL(notification.request.content.data.url);
+        }
+
         return () => {
             Notifications.removeNotificationSubscription(notificationListener.current);
             Notifications.removeNotificationSubscription(responseListener.current);
         };
-    }, []);
+    }, [notification]);
     return (
         <View style={styles.container}>
             <View style={styles.header}>
@@ -54,9 +62,9 @@ const Home = ({ }) => {
 
 Notifications.scheduleNotificationAsync({
     content: {
-        title: "You've got mail 1! 📬",
-        body: 'Here is the notification body',
-        data: { data: 'goes here' },
+        title: "Recordatorio",
+        body: 'Recuerda cambiar tu unidad filtrante cada dos años. ¡Utiliza nuestro mapa con los puntos de distribución para encontrar un vendedor cerca de ti!',
+        data: { url: '' },
     },
     trigger: {
         seconds: 8,
@@ -64,9 +72,9 @@ Notifications.scheduleNotificationAsync({
 });
 Notifications.scheduleNotificationAsync({
     content: {
-        title: "You've got mail 2! 📬",
-        body: 'Here is the notification body',
-        data: { data: 'goes here' },
+        title: "Encuesta",
+        body: 'Por favor llena nuestra encuesta de satisfacción.',
+        data: { url: 'https://www.ecofiltro.com.gt/' },
     },
     trigger: {
         seconds: 10,
