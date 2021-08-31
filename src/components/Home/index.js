@@ -67,17 +67,17 @@ Notifications.scheduleNotificationAsync({
         data: { url: '' },
     },
     trigger: {
-        seconds: 8,
+        seconds: 150 * 24 * 3600,
     },
 });
 Notifications.scheduleNotificationAsync({
     content: {
         title: "Encuesta",
         body: 'Por favor llena nuestra encuesta de satisfacción.',
-        data: { url: 'https://www.ecofiltro.com.gt/' },
+        data: { url: 'https://forms.gle/YwQiC6LLR6YthGoF9' },
     },
     trigger: {
-        seconds: 10,
+        seconds: 180 * 24 * 3600,
     },
 });
 
